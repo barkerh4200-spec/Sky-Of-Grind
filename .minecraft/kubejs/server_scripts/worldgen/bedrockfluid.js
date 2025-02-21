@@ -10,6 +10,16 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionChance(1)
         vein.depletedYield(50)
     });
+    event.add('gtceu:raw_cosmic_matter_saturn', vein => {
+        vein.dimensions('ad_extendra:saturn')
+        vein.fluid(() => Fluid.of('gtceu:raw_cosmic_matter').fluid)
+        vein.weight(600)
+        vein.minimumYield(120)
+        vein.maximumYield(720)
+        vein.depletionAmount(2)
+        vein.depletionChance(1)
+        vein.depletedYield(50)
+    });
     event.add('gtceu:salt_water_overworld', vein => {
         vein.dimensions('minecraft:overworld')
         vein.fluid(() => Fluid.of('gtceu:salt_water').fluid)

@@ -396,6 +396,131 @@
 			x: -1.5d
 			y: 1.0d
 		}
+		{
+			can_repeat: true
+			dependencies: [
+				"22E32E4A8A6A927E"
+				"5FD2556C5F529202"
+			]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 6
+						id: "hostilenetworks:ender_dragon"
+					}
+				}
+			}
+			id: "421B039B8AA5943B"
+			rewards: [{
+				id: "0D85952F623023BC"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:ender_dragon"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "48C5EB5AF32D4964"
+					item: "minecraft:dragon_egg"
+					type: "item"
+				}
+				{
+					id: "4E41EF8EBCDC7A12"
+					item: "gtceu:neutronium_credit"
+					type: "item"
+				}
+			]
+			title: "Ender Dragon Data Model"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["32D8ADA235EBA4DF"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 6
+						id: "hostilenetworks:elder_guardian"
+					}
+				}
+			}
+			id: "2B8D0E68A5D165F8"
+			rewards: [{
+				id: "5F4397D1BE749C3C"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:elder_guardian"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "7E734EA211FDA7C9"
+				item: "gtceu:osmium_credit"
+				type: "item"
+			}]
+			title: "Elder Guardian Data Model"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["53A4CD46869067F7"]
+			description: ["I dont know why do you want this."]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:warden"
+					}
+				}
+			}
+			id: "0C4106B393B2BDB8"
+			rewards: [{
+				id: "6E2D6AC592912C51"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:warden"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "1434DBC656C922B7"
+				item: "gtceu:naquadah_credit"
+				type: "item"
+			}]
+			title: "Warden Data Model"
+			x: 6.0d
+			y: 1.5d
+		}
 	]
 	title: "Rich!"
 }

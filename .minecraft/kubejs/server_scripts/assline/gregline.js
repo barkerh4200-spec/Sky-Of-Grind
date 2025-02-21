@@ -111,11 +111,10 @@ event.recipes.gtceu.assembly_line('h_gim')
 .itemInputs('64x kubejs:quantum_casing', '16x gtceu:gravi_star', 'gtceu:uev_machine_hull', '32x gtceu:double_cosmic_tungsten_plate', '4x #gtceu:circuits/uev', '16x gtceu:uev_robot_arm', '16x gtceu:uev_electric_piston', 'kubejs:highly_resonative_soc', 'kubejs:gravitational_fluctuation_module', 'kubejs:quantum_resonant_core', 'gtceu:uev_compressor', '4x gtceu:uhv_field_generator')
 .itemOutputs('gtceu:gravitational_implosion_machine')
 .inputFluids(
-Fluid.of('gtceu:soldering_alloy', 1152),
-Fluid.of('gtceu:polybenzimidazole', 1152),
-Fluid.of('gtceu:condensed_star_matter', 8124),
-Fluid.of('gtceu:neutronium', 8124)
-)
+  Fluid.of('gtceu:stropharic_hypoxylon', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
 .duration(1000)
 .EUt(GTValues.VA[GTValues.UIV])   
 event.recipes.gtceu.assembly_line('xl_plasma_turbine')
@@ -128,4 +127,45 @@ Fluid.of('gtceu:europium', 244)
 )
 .duration(1000)
 .EUt(GTValues.VA[GTValues.UV])   
+event.recipes.gtceu.assembly_line('large_synchrotron_switcher')
+.itemInputs('16x gtceu:chaos_plate', '16x kubejs:reactive_chaos_pellet', 'gtceu:uiv_machine_hull', '32x gtceu:double_awakened_draconium_plate', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', 'gtceu:uiv_field_generator', '4x gtceu:uev_fusion_reactor')
+.itemOutputs('gtceu:large_synchrotron_switcher')
+.inputFluids(
+  Fluid.of('gtceu:stropharic_hypoxylon', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(1000)
+.EUt(GTValues.VA[GTValues.UXV])   
+event.recipes.gtceu.assembly_line('chaotic_singularity_reactor')
+.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '32x gtceu:dense_chaos_plate', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', 'gtceu:xl_plasma_turbine', '4x gtceu:uiv_field_generator')
+.itemOutputs('gtceu:chaotic_singularity_reactor')
+.inputFluids(
+  Fluid.of('gtceu:stropharic_hypoxylon', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(1000)
+.EUt(GTValues.VA[GTValues.UXV])   
+
+event.recipes.gtceu.quantum_station('qee')
+.inputFluids('gtceu:oganesson 32', 'gtceu:antimatter 32')
+.itemInputs('gtceu:research_station')
+.itemOutputs('gtceu:quantum_entanglement_encrypter')
+.EUt((GTValues.VA[GTValues.UIV]))
+.totalCWU(1000*12000)
+.CWUt(1000)
+event.recipes.gtceu.quantum_station('qed')
+.inputFluids('gtceu:oganesson 32', 'gtceu:awakened_draconium 32')
+.itemInputs('gtceu:research_station')
+.itemOutputs('gtceu:quantum_entanglement_decrypter')
+.EUt((GTValues.VA[GTValues.UIV]))
+.totalCWU(1000*12000)
+.CWUt(1000)
+
+
+
+
+
+
     })

@@ -193,6 +193,23 @@ ServerEvents.recipes(sog => {
         .itemOutputs('hostilenetworks:loot_fabricator')
         .duration(100)
         .EUt(32)
+    sog.recipes.gtceu.assembler('solidsteelmachinecasing')
+        .itemInputs('8x gtceu:steel_plate')
+        .itemOutputs('gtceu:steel_machine_casing')
+        .duration(100)
+        .EUt(32)
+        .circuit(8)
+    sog.recipes.gtceu.assembler('bronzemachinecasing')
+        .itemInputs('8x gtceu:bronze_plate')
+        .itemOutputs('gtceu:bronze_machine_casing')
+        .duration(100)
+        .EUt(32)
+        .circuit(8)
+    sog.recipes.gtceu.assembler('uivmachinecasing')
+        .itemInputs('8x gtceu:draconium_plate', 'kubejs:draconium_heavy_plating')
+        .itemOutputs('gtceu:uiv_machine_casing')
+        .EUt(32)
+        .circuit(8)
     sog.recipes.gtceu.alloy_smelter('soulsand')
         .itemInputs('8x minecraft:ink_sac', '16x minecraft:sand')
         .itemOutputs('4x minecraft:soul_sand')
@@ -842,7 +859,7 @@ ServerEvents.recipes(sog => {
                 H: 'gtceu:triplatirium_235_foil'
             }
             ).id('gt:blacklight')
-    sog.recipes.gtceu.electric_blast_furnace('gtceu:ebf/hasoc')
+    sog.recipes.gtceu.electric_blast_furnace('hasoc')
             .itemInputs('gtceu:advanced_soc', 'kubejs:condensed_star_matter')
             .inputFluids('gtceu:sulfuric_acid 1000')
             .itemOutputs('8x gtceu:highly_advanced_soc')
@@ -1498,9 +1515,9 @@ sog.shaped(
         Y: 'minecraft:sticky_piston',
 })
 
-    sog.recipes.gtceu.autoclave("glow_ink_sac")
-      .itemInputs("1x minecraft:ink_sac")
-      .inputFluids(Fluid.of("gtceu:glowstone", 144))
+    sog.recipes.gtceu.autoclave("glow_ink_sac") // sog=event.recipes.gtceu.autoclave(name of the machine)"glow_ink_sak"=recipe id
+      .itemInputs("1x minecraft:ink_sac") // inputs  of the machine
+      .inputFluids(Fluid.of("gtceu:glowstone", 144)) //fl
       .itemOutputs("1x minecraft:glow_ink_sac")
       .duration(20 * 5)
       .EUt(16)

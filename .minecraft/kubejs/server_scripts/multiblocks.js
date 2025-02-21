@@ -253,6 +253,13 @@ event.recipes.gtceu.atomicforge('resonant_essence_coil')
     .itemOutputs("kubejs:resonant_essence_coil_block")
     .duration(200)
     .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomicforge('awakened_draconium_coil')
+    .inputFluids([Fluid.of('gtceu:draconium', 288)])
+    .notConsumable("kubejs:gravitational_fluctuation_module")
+    .itemInputs('kubejs:resonant_essence_coil_block', '8x gtceu:awakened_draconium_double_wire', '8x gtceu:antimatter_foil')
+    .itemOutputs("kubejs:awakened_draconium_coil_block")
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.UXV]);
 
 
 event.recipes.gtceu.dimensionalmatter('matter')
@@ -307,6 +314,12 @@ event.recipes.gtceu.atomiccompressor('singularity')
     .itemOutputsRanged( 'ae2:singularity', 25, 50)
     .duration(5)
     .EUt(GTValues.VA[GTValues.UV]);
+event.recipes.gtceu.atomiccompressor('dragon_heart')
+    .inputFluids(Fluid.of('gtceu:antimatter', 10))
+    .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:ender_dragon"}}').strongNBT())
+    .itemOutputs('draconicevolution:dragon_heart')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.UEV]);
 
 event.recipes.gtceu.svs('singularitysteel')
     .itemInputs('1024x gtceu:steel_ingot')

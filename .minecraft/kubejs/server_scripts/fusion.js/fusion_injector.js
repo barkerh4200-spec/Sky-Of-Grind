@@ -83,7 +83,7 @@ ServerEvents.recipes(sog => {
     }
     
     wyvern_injector('wyvern_energy_core', 'draconicevolution:wyvern_energy_core', ['4x draconicevolution:wyvern_core', '4x gtceu:gravi_star', '1x kubejs:draconium_heavy_plating'], "UEV", 90)
-    basic_injector('wyvern_core', 'draconicevolution:wyvern_core', ['16x draconicevolution:draconium_core', '8x gtceu:gravi_star', '2x kubejs:draconium_heavy_plating'], "UEV", 90)
+    basic_injector('wyvern_core', '8x draconicevolution:wyvern_core', ['16x draconicevolution:draconium_core', '8x gtceu:gravi_star', '1x kubejs:draconium_heavy_plating'], "UEV", 90)
     wyvern_injector('wyvern_shovel', 'draconicevolution:wyvern_shovel', ['4x draconicevolution:draconium_core', '8x draconicevolution:draconium_ingot', '1x draconicevolution:wyvern_energy_core', '4x draconicevolution:basic_relay_crystal', 'minecraft:diamond_shovel'], "UEV", 90)
     chaotic_injector('chaos_infuser', 'draconicadditions:chaos_infuser', ['1x draconicevolution:energy_transfuser', '1x draconicadditions:chaos_container'], "UXV", 90)
     basic_injector('draconium_chest', 'draconicevolution:draconium_chest', ['16x draconicevolution:draconium_core', '5x minecraft:furnace', '2x minecraft:crafting_table', '2x draconicevolution:draconium_block', 'minecraft:chest'], "UEV", 90)

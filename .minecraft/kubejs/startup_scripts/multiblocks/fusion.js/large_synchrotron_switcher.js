@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('W', Predicates.blocks('gtceu:electrolytic_cell'))
             .where('D', Predicates.blocks('kubejs:highly_superconducting_coil_block'))
             .where('E', Predicates.blocks('kubejs:stellar_powered_casing'))
-            .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
+            .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing').setMinGlobalLimited(180)
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE))
                 .or(Predicates.abilities(PartAbility.INPUT_LASER).setExactLimit(1))

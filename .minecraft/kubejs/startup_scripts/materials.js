@@ -262,6 +262,12 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .cableProperties(GTValues.V[GTValues.UHV], 1024, 0, true)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.NO_SMELTING)
+        event.create('heavy_duty_alloy_t4')
+        .ingot().dust().fluid()
+        .color(0x17e0ff)
+        .cableProperties(GTValues.V[GTValues.UXV], 24, 0, true)
+        .iconSet('metallic')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
     event.create('mixed_alloy')
         .ingot().dust()
         .color(0xe8c492)
@@ -419,6 +425,16 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .iconSet('radioactive')
         .blastTemp(13000, 'highest', 2097152, 1400)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        event.create('magnetic_stabilized_iridium')
+        .ingot()
+        .components('1x stabilized_iridium')
+        .color(0x9deafa).secondaryColor(0x232020)
+        .iconSet(GTMaterialIconSet.MAGNETIC)
+        .ingotSmeltInto(GTMaterials.get('stabilized_iridium'))
+        .arcSmeltInto(GTMaterials.get('stabilized_iridium'))
+        .macerateInto(GTMaterials.get('stabilized_iridium'))
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
+
     event.create('neutronic_chromite')
         .ingot()
         .element('neutronic_chromite')
@@ -527,6 +543,10 @@ event.create("universium")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .element('universium')
 .color(0xffffff)
+event.create("eternity")
+.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+.element('eternity')
+.color(0xffffff)
 event.create("molten_space_time")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .color(0xffffff)
@@ -547,15 +567,60 @@ event.create('space_time')
     GTMaterialFlags.GENERATE_BOLT_SCREW, 
     GTMaterialFlags.PHOSPHORESCENT
 )
-event.create("raw_cosmic_matter")
-.liquid()
-.color(0x000000)
-event.create("cosmic_matter")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.color(0xffffff)
+
 event.create("stellar_matter_plasma")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .color(0xffffff)
+
+
+
+// COSMIC LINE
+
+event.create("raw_cosmic_matter")
+.gas()
+.color(0x000000) 
+event.create("crude_astral_flux") // Dimensional Matter Extractor Saturn
+.plasma()
+.color(0x2c00ad)
+event.create("astral_flux") // Singularity Data Chamber
+.plasma()
+.color(0x4000ff)
+event.create("hyper_ionized_helium") // Large Synchrotron Switcher
+.plasma()
+.color(0xfff2ab)
+event.create("infused_cosmic_matter") // Alloy Blast Smelter Awakened coils
+.gas()
+.color(0xaeabff)
+event.create("stabilized_raw_cosmic_matter") // Superconductive Stasis Field
+.gas()
+.color(0x14004f)
+event.create("cryo_compressed_raw_cosmic_matter") // Quantum Cooling Chamber
+.gas()
+.color(0x00224f)
+event.create("cryogenic_neutron_flow") // MK4 Neutronium Plasma
+.liquid()
+.color(0x00fff7)
+event.create("shifted_cosmic_matter_base")// Phase Shifter Freezer
+.gas()
+.color(0x020078)
+event.create("plasma_tempered_cosmic_matter_base") // Transcendental Plasma Nexus
+.plasma()
+.color(0x060040)
+event.create("hyper_dense_cosmic_matter_base") // Large Synchrotron Switcher
+.plasma()
+.color(0x020012)
+event.create("refined_cosmic_matter") // Trascendental Plasma Nexus
+.plasma()
+.color(0x1c00ff)
+event.create("cosmic_matter")
+.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill()) // Vacuum Freezer
+.color(0xffffff)
+
+
+
+
+
+
 
     })
 

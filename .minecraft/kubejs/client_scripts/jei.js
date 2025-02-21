@@ -30,8 +30,9 @@ JEIEvents.hideItems(event => {
   //solarflux
   event.hide(['solarflux:traversal_upgrade', 'solarflux:block_charging_upgrade', 'solarflux:dispersive_upgrade', 'solarflux:furnace_upgrade', 'solarflux:efficiency_upgrade'])
   event.hide(['solarflux:transfer_rate_upgrade', 'solarflux:capacity_upgrade'])
-
-
+  //dracevo
+  event.hide(['draconicevolution:awakened_crafting_injector', 'draconicevolution:basic_crafting_injector', 'draconicevolution:chaotic_crafting_injector', 'draconicevolution:crafting_core', 'draconicevolution:wyvern_crafting_injector'])
+  event.hide(['exdeorum:string_mesh', 'exdeorum:flint_mesh', 'exdeorum:iron_mesh', 'exdeorum:golden_mesh', 'exdeorum:diamond_mesh', 'exdeorum:netherite_mesh', 'exdeorum:iron_ore_chunk', 'exdeorum:copper_ore_chunk', 'exdeorum:gold_ore_chunk'])
 
 })
 

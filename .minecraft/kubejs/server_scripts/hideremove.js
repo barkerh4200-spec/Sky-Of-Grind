@@ -188,5 +188,11 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['draconicevolution:chaos_shard', 'draconicevolution:large_chaos_frag', 'draconicevolution:medium_chaos_frag', 'draconicevolution:small_chaos_frag'], mod: 'draconicevolution'})
     event.remove({ output: ['ae2:export_bus', 'ae2:import_bus', 'ae2:interface', 'ae2:energy_acceptor']})
     event.remove({ output: 'gtceu:pyrochlore_dust', input: 'gtceu:refined_apatite_ore'})
+    event.remove({ type: 'draconicevolution:fusion_crafting' })
+    event.remove({ type: 'exdeorum:compressed_sieve' })
+    event.remove({ type: 'ae2:inscriber' })
+    event.remove({ type: 'ae2:charger' })
+    event.remove({ type: 'ad_astra:compressor' })
+
 
   })

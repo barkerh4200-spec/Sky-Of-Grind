@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('bloodmagic:demonpylon'))
             .where(
                 "C",
-                Predicates.blocks('gtceu:atomic_casing')
+                Predicates.blocks('gtceu:atomic_casing').setMinGlobalLimited(155)
                   .or(Predicates.autoAbilities(definition.getRecipeTypes()))
             )
             .where('O', Predicates.abilities(PartAbility.MUFFLER)

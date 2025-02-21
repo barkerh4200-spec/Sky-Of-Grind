@@ -83,9 +83,10 @@
 			dependencies: [
 				"071D143BE842866F"
 				"132CEAF670E7CC3B"
+				"010A1946F22B62A3"
 			]
+			description: ["This took long enough, right?"]
 			id: "38B15640E2E9E90E"
-			subtitle: "Needs UIV"
 			tasks: [
 				{
 					id: "7E6B245325184EF3"
@@ -390,13 +391,13 @@
 				" (next page)"
 				"{@pagebreak}"
 				""
-				"Crystal Matrix = 64 CWU/t (64*500 duration)"
-				"Cosmic Titanium = 64 CWU/t (64*500 duration)"
-				"Cosmic Tungsten = 64 CWU/t (64*500 duration)"
-				"Cosmic Iridium = 96 CWU/t (96*500 duration)"
-				"Cosmic Osmium = 64 CWU/t (64*500 duration)"
-				"Nihonium = 256 CWU/t (256*500 duration)"
-				"Oganesson = 256 CWU/t (256*500 duration)"
+				"Crystal Matrix = 64 CWU/t (64*20 duration)"
+				"Cosmic Titanium = 64 CWU/t (64*20 duration)"
+				"Cosmic Tungsten = 64 CWU/t (64*20 duration)"
+				"Cosmic Iridium = 96 CWU/t (96*20 duration)"
+				"Cosmic Osmium = 64 CWU/t (64*20 duration)"
+				"Nihonium = 256 CWU/t (256*20 duration)"
+				"Oganesson = 256 CWU/t (256*20 duration)"
 			]
 			id: "1AAD55E80A86E225"
 			shape: "octagon"

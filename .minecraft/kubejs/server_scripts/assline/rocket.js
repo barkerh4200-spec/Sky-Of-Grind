@@ -158,4 +158,111 @@ event.custom({
   })
 
 
+
+  event.custom({
+    "type": "ad_astra:nasa_workbench",
+    "ingredients": [
+      {
+        "item": "ad_astra:rocket_nose_cone"
+      },
+      {
+        "item": "draconicevolution:awakened_draconium_block"
+      },
+      {
+        "item": "draconicevolution:awakened_draconium_block"
+      },
+      {
+        "item": "draconicevolution:awakened_draconium_block"
+      },
+      {
+        "item": "draconicevolution:awakened_draconium_block"
+      },
+      {
+        "item": "draconicevolution:awakened_draconium_block"
+      },
+      {
+        "item": "draconicevolution:awakened_draconium_block"
+      },
+      {
+        "item": "draconicevolution:awakened_core"
+      },
+      {
+        "item": "kubejs:uiv_voltage_coil"
+      },
+      {
+        "item": "kubejs:uiv_voltage_coil"
+      },
+      {
+        "item": "draconicevolution:awakened_core"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      },
+      {
+        "item": "avaritia:eternal_singularity"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      }
+    ],
+    "result": {
+      "count": 1,
+      "id": "ad_astra:tier_4_rocket"
+    }
+  })
+
+
+  
+  event.custom({
+    "type": "ad_astra:nasa_workbench",
+    "ingredients": [
+      {
+        "item": "ad_astra:rocket_nose_cone"
+      },
+      {
+        "item": "gtceu:heavy_duty_alloy_t4_block"
+      },
+      {
+        "item": "gtceu:heavy_duty_alloy_t4_block"
+      },
+      {
+        "item": "gtceu:heavy_duty_alloy_t4_block"
+      },
+      {
+        "item": "gtceu:heavy_duty_alloy_t4_block"
+      },
+      {
+        "item": "gtceu:heavy_duty_alloy_t4_block"
+      },
+      {
+        "item": "gtceu:heavy_duty_alloy_t4_block"
+      },
+      {
+        "item": "kubejs:singularity_data"
+      },
+      {
+        "item": "kubejs:uiv_voltage_coil"
+      },
+      {
+        "item": "kubejs:uiv_voltage_coil"
+      },
+      {
+        "item": "kubejs:singularity_data"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      },
+      {
+        "item": "kubejs:elementary_data"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      }
+    ],
+    "result": {
+      "count": 1,
+      "id": "ad_extendra:tier_5_rocket"
+    }
+  })
+
 })

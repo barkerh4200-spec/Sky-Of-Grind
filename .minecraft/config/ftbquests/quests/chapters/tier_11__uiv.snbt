@@ -6,14 +6,34 @@
 	icon: "draconicevolution:awakened_draconium_ingot"
 	id: "29411A93BF152DAF"
 	order_index: 13
-	quest_links: [{
-		id: "7674BEA9453CAE45"
-		linked_quest: "5E851266CCD8E325"
-		shape: "octagon"
-		size: 2.0d
-		x: 0.0d
-		y: 0.0d
-	}]
+	quest_links: [
+		{
+			id: "7674BEA9453CAE45"
+			linked_quest: "5E851266CCD8E325"
+			shape: "octagon"
+			size: 2.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "139F9F93D153E4E1"
+			linked_quest: "38B15640E2E9E90E"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			id: "1D070C26EB7B4D2D"
+			linked_quest: "6FE6B17B9193CAB2"
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			id: "699A92A3755E94A5"
+			linked_quest: "2FA03148CCD8CA22"
+			x: -1.5d
+			y: 10.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["5E851266CCD8E325"]
@@ -26,6 +46,7 @@
 				"Each tier has the recipes of the last one, so you only need to upgrade the frames and the controller!"
 			]
 			id: "1CFDE8AD978AA9EF"
+			subtitle: "No overcloking!"
 			tasks: [{
 				id: "77C8A19523921931"
 				item: "gtceu:basic_fusion_injector"
@@ -35,11 +56,17 @@
 			y: 2.0d
 		}
 		{
+			dependencies: [
+				"5909F49C7467BCDF"
+				"77BC3152DE79CA88"
+			]
 			description: [
 				"This is a very tall multiblock huh."
 				""
 				"Prepare lots of hydrogen, you will need it-"
 				"Wait what's that? ..."
+				""
+				"Note: This multiblock cannot overclock and only uses laser hatches."
 			]
 			id: "3A6AD36D1D7EF770"
 			shape: "octagon"
@@ -50,8 +77,8 @@
 				item: "gtceu:large_synchrotron_switcher"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 1.5d
+			x: 4.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3A6AD36D1D7EF770"]
@@ -68,8 +95,8 @@
 				item: "kubejs:quantum_anomaly"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 4.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1CFDE8AD978AA9EF"]
@@ -104,8 +131,8 @@
 				item: "draconicevolution:awakened_draconium_block"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -136,7 +163,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["176C5C21B6EDF8FA"]
+			dependencies: ["0D36D184374AD66C"]
 			id: "6C8F57A1DBEBBAB3"
 			tasks: [{
 				id: "59996FC6EF712AA1"
@@ -177,8 +204,284 @@
 				}
 			]
 			title: "UIV Components"
-			x: 3.5d
+			x: 6.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["176C5C21B6EDF8FA"]
+			id: "0D36D184374AD66C"
+			tasks: [{
+				id: "1ACE629D2825AE34"
+				item: "gtceu:uiv_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0D36D184374AD66C"]
+			id: "155CCC70C0FAF459"
+			shape: "octagon"
+			tasks: [{
+				id: "75F2B9F7138A7456"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["155CCC70C0FAF459"]
+			icon: "ad_astra:glacio_globe"
+			id: "6EC808C647E515F5"
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				id: "6907D1530E737726"
+				type: "dimension"
+			}]
+			title: "Visit Glacio!"
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6EC808C647E515F5"]
+			description: [
+				"Congrats!"
+				""
+				"This is a huge milestone for UIV."
+			]
+			id: "5909F49C7467BCDF"
+			subtitle: "Very Chaotic"
+			tasks: [{
+				id: "54149F1B15C2A163"
+				item: "gtceu:raw_chaos"
+				type: "item"
+			}]
+			title: "Chaos Vein"
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5909F49C7467BCDF"]
+			id: "1EF5F78DFEF2DA1F"
+			tasks: [
+				{
+					id: "5A6EBCBE14E5D689"
+					item: "gtceu:uiv_field_generator"
+					type: "item"
+				}
+				{
+					id: "4E0E3007D2EB392F"
+					item: "gtceu:uiv_emitter"
+					type: "item"
+				}
+				{
+					id: "0AB571612ACC1AC7"
+					item: "gtceu:uiv_sensor"
+					type: "item"
+				}
+			]
+			title: "UIV Components #2"
+			x: 2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1EF5F78DFEF2DA1F"]
+			id: "77BC3152DE79CA88"
+			tasks: [{
+				id: "47BF26DDB4D75FB4"
+				item: "gtceu:uiv_256a_laser_target_hatch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3A6AD36D1D7EF770"]
+			id: "3B3D1E1035BDF168"
+			tasks: [
+				{
+					id: "0BB730E13BCDE462"
+					item: "kubejs:graviton"
+					type: "item"
+				}
+				{
+					id: "634F61E378DD8505"
+					item: "kubejs:quarks"
+					type: "item"
+				}
+				{
+					id: "678039715D8A6620"
+					item: "kubejs:strange_quarks"
+					type: "item"
+				}
+				{
+					id: "05F1C60B99CDF739"
+					item: "kubejs:photon"
+					type: "item"
+				}
+				{
+					id: "5F0D4525FA167D98"
+					item: "kubejs:tau_neutrino"
+					type: "item"
+				}
+			]
+			title: "Elementary Particles"
+			x: 5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"4E2B592E170BF6B0"
+				"5909F49C7467BCDF"
+			]
+			id: "3B606E680E7317ED"
+			tasks: [{
+				id: "10A3B57677767A01"
+				item: "draconicevolution:chaotic_core"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"6075D2D1AA906975"
+				"3734E5BAB19292B9"
+			]
+			id: "31F36961B2D8EF44"
+			tasks: [{
+				id: "42C09FC40263BBEC"
+				item: "kubejs:singularity_data"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"3B3D1E1035BDF168"
+				"2300C47A2C25331E"
+			]
+			id: "5FB62D5518E967A4"
+			tasks: [{
+				id: "0489DE2761F6193D"
+				item: "kubejs:elementary_data"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.5d
+		}
+		{
+			id: "2300C47A2C25331E"
+			tasks: [{
+				id: "4EC8E7E30EDC546A"
+				item: "gtceu:quantum_entanglement_encrypter"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			id: "3734E5BAB19292B9"
+			tasks: [{
+				id: "761562132F8426C2"
+				item: "gtceu:quantum_entanglement_decrypter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0D36D184374AD66C"]
+			hide_dependency_lines: true
+			id: "6F442AC629958898"
+			shape: "octagon"
+			tasks: [{
+				id: "1F024E703F93C0DC"
+				item: "kubejs:awakened_draconium_coil_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["6F442AC629958898"]
+			id: "0964B894A7181F59"
+			tasks: [{
+				id: "56E1D0092100DA3F"
+				item: "gtceu:heavy_duty_alloy_t4_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"0964B894A7181F59"
+				"31F36961B2D8EF44"
+			]
+			description: [
+				"This will unlock Saturn, which you'll need for getting new materials required for the Cosmic Matter line."
+				""
+				"The main material of UXV."
+			]
+			id: "4BFE9DADA134A559"
+			subtitle: "A new rocket!"
+			tasks: [{
+				id: "3E747BA88AF2CCBF"
+				item: {
+					Count: 1
+					id: "ad_extendra:tier_5_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4BFE9DADA134A559"]
+			icon: "ad_extendra:saturn_globe"
+			id: "6F838DE20B09BED1"
+			shape: "octagon"
+			tasks: [{
+				dimension: "ad_extendra:saturn"
+				id: "6A7A5AF63C8C07BC"
+				title: "Visit Saturn"
+				type: "dimension"
+			}]
+			x: 8.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6F838DE20B09BED1"]
+			description: ["Dimensional matter extractor, in Saturn."]
+			id: "6F3A1EB92A61BCA6"
+			tasks: [{
+				id: "3307286817FAB655"
+				item: "gtceu:crude_astral_flux_plasma_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6F838DE20B09BED1"]
+			description: ["Fluid drilling rigs, in saturn."]
+			id: "5307CBA9B1464206"
+			subtitle: "This is a very cosmic line"
+			tasks: [{
+				id: "7B60CF8FB58A0501"
+				item: "gtceu:raw_cosmic_matter_bucket"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 16.5d
 		}
 	]
 	subtitle: ["Ultra Immense Voltage"]
