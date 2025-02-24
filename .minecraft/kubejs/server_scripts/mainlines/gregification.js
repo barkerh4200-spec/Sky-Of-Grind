@@ -679,7 +679,6 @@ ServerEvents.recipes(sog => {
         .duration(2000)
         .EUt((GTValues.VA[GTValues.LV]))
     sog.recipes.gtceu.combustion_generator('mercurypower')
-        .notConsumable('gtceu:quantum_star')
         .inputFluids(Fluid.of('gtceu:mercury_vapor', 1000))
         .duration(400).EUt(-(GTValues.V[GTValues.IV]))
     sog.recipes.gtceu.autoclave('starmold')

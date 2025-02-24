@@ -579,34 +579,34 @@ event.create("stellar_matter_plasma")
 event.create("raw_cosmic_matter")
 .gas()
 .color(0x000000) 
-event.create("crude_astral_flux") // Dimensional Matter Extractor Saturn
+event.create("crude_astral_flux") // Dimensional Matter Extractor Saturn --
 .plasma()
 .color(0x2c00ad)
-event.create("astral_flux") // Singularity Data Chamber
+event.create("astral_flux") // Singularity Data Chamber --
 .plasma()
 .color(0x4000ff)
-event.create("hyper_ionized_helium") // Large Synchrotron Switcher
+event.create("hyper_ionized_helium") // Large Synchrotron Switcher --
 .plasma()
 .color(0xfff2ab)
-event.create("infused_cosmic_matter") // Alloy Blast Smelter Awakened coils
+event.create("infused_cosmic_matter") // Alloy Blast Smelter Awakened coils --
 .gas()
 .color(0xaeabff)
-event.create("stabilized_raw_cosmic_matter") // Superconductive Stasis Field
+event.create("stabilized_raw_cosmic_matter") // Superconductive Stasis Field --
 .gas()
 .color(0x14004f)
-event.create("cryo_compressed_raw_cosmic_matter") // Quantum Cooling Chamber
+event.create("cryo_compressed_raw_cosmic_matter") // Quantum Cooling Chamber --
 .gas()
 .color(0x00224f)
-event.create("cryogenic_neutron_flow") // MK4 Neutronium Plasma
+event.create("cryogenic_neutron_flow") // MK4 Neutronium Plasma --
 .liquid()
 .color(0x00fff7)
-event.create("shifted_cosmic_matter_base")// Phase Shifter Freezer
+event.create("shifted_cosmic_matter_base")// Stasis Phase Shifter
 .gas()
 .color(0x020078)
 event.create("plasma_tempered_cosmic_matter_base") // Transcendental Plasma Nexus
 .plasma()
 .color(0x060040)
-event.create("hyper_dense_cosmic_matter_base") // Large Synchrotron Switcher
+event.create("hyper_dense_cosmic_matter_base") // Large Synchrotron Switcher --
 .plasma()
 .color(0x020012)
 event.create("refined_cosmic_matter") // Trascendental Plasma Nexus
