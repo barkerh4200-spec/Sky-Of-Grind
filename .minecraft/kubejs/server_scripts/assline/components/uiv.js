@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
   .inputFluids(Fluid.of('gtceu:draconium', 3456))
   .itemOutputs('kubejs:highly_superconducting_coil_block')
   .duration(200)
-  .EUt(GTValues.VA[GTValues.UXV]);
+  .EUt(GTValues.VA[GTValues.UIV]);
   event.recipes.gtceu.polarizer('magnetic_iridium')
   .itemInputs('gtceu:stabilized_iridium_ingot')
   .circuit(1)

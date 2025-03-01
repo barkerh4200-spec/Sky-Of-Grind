@@ -69,7 +69,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(50)
         .neutrons(75)
         .symbol('Ch');
-        
+    event.create('cosmic_matter')
+        .protons(199)
+        .neutrons(99)
+        .symbol('CoM');
         //  ₂₃₄₅₆₇₈₉₀
 })
 
@@ -127,6 +130,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x426148)
     event.create('resonant_naquadah')
         .ingot().fluid().dust()
+        .ore(1, 1,)
         .color(0x2b3d2d)
         .blastTemp(9100) 
         .cableProperties(GTValues.V[GTValues.UV], 4, 2, true)
@@ -224,6 +228,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         event.create('cosmic_neutronium')
         .ingot().dust()
         .color(0x161616)
+        .ore(1, 1,)
         .element('cosmic_neutronium')
         .iconSet('radioactive')
         .blastTemp(13000, 'highest', 2097152, 2400)
@@ -290,6 +295,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('resonant_essence')
         .ingot().dust().fluid()
         .color(0x8ceb34)
+        .ore(1, 1,)
         .blastTemp(12000)
         .element('resonant_essence')
         .iconSet('bright')
@@ -371,6 +377,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     
     event.create('draconium')
         .ingot().fluid()
+        .ore(1, 1,)
         .color(0x7A42AE)
         .element('draconium')
         .iconSet('metallic')
@@ -393,6 +400,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     
     event.create('awakened_draconium')
         .ingot().fluid()
+        .ore(1, 1,)
         .color(0xFF6A00)
         .element('awakened_draconium')
         .iconSet('shiny')
@@ -462,6 +470,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     
 event.create('cosmic_tungsten')
 .ingot().fluid()
+.ore(1, 1,)
 .element('cosmic_tungsten')
 .color(0x04011c)
 .iconSet('radioactive')
@@ -481,6 +490,7 @@ event.create('cosmic_tungsten')
 )
 event.create('cosmic_titanium')
 .ingot().fluid()
+.ore(1, 1,)
 .element('cosmic_titanium')
 .color(0x3d0245)
 .iconSet('radioactive')
@@ -500,6 +510,7 @@ event.create('cosmic_titanium')
 )
 event.create('cosmic_iridium')
 .ingot().fluid()
+.ore(1, 1,)
 .element('cosmic_iridium')
 .color(0x016646)
 .iconSet('radioactive')
@@ -519,6 +530,7 @@ event.create('cosmic_iridium')
 )
 event.create('cosmic_osmium')
 .ingot().fluid()
+.ore(1, 1,)
 .element('cosmic_osmium')
 .color(0x023e45)
 .iconSet('radioactive')
@@ -579,28 +591,28 @@ event.create("stellar_matter_plasma")
 event.create("raw_cosmic_matter")
 .gas()
 .color(0x000000) 
-event.create("crude_astral_flux") // Dimensional Matter Extractor Saturn --
+event.create("crude_astral_flux")
 .plasma()
 .color(0x2c00ad)
-event.create("astral_flux") // Singularity Data Chamber --
+event.create("astral_flux") 
 .plasma()
 .color(0x4000ff)
-event.create("hyper_ionized_helium") // Large Synchrotron Switcher --
+event.create("hyper_ionized_helium")
 .plasma()
 .color(0xfff2ab)
-event.create("infused_cosmic_matter") // Alloy Blast Smelter Awakened coils --
+event.create("infused_cosmic_matter")
 .gas()
 .color(0xaeabff)
-event.create("stabilized_raw_cosmic_matter") // Superconductive Stasis Field --
+event.create("stabilized_raw_cosmic_matter")
 .gas()
 .color(0x14004f)
-event.create("cryo_compressed_raw_cosmic_matter") // Quantum Cooling Chamber --
+event.create("cryo_compressed_raw_cosmic_matter")
 .gas()
 .color(0x00224f)
-event.create("cryogenic_neutron_flow") // MK4 Neutronium Plasma --
+event.create("cryogenic_neutron_flow")
 .liquid()
 .color(0x00fff7)
-event.create("shifted_cosmic_matter_base")// Stasis Phase Shifter
+event.create("shifted_cosmic_matter_base")
 .gas()
 .color(0x020078)
 event.create("plasma_tempered_cosmic_matter_base") // Transcendental Plasma Nexus
@@ -615,8 +627,43 @@ event.create("refined_cosmic_matter") // Trascendental Plasma Nexus
 event.create("cosmic_matter")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill()) // Vacuum Freezer
 .color(0xffffff)
+event.create("pure_cosmic_matter")
+.ingot().dust()
+.ore(1, 1,)
+.element('cosmic_matter')
+.color(0x121212).secondaryColor(0x6200ff)
+.iconSet('radioactive')
+.flags(
+    GTMaterialFlags.GENERATE_PLATE, 
+    GTMaterialFlags.GENERATE_ROD, 
+    GTMaterialFlags.GENERATE_GEAR, 
+    GTMaterialFlags.GENERATE_FINE_WIRE,
+    GTMaterialFlags.GENERATE_FRAME, 
+    GTMaterialFlags.GENERATE_DENSE, 
+    GTMaterialFlags.GENERATE_ROTOR, 
+    GTMaterialFlags.GENERATE_BOLT_SCREW,
+    GTMaterialFlags.GENERATE_LONG_ROD,
+    GTMaterialFlags.GENERATE_SMALL_GEAR,
+    GTMaterialFlags.GENERATE_ROUND
+)
+ 
+// PLASMAS NEBULA
 
-
+event.create("hypercharged_nebular") 
+.plasma()
+.color(0x1c03fc)
+event.create("high_entropy_neptunium") 
+.plasma()
+.color(0x03a1fc)
+event.create("supercritical_californium") 
+.plasma()
+.color(0xffffff)
+event.create("hypercharged_oganesson") 
+.plasma()
+.color(0xa39672)
+event.create("hypercharged_nihonium") 
+.plasma()
+.color(0x84a1e8)
 
 
 

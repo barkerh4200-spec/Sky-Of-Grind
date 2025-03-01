@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
 
 event.recipes.gtceu.circuit_assembly_line('microchip_processor')
 .itemInputs('16x gtceu:plastic_printed_circuit_board', '8x gtceu:advanced_soc')
-.itemOutputs('32x gtceu:microchip_processor')
+.itemOutputs('64x gtceu:microchip_processor')
 .inputFluids(
 Fluid.of('gtceu:copper', 2056),
 Fluid.of('gtceu:soldering_alloy', 2056)
@@ -61,7 +61,7 @@ Fluid.of('gtceu:soldering_alloy', 2056)
 
 event.recipes.gtceu.circuit_assembly_line('micro_processor')
 .itemInputs('16x gtceu:plastic_printed_circuit_board', '16x gtceu:advanced_soc')
-.itemOutputs('32x gtceu:micro_processor')
+.itemOutputs('64x gtceu:micro_processor')
 .inputFluids(
 Fluid.of('gtceu:red_alloy', 2056),
 Fluid.of('gtceu:soldering_alloy', 4112)
@@ -72,7 +72,7 @@ Fluid.of('gtceu:soldering_alloy', 4112)
 
 event.recipes.gtceu.circuit_assembly_line('nano_processor')
 .itemInputs('16x gtceu:epoxy_printed_circuit_board', '24x gtceu:advanced_soc')
-.itemOutputs('32x gtceu:nano_processor')
+.itemOutputs('64x gtceu:nano_processor')
 .inputFluids(
 Fluid.of('gtceu:electrum', 4112),
 Fluid.of('gtceu:soldering_alloy', 8124)
@@ -83,7 +83,7 @@ Fluid.of('gtceu:soldering_alloy', 8124)
 
 event.recipes.gtceu.circuit_assembly_line('quantum_processor')
 .itemInputs('16x gtceu:fiber_reinforced_printed_circuit_board', '32x gtceu:advanced_soc')
-.itemOutputs('32x gtceu:quantum_processor')
+.itemOutputs('64x gtceu:quantum_processor')
 .inputFluids(
 Fluid.of('gtceu:niobium_titanium', 2056),
 Fluid.of('gtceu:platinum', 4112),
@@ -138,5 +138,55 @@ event.recipes.gtceu.circuit_assembly_line('dragon_processor_mainframe')
     Fluid.of('gtceu:naquadria', 8124)
 )
 .duration(1600)
-.EUt(GTValues.VA[GTValues.UIV])   
+.EUt(GTValues.VA[GTValues.UIV])  
+
+
+
+// UXV CIRCUITS 
+
+event.recipes.gtceu.circuit_assembly_line('cosmic_processor')
+.itemInputs('2x kubejs:dragon_processor', '64x gtceu:fine_awakened_draconium_wire', '64x kubejs:complex_smd_capacitor', '8x gtceu:fine_pure_cosmic_matter_wire', 'kubejs:extremely_advanced_soc', 'kubejs:quantum_data_module', '32x avaritia:eternal_singularity')
+.itemOutputs('2x kubejs:cosmic_processor')
+.inputFluids(
+    Fluid.of('gtceu:eternity', 10),
+    Fluid.of('gtceu:cosmic_matter', 100),
+    Fluid.of('gtceu:antimatter', 8124),
+    Fluid.of('gtceu:hypoxylon', 8124)
+)
+.duration(200)
+.EUt(GTValues.VA[GTValues.UXV])     
+event.recipes.gtceu.circuit_assembly_line('cosmic_processor_assembly')
+.itemInputs('2x kubejs:cosmic_printed_circuit_board', 'kubejs:cosmic_processor', '64x gtceu:fine_awakened_draconium_wire', '64x kubejs:complex_smd_capacitor', '16x gtceu:fine_pure_cosmic_matter_wire', 'kubejs:extremely_advanced_soc', 'kubejs:chaos_heavy_plating', 'kubejs:quantum_data_module')
+.itemOutputs('2x kubejs:cosmic_processor_assembly')
+.inputFluids(
+    Fluid.of('gtceu:eternity', 10),
+    Fluid.of('gtceu:cosmic_matter', 100),
+    Fluid.of('gtceu:antimatter', 8124),
+    Fluid.of('gtceu:hypoxylon', 8124)
+)
+.duration(400)
+.EUt(GTValues.VA[GTValues.UXV])     
+event.recipes.gtceu.circuit_assembly_line('cosmic_processor_computer')
+.itemInputs('2x kubejs:cosmic_processor_assembly', 'kubejs:cosmic_printed_circuit_board', '64x gtceu:fine_awakened_draconium_wire', '64x kubejs:complex_smd_capacitor', '24x gtceu:fine_pure_cosmic_matter_wire', 'kubejs:extremely_advanced_soc', '7x gtceu:dense_awakened_draconium_plate', '4x kubejs:chaos_heavy_plating', 'kubejs:quantum_data_module')
+.itemOutputs('1x kubejs:cosmic_processor_computer')
+.inputFluids(
+    Fluid.of('gtceu:eternity', 10),
+    Fluid.of('gtceu:cosmic_matter', 100),
+    Fluid.of('gtceu:antimatter', 8124),
+    Fluid.of('gtceu:hypoxylon', 8124)
+)
+.duration(800)
+.EUt(GTValues.VA[GTValues.UXV])   
+event.recipes.gtceu.circuit_assembly_line('cosmic_processor_mainframe')
+.itemInputs('2x kubejs:cosmic_processor_computer', '4x kubejs:awakened_draconium_heavy_plating', '64x kubejs:complex_smd_capacitor', 'kubejs:extremely_advanced_soc', '4x kubejs:cosmic_printed_circuit_board', '4x kubejs:chaos_heavy_plating', '4x avaritia:eternal_singularity', '2x gtceu:pure_cosmic_matter_gear', 'kubejs:quantum_data_module')
+.itemOutputs('1x kubejs:cosmic_processor_mainframe')
+.inputFluids(
+    Fluid.of('gtceu:eternity', 10),
+    Fluid.of('gtceu:cosmic_matter', 100),
+    Fluid.of('gtceu:antimatter', 8124),
+    Fluid.of('gtceu:hypoxylon', 8124)
+)
+.duration(1600)
+.EUt(GTValues.VA[GTValues.UXV])  
+
 })

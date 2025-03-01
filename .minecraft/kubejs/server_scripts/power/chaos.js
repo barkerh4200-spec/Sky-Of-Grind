@@ -4,7 +4,7 @@ ServerEvents.recipes(sog => {
     .itemInputs('2x draconicevolution:chaos_shard')
     .inputFluids(Fluid.of('gtceu:antimatter', 576))
     .circuit(19)
-    .itemOutputs('2x kubejs:reactive_blend')
+    .itemOutputs('8x kubejs:reactive_blend')
     .duration(20*50)
     .EUt((GTValues.VA[GTValues.UXV]))
     sog.recipes.gtceu.electric_blast_furnace('reactive_chaos_dust')

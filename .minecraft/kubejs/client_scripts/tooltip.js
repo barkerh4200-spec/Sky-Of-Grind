@@ -31,6 +31,13 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('gtceu:atmospheric_collector', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
+    event.addAdvanced('gtceu:nebular_plasma_nexus', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+    })
+    event.addAdvanced('gtceu:processing_plant', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
+    })
     event.addAdvanced('gtceu:uev_fusion_reactor', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UEV, 16) / 1000000)))
         text.add(2, Text.translatable('gtceu.multiblock.uev_fusion_reactor.description'))
@@ -52,7 +59,9 @@ ItemEvents.tooltip(event => {
         text.add(1, Text.translatable('gtceu.multiblock.needed_laser_input.description'))
         text.add(2, Text.translatable('gtceu.multiblock.lss.description'))
     })
-
+    event.addAdvanced('gtceu:singularity_data_confinement', (item, adv, text) => {
+        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
+    })
 
 
 

@@ -1,12 +1,17 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "tier_12__uxv"
 	group: "6B3EFCC5BFD49997"
 	icon: "draconicevolution:chaos_shard"
 	id: "1D7194D795A36679"
 	order_index: 14
-	quest_links: [ ]
+	quest_links: [{
+		id: "51329027B968EEA1"
+		linked_quest: "3C7786F4A3C00CAE"
+		x: 0.0d
+		y: 0.0d
+	}]
 	quests: [ ]
 	subtitle: ["Ultra Extreme Voltage"]
 	title: "&#121212&lTier 12 - UXV"

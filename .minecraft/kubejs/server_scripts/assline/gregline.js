@@ -138,7 +138,7 @@ event.recipes.gtceu.assembly_line('large_synchrotron_switcher')
 .duration(1000)
 .EUt(GTValues.VA[GTValues.UXV])   
 event.recipes.gtceu.assembly_line('chaotic_singularity_reactor')
-.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '32x gtceu:dense_chaos_plate', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', 'gtceu:xl_plasma_turbine', '4x gtceu:uiv_field_generator')
+.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '32x gtceu:dense_chaos_plate', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', '4x gtceu:uiv_field_generator')
 .itemOutputs('gtceu:chaotic_singularity_reactor')
 .inputFluids(
   Fluid.of('gtceu:stropharic_hypoxylon', 9152),
@@ -147,6 +147,64 @@ event.recipes.gtceu.assembly_line('chaotic_singularity_reactor')
   )
 .duration(1000)
 .EUt(GTValues.VA[GTValues.UXV])   
+event.recipes.gtceu.assembly_line('singularity_data_confinement')
+.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '1x kubejs:elementary_data', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_field_generator', '8x gtceu:uiv_electric_piston')
+.itemOutputs('gtceu:singularity_data_confinement')
+.inputFluids(
+  Fluid.of('gtceu:awakened_draconium', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(1200)
+.EUt(GTValues.VA[GTValues.UXV])   
+event.recipes.gtceu.assembly_line('quantum_cooling_chamber')
+.itemInputs('16x gtceu:cosmic_iridium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_field_generator', '8x gtceu:uiv_electric_piston', 'gtceu:mega_vacuum_freezer')
+.itemOutputs('gtceu:quantum_cooling_chamber')
+.inputFluids(
+  Fluid.of('gtceu:awakened_draconium', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(1200)
+.EUt(GTValues.VA[GTValues.UXV])  
+event.recipes.gtceu.assembly_line('stasis_phase_shifter')
+.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_field_generator', '8x gtceu:uiv_electric_piston', 'gtceu:large_synchrotron_switcher')
+.itemOutputs('gtceu:stasis_phase_shifter')
+.inputFluids(
+  Fluid.of('gtceu:awakened_draconium', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(1200)
+.EUt(GTValues.VA[GTValues.UXV])  
+event.recipes.gtceu.assembly_line('superconductive_stasis_field')
+.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_field_generator', '8x gtceu:uiv_electric_piston', 'gtceu:uev_fusion_reactor')
+.itemOutputs('gtceu:superconductive_stasis_field')
+.inputFluids(
+  Fluid.of('gtceu:awakened_draconium', 9152),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(1200)
+.EUt(GTValues.VA[GTValues.UXV])  
+event.recipes.gtceu.assembly_line('nebular_plasma_nexus')
+.itemInputs('8x kubejs:awakened_draconium_heavy_plating', '4x draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '4x #gtceu:circuits/uiv', '16x gtceu:uiv_field_generator', '8x gtceu:uiv_electric_piston', 'gtceu:uev_fusion_reactor',  'gtceu:superconductive_stasis_field', '64x avaritia:eternal_singularity')
+.itemOutputs('gtceu:nebular_plasma_nexus')
+.inputFluids(
+  Fluid.of('gtceu:eternity', 50),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:crystal_matrix', 5000)
+  )
+.duration(60000)
+.EUt(GTValues.VA[GTValues.UXV])  
+event.recipes.gtceu.assembly_line('ore_processing_plant')
+.itemInputs('8x gtceu:heavy_duty_alloy_t4_plate', '4x draconicevolution:wyvern_core', 'gtceu:uiv_machine_hull', '1x #gtceu:circuits/uiv', '1x gtceu:uiv_electric_piston', 'gtceu:uiv_macerator', '1x avaritia:eternal_singularity')
+.itemOutputs('gtceu:processing_plant')
+.inputFluids(
+  Fluid.of('gtceu:crystal_matrix', 250)
+  )
+.duration(200)
+.EUt(GTValues.VA[GTValues.UEV])  
 
 event.recipes.gtceu.quantum_station('qee')
 .inputFluids('gtceu:oganesson 32', 'gtceu:antimatter 32')

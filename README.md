@@ -16,5 +16,9 @@
  - Thanks to Jamiscus for the heavy plating textures.
  - Thanks to Cosmic Frontiers/Cosmic Core for some textures.
  - Thanks to Gregtech New Beginnings for some textures, like cosmic matter and infinity coils.
+ - Thanks to Monifactory for their complex smds textures.
+ - Thanks to Star Technology for giving us permission to use some of their code.
+ 
+ - And thanks again, to the great GT modpacks like GT:NH, Nomifactory, Technological Journey, etc. For lots of ideas and inspiration!
 
  

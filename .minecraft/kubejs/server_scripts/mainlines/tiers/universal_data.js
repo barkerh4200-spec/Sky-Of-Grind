@@ -11,6 +11,12 @@ ServerEvents.recipes(sog => {
     .itemOutputs('kubejs:elementary_data')
     .duration(20*240)
     .EUt(GTValues.VA[GTValues.UXV]);
+    sog.recipes.gtceu.quantum_entanglement_encrypter('plasma_data')
+    .inputFluids('gtceu:hypercharged_nihonium_plasma 1000', 'gtceu:hypercharged_oganesson_plasma 1000', 'gtceu:hypercharged_nebular_plasma 1000')
+    .itemInputs('gtceu:data_module')
+    .itemOutputs('kubejs:plasma_data')
+    .duration(20*240)
+    .EUt(GTValues.VA[GTValues.UXV]);
 
     
 })

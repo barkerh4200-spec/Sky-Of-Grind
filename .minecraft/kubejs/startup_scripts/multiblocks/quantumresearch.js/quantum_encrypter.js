@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('quantum_entanglement_encrypter')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(8, 2, 0, 0)
+        .setMaxIOSize(8, 2, 4, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)

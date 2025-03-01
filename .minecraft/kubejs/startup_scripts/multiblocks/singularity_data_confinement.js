@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("B", Predicates.blocks('kubejs:awakened_draconium_coil_block'))
             .where("D", Predicates.blocks('gtceu:chaos_block'))
             .where("E", Predicates.blocks('gtceu:antimatter_frame'))
-            .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing').setMinGlobalLimited(1)
+            .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS)
                 .or(Predicates.abilities(PartAbility.INPUT_LASER))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE)))
