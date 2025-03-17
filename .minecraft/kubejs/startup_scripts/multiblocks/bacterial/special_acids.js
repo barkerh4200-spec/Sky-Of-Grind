@@ -12,5 +12,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('ferulic_acid')
     .fluid()
     .color(0xffffff)
-    
+    event.create('glutamic_acid')
+    .fluid()
+    .color(0xffffff)
 })
