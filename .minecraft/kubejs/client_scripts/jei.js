@@ -33,6 +33,9 @@ JEIEvents.hideItems(event => {
   //dracevo
   event.hide(['draconicevolution:awakened_crafting_injector', 'draconicevolution:basic_crafting_injector', 'draconicevolution:chaotic_crafting_injector', 'draconicevolution:crafting_core', 'draconicevolution:wyvern_crafting_injector'])
   event.hide(['exdeorum:string_mesh', 'exdeorum:flint_mesh', 'exdeorum:iron_mesh', 'exdeorum:golden_mesh', 'exdeorum:diamond_mesh', 'exdeorum:netherite_mesh', 'exdeorum:iron_ore_chunk', 'exdeorum:copper_ore_chunk', 'exdeorum:gold_ore_chunk'])
+  //ae2additions
+  event.hide(['ae2additions:1024k_crafting_storage', 'ae2additions:4096k_crafting_storage', 'ae2additions:16384k_crafting_storage', 'ae2additions:65536k_crafting_storage', 'ae2additions:me_wireless_transceiver'])
+  event.hide(['ae2additions:disk_item_256k', 'ae2additions:item_storage_cell_1024', 'ae2additions:item_storage_cell_4096','ae2additions:item_storage_cell_16384','ae2additions:item_storage_cell_65536','ae2additions:fluid_storage_cell_1024','ae2additions:fluid_storage_cell_4096', 'ae2additions:fluid_storage_cell_16384'])
 
 })
 
