@@ -198,7 +198,7 @@ event.recipes.gtceu.assembly_line('nebular_plasma_nexus')
 .duration(60000)
 .EUt(GTValues.VA[GTValues.UXV])  
 event.recipes.gtceu.assembly_line('ore_processing_plant')
-.itemInputs('8x gtceu:osmiridium_plate', '4x gtceu:luv_electric_motor', 'gtceu:luv_machine_hull', '8x #gtceu:circuits/luv', '1x gtceu:luv_electric_piston', 'gtceu:luv_macerator', '1x avaritia:eternal_singularity')
+.itemInputs('8x gtceu:osmiridium_plate', '4x gtceu:luv_electric_motor', 'gtceu:luv_machine_hull', '8x #gtceu:circuits/luv', '1x gtceu:luv_electric_piston', 'gtceu:luv_macerator')
 .itemOutputs('gtceu:processing_plant')
 .inputFluids(
   Fluid.of('gtceu:star_matter', 256),
