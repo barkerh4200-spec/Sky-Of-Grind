@@ -70,7 +70,8 @@
     "sieve": true
   },
   "avaritia": {
-    "extreme": true,
+    "extreme_smithing": true,
+    "crafting_table": true,
     "compressor": true
   },
   "bonsaitrees3": {
