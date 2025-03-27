@@ -232,7 +232,7 @@ ServerEvents.recipes(sog => {
         .EUt((GTValues.VA[GTValues.IV]))
         .circuit(8)
         sog.recipes.gtceu.assembler('high_power_crushing_wheels')
-        .itemInputs('3x gtceu:rhodium_plated_palladium_gear', 'kubejs:high_power_casing', 'gtceu:iv_electric_motor')
+        .itemInputs('8x gtceu:rhodium_plated_palladium_plate', 'kubejs:high_power_casing', 'gtceu:iv_electric_motor')
         .itemOutputs('kubejs:high_power_crushing_wheels')
         .EUt((GTValues.VA[GTValues.IV]))
         .circuit(8)

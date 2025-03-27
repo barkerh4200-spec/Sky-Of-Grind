@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("B", Predicates.blocks('kubejs:high_power_crushing_wheels'))
             .where("O", Predicates.air())
             .where("C", Predicates.blocks('kubejs:high_power_casing')
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.IMPORT_ITEMS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.IMPORT_ITEMS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.IMPORT_FLUIDS))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE, PartAbility.PARALLEL_HATCH))
                 .or(Predicates.abilities(PartAbility.INPUT_LASER))
             )
