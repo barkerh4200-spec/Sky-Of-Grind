@@ -213,15 +213,11 @@
 				"62DB1817C349C6F5"
 				"1AAD55E80A86E225"
 			]
-			description: [
-				"Congrats, you got &mcreative&r nice energy!"
-				""
-				"Jokes aside, this is 1 amp of &cMAX&r energy, so feel free to expand. Atleast till creative energy."
-			]
+			description: [""]
 			hide_text_until_complete: false
 			icon: "gtceu:reactable_fissioned_matter_plasma_bucket"
 			id: "00D749A4BC17C724"
-			subtitle: "1 amp of MAX"
+			subtitle: "1 Amps of UXV"
 			tasks: [
 				{
 					id: "32200EEEEF037F12"
@@ -524,11 +520,10 @@
 		}
 		{
 			description: [
-				"This is the Large Solar Panel."
+				"This is the large solar panel."
+				"The only way to use solar panels is by putting them inside here, you won't have to worry about day/night cycle though."
 				""
-				"A large solar panel that holds stacks of panels in it's interior to gather energy from the sun."
-				""
-				"Definitely the best choice if u have high voltage dynamos, as it can overclock and produce more energy from lower tier panels."
+				"FE to EU converters are disabled, so this is the only way to use 'em."
 			]
 			id: "17169E18FCB4C6CF"
 			shape: "octagon"
@@ -557,7 +552,7 @@
 		}
 		{
 			description: [
-				"Great power for ZPM-UV (Maybe UHV actually)"
+				"Great power for IV-UV (Maybe UHV actually)"
 				""
 				"Needs a little bit of work and it's not as brainded as  other methods of generating power like solar panels. But it can reach insane amounts of power!"
 			]
@@ -622,9 +617,9 @@
 		}
 		{
 			dependencies: ["6FE6B17B9193CAB2"]
-			description: ["Or this number: &434,359,738,368&r"]
+			description: [""]
 			id: "2FA03148CCD8CA22"
-			subtitle: "1 MAX+2 AMP"
+			subtitle: "Amp of MAX"
 			tasks: [{
 				id: "07D51ADAC430CF70"
 				item: "kubejs:reactive_chaos_pellet"

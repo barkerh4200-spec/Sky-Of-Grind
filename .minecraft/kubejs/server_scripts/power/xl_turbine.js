@@ -19,7 +19,7 @@ ServerEvents.recipes(sog => {
     .itemInputs('gtceu:neutronium_turbine_blade')
     .outputFluids(Fluid.of('gtceu:antimatter', 1000))
     .duration(8400)
-    .EUt(-(GTValues.V[GTValues.MAX]))
+    .EUt(-(GTValues.V[GTValues.UXV]))
 
 
 

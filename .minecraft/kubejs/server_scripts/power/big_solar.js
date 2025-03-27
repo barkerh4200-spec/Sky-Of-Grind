@@ -27,7 +27,6 @@ function Solar(id, input, EU, circuit) {{
 }}
 
 
-////// Trees //////
 
 // T1
 Solar('solar_t1_1', '4x solarflux:sp_1', 4*GTValues.V[GTValues.ULV], 1)

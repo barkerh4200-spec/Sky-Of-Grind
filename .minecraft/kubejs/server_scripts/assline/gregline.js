@@ -198,13 +198,16 @@ event.recipes.gtceu.assembly_line('nebular_plasma_nexus')
 .duration(60000)
 .EUt(GTValues.VA[GTValues.UXV])  
 event.recipes.gtceu.assembly_line('ore_processing_plant')
-.itemInputs('8x gtceu:heavy_duty_alloy_t4_plate', '4x draconicevolution:wyvern_core', 'gtceu:uiv_machine_hull', '1x #gtceu:circuits/uiv', '1x gtceu:uiv_electric_piston', 'gtceu:uiv_macerator', '1x avaritia:eternal_singularity')
+.itemInputs('8x gtceu:osmiridium_plate', '4x gtceu:luv_electric_motor', 'gtceu:luv_machine_hull', '8x #gtceu:circuits/luv', '1x gtceu:luv_electric_piston', 'gtceu:luv_macerator', '1x avaritia:eternal_singularity')
 .itemOutputs('gtceu:processing_plant')
 .inputFluids(
-  Fluid.of('gtceu:crystal_matrix', 250)
-  )
+  Fluid.of('gtceu:star_matter', 256),
+  Fluid.of('gtceu:silicone_rubber', 1152),
+  Fluid.of('gtceu:styrene_butadiene_rubber', 1152),
+  Fluid.of('gtceu:soldering_alloy', 1152),
+)
 .duration(200)
-.EUt(GTValues.VA[GTValues.UEV])  
+.EUt(GTValues.VA[GTValues.ZPM])  
 
 event.recipes.gtceu.quantum_station('qee')
 .inputFluids('gtceu:oganesson 32', 'gtceu:antimatter 32')

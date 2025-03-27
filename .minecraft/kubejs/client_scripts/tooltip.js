@@ -63,6 +63,8 @@ ItemEvents.tooltip(event => {
         text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
     })
 
+    event.add(['fluxnetworks:flux_block', 'fluxnetworks:flux_plug', 'fluxnetworks:flux_point', 'fluxnetworks:flux_controller', 'fluxnetworks:basic_flux_storage', 'fluxnetworks:herculean_flux_storage', 'fluxnetworks:gargantuan_flux_storage', 'fluxnetworks:flux_dust', 'fluxnetworks:flux_configurator', 'fluxnetworks:flux_core'], Text.red('DEPRECATED & WILL BE REMOVED NEXT UPDATE').bold(true))
+
 
 
 })
@@ -75,7 +77,7 @@ ClientEvents.lang("en_us", e => {
     e.renameItem('avaritia:neutron_ingot', 'Cosmic Neutronium Ingot')
     e.renameItem('avaritia:neutron_gear', 'Cosmic Neutronium Gear')
     e.renameItem('avaritia:neutron', 'Very Cosmic Neutronate Block')
-	e.renameItem('ae2additions:super_cell_component_1024k', '1M ME Super Storage Component')
+    e.renameItem('ae2additions:super_cell_component_1024k', '1M ME Super Storage Component')
 	e.renameItem('ae2additions:super_cell_component_4096k', '4M ME Super Storage Component')
 	e.renameItem('ae2additions:super_cell_component_65m', '64M ME Super Storage Component')
 	e.renameItem('ae2additions:super_cell_1024k', '1M ME Super Storage Cell')

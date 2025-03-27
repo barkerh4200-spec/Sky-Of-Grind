@@ -88,6 +88,7 @@
 				""
 				"Jokes aside, good luck and pray to rng jesus."
 			]
+			icon_scale: 2.0d
 			id: "6075D2D1AA906975"
 			subtitle: "This is sick"
 			tasks: [{
@@ -545,6 +546,7 @@
 				"With this, you'll have unlocked the easiest way to make eternal singularities."
 				"Have fun!"
 			]
+			icon_scale: 2.0d
 			id: "2C628D575A89E6E1"
 			shape: "octagon"
 			size: 2.0d
@@ -712,7 +714,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 11.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["63A03A8BE61A51F0"]
@@ -722,8 +724,8 @@
 				item: "gtceu:pure_cosmic_matter_ingot"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 11.5d
+			x: 18.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -740,18 +742,21 @@
 				item: "kubejs:cosmic_processor"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 9.5d
+			x: 19.5d
+			y: 10.0d
 		}
 		{
-			dependencies: ["5C37A8DEC022B4EF"]
+			dependencies: [
+				"5C37A8DEC022B4EF"
+				"63A03A8BE61A51F0"
+			]
 			id: "7F2F6FBE64856D0A"
 			tasks: [{
 				id: "038E551FF1DCE505"
 				item: "kubejs:cosmic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: 11.5d
 		}
 		{
@@ -849,8 +854,8 @@
 				item: "kubejs:cosmic_processor"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 8.0d
+			x: 19.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -867,8 +872,8 @@
 				item: "kubejs:cosmic_processor_computer"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 6.5d
+			x: 19.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -879,6 +884,7 @@
 				"02228954A89137E9"
 				"019A1C7B77D8D57A"
 			]
+			icon_scale: 2.0d
 			id: "78508975EC36DBFA"
 			shape: "octagon"
 			size: 2.0d
@@ -887,21 +893,21 @@
 				item: "kubejs:cosmic_processor_mainframe"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["78508975EC36DBFA"]
 			id: "3C7786F4A3C00CAE"
-			subtitle: "Great achivement!"
+			subtitle: "Welcome to the end."
 			tasks: [{
 				id: "7AA8CA9D731E1EEA"
 				item: "gtceu:uxv_machine_hull"
 				type: "item"
 			}]
 			title: "Welcome to UXV"
-			x: 16.0d
-			y: 6.0d
+			x: 17.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["78508975EC36DBFA"]
@@ -911,20 +917,8 @@
 				item: "gtceu:uiv_uiv_parallel_hatch"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["176C5C21B6EDF8FA"]
-			id: "27691D0A469C4AF9"
-			subtitle: "Save on TPS?"
-			tasks: [{
-				id: "78E4E5951E0ED386"
-				item: "gtceu:processing_plant"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 3.0d
+			x: 22.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Ultra Immense Voltage"]

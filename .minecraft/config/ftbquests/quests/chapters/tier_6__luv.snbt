@@ -1614,6 +1614,18 @@
 			x: 8.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["215B14559169ADDA"]
+			id: "27691D0A469C4AF9"
+			subtitle: "Save on TPS?"
+			tasks: [{
+				id: "78E4E5951E0ED386"
+				item: "gtceu:processing_plant"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 17.0d
+		}
 	]
 	subtitle: ["Ludicrous Voltage"]
 	title: "&#e68af2Tier 6 - LuV"

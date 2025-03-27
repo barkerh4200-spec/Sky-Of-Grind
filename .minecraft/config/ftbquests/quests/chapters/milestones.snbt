@@ -74,12 +74,6 @@
 			x: 13.5d
 			y: 0.0d
 		}
-		{
-			id: "0D00E71CC73FDBB9"
-			linked_quest: "61F1797DA06E0711"
-			x: 7.0d
-			y: 21.0d
-		}
 	]
 	quests: [
 		{
@@ -528,54 +522,6 @@
 			y: 13.5d
 		}
 		{
-			dependencies: [
-				"2A0B2D9208AA3F3D"
-				"3889F75D816FE62C"
-			]
-			id: "5701B0DA8F070E6B"
-			tasks: [{
-				id: "0C15E41B3FA334DE"
-				item: "kubejs:space_time_processor_mainframe"
-				type: "item"
-			}]
-			title: "OpV"
-			x: 18.0d
-			y: 19.5d
-		}
-		{
-			dependencies: ["3FC176CF3009C819"]
-			id: "3889F75D816FE62C"
-			tasks: [{
-				id: "2A800116CBAC929D"
-				item: "kubejs:space_time_processor_computer"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 18.0d
-		}
-		{
-			dependencies: ["64141E3B2D6690BC"]
-			id: "3FC176CF3009C819"
-			tasks: [{
-				id: "391E5C3768F4D57B"
-				item: "kubejs:space_time_processor_assembly"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 16.5d
-		}
-		{
-			dependencies: ["2A0B2D9208AA3F3D"]
-			id: "64141E3B2D6690BC"
-			tasks: [{
-				id: "100957318DD1052A"
-				item: "kubejs:space_time_processor"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 15.0d
-		}
-		{
 			id: "78C27888EEB6BF83"
 			subtitle: "LV"
 			tasks: [{
@@ -705,14 +651,14 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["5701B0DA8F070E6B"]
+			dependencies: ["2A0B2D9208AA3F3D"]
 			id: "08F19428C7F1E9B4"
 			tasks: [{
 				id: "4B3C619B529263DF"
 				item: "kubejs:dimensional_processor"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.5d
 			y: 19.5d
 		}
 		{
@@ -770,6 +716,7 @@
 				"Thanks to DanRobzProbz for making the first ever Sky of Grind YouTube playthrough."
 				"- And thanks to RadzRatz for following in!"
 			]
+			icon_scale: 2.0d
 			id: "721022894AAF65E9"
 			rewards: [{
 				count: 2
@@ -785,7 +732,7 @@
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 19.5d
 		}
 		{
@@ -796,19 +743,8 @@
 				item: "kubejs:max_voltage_coil"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 23.0d
-		}
-		{
-			dependencies: ["5701B0DA8F070E6B"]
-			id: "4D003F393F990076"
-			tasks: [{
-				id: "2D70631CA3E26752"
-				item: "kubejs:opv_voltage_coil"
-				type: "item"
-			}]
-			x: 20.0d
-			y: 19.5d
 		}
 		{
 			dependencies: ["2A0B2D9208AA3F3D"]
@@ -1128,7 +1064,7 @@
 		{
 			dependencies: ["4D968848815FA9AD"]
 			id: "306E4DCF47AFECFE"
-			subtitle: "OPV"
+			subtitle: "MAX"
 			tasks: [{
 				id: "45EDB2C6BBBCB140"
 				item: "gtceu:universium_bucket"
@@ -1258,23 +1194,13 @@
 			y: 18.0d
 		}
 		{
-			id: "1A0ED19C5F1AF2A8"
-			tasks: [{
-				id: "0405B73ECCA744F5"
-				item: "gtceu:opv_machine_casing"
-				type: "item"
-			}]
-			x: 21.5d
-			y: 19.5d
-		}
-		{
 			id: "3CE8156C2E4AAFCE"
 			tasks: [{
 				id: "56A39E5B289B0A16"
 				item: "gtceu:max_machine_casing"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 16.0d
 		}
 		{
@@ -1293,6 +1219,7 @@
 				"306E4DCF47AFECFE"
 				"41D28FE36C13266F"
 			]
+			icon_scale: 2.0d
 			id: "7FFA0E8C4210B437"
 			tasks: [{
 				id: "30E8AE831136644C"
@@ -1336,7 +1263,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 19.5d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -1399,6 +1326,7 @@
 				"28365A3D6884CA34"
 				"7B468B84887DD456"
 			]
+			icon_scale: 2.0d
 			id: "61F1797DA06E0711"
 			tasks: [{
 				id: "607F82A945C86212"
@@ -1406,7 +1334,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 18.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["1B4C0866D289C638"]
@@ -1441,6 +1369,21 @@
 			}]
 			x: 16.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["61F1797DA06E0711"]
+			id: "45C4B2C50BCF025D"
+			tasks: [{
+				id: "5A89C80F6B35BDED"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_bow"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 18.0d
 		}
 	]
 	subtitle: ["Dont lose your motivation!"]

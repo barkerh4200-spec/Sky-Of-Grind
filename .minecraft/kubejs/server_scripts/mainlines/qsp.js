@@ -154,13 +154,6 @@ event.recipes.gtceu.qsp('hrsoc')
     .outputFluids(Fluid.of('gtceu:americium 1000'))
     .duration(60)
     .EUt(GTValues.VA[GTValues.ZPM]);
-    event.recipes.gtceu.qsp('fusion_radon_qsp')
-    .notConsumable('kubejs:fusion_projector_module')
-    .inputFluids(Fluid.of('gtceu:gold', 16))
-    .inputFluids(Fluid.of('gtceu:mercury', 16))
-    .outputFluids(Fluid.of('gtceu:radon 1000'))
-    .duration(60)
-    .EUt(GTValues.VA[GTValues.LuV]);
     event.recipes.gtceu.qsp('fusion_tritanium_qsp')
     .notConsumable('kubejs:fusion_projector_module')
     .inputFluids(Fluid.of('gtceu:titanium', 32))

@@ -32,6 +32,6 @@ ServerEvents.recipes(sog => {
     .chancedInput('kubejs:reactive_chaos_pellet', 1000, 0)
     .chancedOutput('kubejs:reactive_chaos_waste', 500, 0)
     .duration(20*20)
-    .EUt(-34359738368)
+    .EUt(-(GTValues.V[GTValues.MAX]))
 
 })

@@ -1560,7 +1560,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 14.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["7243EE3F57F3A31A"]
@@ -1664,23 +1664,6 @@
 		}
 		{
 			dependencies: ["3F0D5B357A418240"]
-			id: "1B45E1F75114DF2D"
-			rewards: [{
-				id: "653F5317DA26C47E"
-				item: "gtceu:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0CDD5C0B0C36485B"
-				item: "fluxnetworks:flux_dust"
-				type: "item"
-			}]
-			title: "Flux Networks. Finally!"
-			x: 8.0d
-			y: 15.0d
-		}
-		{
-			dependencies: ["3F0D5B357A418240"]
 			id: "137868B8B24F436D"
 			rewards: [{
 				id: "0800C2CB18CE50E2"
@@ -1692,8 +1675,8 @@
 				item: "gtceu:quantum_star"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 16.5d
+			x: 7.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["137868B8B24F436D"]
@@ -1715,8 +1698,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: 16.5d
+			x: 8.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["73AB9D7E04840A3C"]

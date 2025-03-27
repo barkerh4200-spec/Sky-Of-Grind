@@ -278,7 +278,7 @@ event.recipes.gtceu.extractinator('c1wheat')
   .outputFluids('gtceu:ferulic_acid 5')
   .duration(80)
   .EUt(GTValues.VA[GTValues.HV]);
-event.recipes.gtceu.extractinator('c1carrot')
+  event.recipes.gtceu.extractinator('c1carrot')
   .circuit(2)
   .itemInputs('32x minecraft:carrot')
   .outputFluids('gtceu:glutamic_acid 5')
