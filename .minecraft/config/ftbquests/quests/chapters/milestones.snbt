@@ -1047,10 +1047,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"41D28FE36C13266F"
-				"2745F50D62B33085"
-			]
+			dependencies: ["2349587F40CC813B"]
 			id: "4D968848815FA9AD"
 			subtitle: "OpV"
 			tasks: [{
@@ -1060,18 +1057,6 @@
 			}]
 			x: 16.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["4D968848815FA9AD"]
-			id: "306E4DCF47AFECFE"
-			subtitle: "MAX"
-			tasks: [{
-				id: "45EDB2C6BBBCB140"
-				item: "gtceu:universium_bucket"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -1.5d
 		}
 		{
 			id: "2A55D8B3FD9169B0"
@@ -1216,8 +1201,9 @@
 		}
 		{
 			dependencies: [
-				"306E4DCF47AFECFE"
 				"41D28FE36C13266F"
+				"603DF5ED229A5BB9"
+				"6889191E23060B52"
 			]
 			icon_scale: 2.0d
 			id: "7FFA0E8C4210B437"
@@ -1228,18 +1214,6 @@
 			}]
 			x: 18.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["306E4DCF47AFECFE"]
-			id: "28CF677C1BC569EB"
-			subtitle: "MAX"
-			tasks: [{
-				id: "215E6F2E67D22E71"
-				item: "gtceu:stellar_matter_plasma_bucket"
-				type: "item"
-			}]
-			x: 19.5d
-			y: -1.5d
 		}
 		{
 			dependencies: ["592AB72B0476B66B"]
@@ -1359,18 +1333,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["7323EB3DBA1D74D8"]
-			id: "2745F50D62B33085"
-			subtitle: "UXV"
-			tasks: [{
-				id: "4A3E8952ACA1EDAA"
-				item: "gtceu:eternity_bucket"
-				type: "item"
-			}]
-			x: 16.5d
-			y: -1.5d
-		}
-		{
 			dependencies: ["61F1797DA06E0711"]
 			id: "45C4B2C50BCF025D"
 			tasks: [{
@@ -1384,6 +1346,41 @@
 			}]
 			x: 7.0d
 			y: 18.0d
+		}
+		{
+			dependencies: ["7323EB3DBA1D74D8"]
+			id: "2349587F40CC813B"
+			subtitle: "UXV"
+			tasks: [{
+				id: "409A1AA1BFAD8D70"
+				item: "gtceu:eternity_ingot"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2349587F40CC813B"]
+			id: "603DF5ED229A5BB9"
+			subtitle: "MAX"
+			tasks: [{
+				id: "5C3EFC28EE7E4E69"
+				item: "gtceu:universium_ingot"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			id: "6889191E23060B52"
+			subtitle: "MAX"
+			tasks: [{
+				id: "610EEE7D4975CD62"
+				item: "gtceu:stellar_matter_plasma_ingot"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["Dont lose your motivation!"]

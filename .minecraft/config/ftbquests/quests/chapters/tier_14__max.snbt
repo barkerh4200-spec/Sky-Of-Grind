@@ -12,7 +12,69 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["3C7786F4A3C00CAE"]
+			icon_scale: 1.5d
+			id: "0BAA4873EF207963"
+			size: 1.0d
+			tasks: [{
+				id: "1AC4F3D01B1B3A64"
+				item: {
+					Count: 1
+					id: "ad_extendra:tier_6_rocket"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 3000L
+								Fluid: "ad_astra:fuel"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			icon_scale: 2.0d
+			id: "19D1E837A7CA3313"
+			tasks: [{
+				id: "7407A94A2E63B59D"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["19D1E837A7CA3313"]
+			id: "1724853A35EE60D9"
+			subtitle: "Finally a better EBF."
+			tasks: [{
+				id: "1A75E7D3B964B4BE"
+				item: "gtceu:reinforced_atomicforge"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"19D1E837A7CA3313"
+				"1724853A35EE60D9"
+			]
+			id: "0D0F01942BEE582F"
+			tasks: [{
+				id: "0740C6D4D7C92D17"
+				item: "avaritia:extreme_anvil"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+	]
 	subtitle: ["Maximum Voltage"]
 	title: "&#ff0000&l  Endgame Goals"
 }

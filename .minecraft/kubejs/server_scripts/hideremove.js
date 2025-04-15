@@ -200,4 +200,5 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['bloodmagic:apprenticebloodorb', 'bloodmagic:masterbloodorb', 'bloodmagic:archmagebloodorb', 'bloodmagic:magicianbloodorb']})
     event.remove({ output: ['fluxnetworks:flux_block', 'fluxnetworks:flux_plug', 'fluxnetworks:flux_point', 'fluxnetworks:flux_controller', 'fluxnetworks:basic_flux_storage', 'fluxnetworks:herculean_flux_storage', 'fluxnetworks:gargantuan_flux_storage', 'fluxnetworks:flux_dust', 'fluxnetworks:flux_core', 'mae2:eu_multi_p2p_tunnel', 'fluxnetworks:flux_configurator', 'mae2:eu_multi_p2p_tunnel', 'mae2:eu_p2p_tunnel']})
     event.remove({ output: 'gtceu:sturdy_machine_casing' })
+    event.remove({ output: 'avaritia:extreme_crafting_table' })
   })

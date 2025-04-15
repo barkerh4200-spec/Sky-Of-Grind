@@ -6,7 +6,7 @@ event.recipes.gtceu.moonminer('titaminer')
     .notConsumable('ad_astra:moon_globe')
     .inputFluids([Fluid.of('gtceu:drilling_fluid', 1000)])
     .itemOutputs('16x gtceu:rutile_dust')
-    .biome('ad_astra:lunar_wastelands')
+    .dimension('ad_astra:moon')
     .duration(640)
     .EUt(GTValues.VA[GTValues.EV]);
 event.recipes.gtceu.moonminer('tungstenminer')

@@ -78,7 +78,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
         event.create('reinforced_atomicforge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(['reinforced_atomicforge', 'atomicforge'])
+        .recipeTypes(['reinforced_atomicforge', 'atomicforge', 'electric_blast_furnace'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GTBlocks.MACHINE_CASING_HV)
         .pattern(definition => FactoryBlockPattern.start()

@@ -1539,6 +1539,13 @@ sog.shaped(
         B: 'ae2:annihilation_core',
         Y: 'minecraft:sticky_piston',
 })
+sog.shaped(
+    'avaritia:extreme_crafting_table',
+    ['BB ', 'AA ', '   '],
+    {
+        A: 'avaritia:crystal_matrix_ingot',
+        B: 'minecraft:flint',
+})
 
     sog.recipes.gtceu.autoclave("glow_ink_sac") // sog=event.recipes.gtceu.autoclave(name of the machine)"glow_ink_sak"=recipe id
       .itemInputs("1x minecraft:ink_sac") // inputs  of the machine

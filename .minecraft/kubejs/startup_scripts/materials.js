@@ -6,6 +6,10 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity_catalyst').parent(GTMaterialIconSet.FINE)
     event.create('atomic_alloy').parent(GTMaterialIconSet.BRIGHT)
     event.create('cosmic_neutronium').parent(GTMaterialIconSet.BRIGHT)
+    event.create('universium').parent(GTMaterialIconSet.METALLIC)
+    event.create('stellar_matter').parent(GTMaterialIconSet.METALLIC)
+    event.create('cosmic_matter').parent(GTMaterialIconSet.METALLIC)
+    event.create('eternity').parent(GTMaterialIconSet.METALLIC)
 })
 
 GTCEuStartupEvents.registry('gtceu:element', event => {
@@ -550,15 +554,42 @@ event.create('cosmic_osmium')
 )
 
 
-
 event.create("universium")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.element('universium')
+.ingot().dust()
+.element(GTElements.get("universium"))
 .color(0xffffff)
+.iconSet('universium')
+.flags(
+    GTMaterialFlags.GENERATE_PLATE, 
+    GTMaterialFlags.GENERATE_ROD, 
+    GTMaterialFlags.GENERATE_GEAR, 
+    GTMaterialFlags.GENERATE_FINE_WIRE,
+    GTMaterialFlags.GENERATE_DENSE, 
+    GTMaterialFlags.GENERATE_ROTOR, 
+    GTMaterialFlags.GENERATE_BOLT_SCREW,
+    GTMaterialFlags.GENERATE_SMALL_GEAR,
+    GTMaterialFlags.GENERATE_ROUND,
+    GTMaterialFlags.GENERATE_SPRING
+)
 event.create("eternity")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.element('eternity')
+.ingot().dust()
+.element(GTElements.get("eternity"))
 .color(0xffffff)
+.iconSet('eternity')
+.flags(
+    GTMaterialFlags.GENERATE_PLATE, 
+    GTMaterialFlags.GENERATE_ROD, 
+    GTMaterialFlags.GENERATE_GEAR, 
+    GTMaterialFlags.GENERATE_FINE_WIRE,
+    GTMaterialFlags.GENERATE_DENSE, 
+    GTMaterialFlags.GENERATE_ROTOR, 
+    GTMaterialFlags.GENERATE_BOLT_SCREW,
+    GTMaterialFlags.GENERATE_SMALL_GEAR,
+    GTMaterialFlags.GENERATE_ROUND,
+    GTMaterialFlags.GENERATE_SPRING
+)
 event.create("molten_space_time")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .color(0xffffff)
@@ -582,7 +613,23 @@ event.create('space_time')
 
 event.create("stellar_matter_plasma")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+.ingot().dust()
+.element(GTElements.get("stellar_matter_plasma"))
 .color(0xffffff)
+.iconSet('stellar_matter')
+.flags(
+    GTMaterialFlags.GENERATE_PLATE, 
+    GTMaterialFlags.GENERATE_ROD, 
+    GTMaterialFlags.GENERATE_GEAR, 
+    GTMaterialFlags.GENERATE_FINE_WIRE,
+    GTMaterialFlags.GENERATE_DENSE, 
+    GTMaterialFlags.GENERATE_ROTOR, 
+    GTMaterialFlags.GENERATE_BOLT_SCREW,
+    GTMaterialFlags.GENERATE_SMALL_GEAR,
+    GTMaterialFlags.GENERATE_ROUND,
+    GTMaterialFlags.GENERATE_SPRING
+
+)
 
 
 
@@ -629,22 +676,20 @@ event.create("cosmic_matter")
 .color(0xffffff)
 event.create("pure_cosmic_matter")
 .ingot().dust()
-.ore(1, 1,)
-.element('cosmic_matter')
-.color(0x121212).secondaryColor(0x6200ff)
-.iconSet('radioactive')
+.element(GTElements.get("cosmic_matter"))
+.color(0xffffff)
+.iconSet('cosmic_matter')
 .flags(
     GTMaterialFlags.GENERATE_PLATE, 
     GTMaterialFlags.GENERATE_ROD, 
     GTMaterialFlags.GENERATE_GEAR, 
     GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_FRAME, 
     GTMaterialFlags.GENERATE_DENSE, 
     GTMaterialFlags.GENERATE_ROTOR, 
     GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_LONG_ROD,
     GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND
+    GTMaterialFlags.GENERATE_ROUND,
+    GTMaterialFlags.GENERATE_SPRING
 )
  
 // PLASMAS NEBULA

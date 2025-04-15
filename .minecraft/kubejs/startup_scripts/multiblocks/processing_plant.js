@@ -36,3 +36,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
         .workableCasingRenderer("kubejs:block/casings/high_power_casing", 'gtceu:block/multiblock/generator/large_plasma_turbine', true)
 })
+
