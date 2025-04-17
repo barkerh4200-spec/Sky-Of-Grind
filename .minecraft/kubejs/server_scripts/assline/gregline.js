@@ -208,6 +208,18 @@ event.recipes.gtceu.assembly_line('ore_processing_plant')
 )
 .duration(200)
 .EUt(GTValues.VA[GTValues.ZPM])  
+event.recipes.gtceu.assembly_line('chemical_plant')
+.itemInputs('8x gtceu:trinium_plate', '4x gtceu:luv_electric_motor', 'gtceu:inert_machine_casing', '8x #gtceu:circuits/zpm', '8x gtceu:trinium_gear', 'gtceu:luv_chemical_reactor')
+.itemOutputs('gtceu:chemical_plant')
+.inputFluids(
+  Fluid.of('gtceu:polybenzimidazole', 256000),
+  Fluid.of('gtceu:silicone_rubber', 1152),
+  Fluid.of('gtceu:styrene_butadiene_rubber', 1152),
+  Fluid.of('gtceu:soldering_alloy', 1152),
+)
+.duration(200)
+.EUt(GTValues.VA[GTValues.ZPM])  
+["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:large_chemical_reactor')).EUt(GTValues.VA[GTValues.IV]).duration(4200)) // 
 
 event.recipes.gtceu.quantum_station('qee')
 .inputFluids('gtceu:oganesson 32', 'gtceu:antimatter 32')

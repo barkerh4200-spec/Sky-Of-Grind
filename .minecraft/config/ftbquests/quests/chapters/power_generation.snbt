@@ -217,7 +217,7 @@
 			hide_text_until_complete: false
 			icon: "gtceu:reactable_fissioned_matter_plasma_bucket"
 			id: "00D749A4BC17C724"
-			subtitle: "1 Amps of UXV"
+			subtitle: "1 Amp of UXV"
 			tasks: [
 				{
 					id: "32200EEEEF037F12"

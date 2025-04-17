@@ -79,7 +79,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4FA85C371E249DB4"]
@@ -94,8 +94,8 @@
 				item: "gtceu:inert_life_essence_bucket"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["429C5E9C7BFA13A2"]
@@ -129,7 +129,7 @@
 				item: "bloodmagic:life_essence_bucket"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 5.0d
 		}
 		{
@@ -353,7 +353,7 @@
 				item: "gtceu:altart5"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: 15.0d
 		}
 		{
@@ -361,6 +361,7 @@
 				"02888AAD173AEED0"
 				"282CE68698C0C23B"
 			]
+			hide_dependent_lines: true
 			id: "78B9144DB08C15E1"
 			rewards: [{
 				id: "073D24BBA2591350"
@@ -372,8 +373,8 @@
 				item: "bloodmagic:demonpylon"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 16.5d
+			x: -3.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -445,7 +446,7 @@
 				}
 			]
 			title: "First \"Meteor\" Invocation"
-			x: 5.5d
+			x: 6.5d
 			y: 15.0d
 		}
 		{
@@ -461,7 +462,7 @@
 				item: "gtceu:niobium_dust"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: 8.0d
 		}
 		{
@@ -497,7 +498,7 @@
 				item: "gtceu:luv_input_hatch"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 8.0d
 			y: 17.0d
 		}
 		{
@@ -555,7 +556,7 @@
 				item: "ad_astra:earth_globe"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 18.0d
 		}
 		{
@@ -585,7 +586,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 18.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["34112DEEBBD82652"]
@@ -736,10 +737,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"2308A0C52AFD7A2B"
-				"2F2D9E00D5C5C71A"
-			]
+			dependencies: ["2308A0C52AFD7A2B"]
 			id: "6E6A5778FD8381A1"
 			rewards: [{
 				id: "30C6EE763B527FC8"
@@ -759,8 +757,8 @@
 				}
 			]
 			title: "Damn, I don't need anything weird?"
-			x: 9.0d
-			y: 2.5d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3172CE3676E125EA"]
@@ -775,8 +773,8 @@
 				item: "gtceu:luv_assembler"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: 9.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -801,8 +799,8 @@
 				item: "gtceu:luv_voltage_coil"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 18.5d
+			x: 9.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["690A7FC1286BEA13"]
@@ -825,8 +823,8 @@
 				item: "gtceu:luv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 18.5d
+			x: 10.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["3172CE3676E125EA"]
@@ -878,6 +876,7 @@
 		}
 		{
 			dependencies: ["0CB55F547C5605F8"]
+			hide_dependent_lines: true
 			id: "11CBAA4E5904D898"
 			rewards: [{
 				id: "2B0EBC69225C73E2"
@@ -889,8 +888,8 @@
 				item: "gtceu:fiber_reinforced_printed_circuit_board"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -1.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3172CE3676E125EA"]
@@ -922,8 +921,8 @@
 				item: "gtceu:qbit_cpu_wafer"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -4.5d
+			x: 7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6E6A5778FD8381A1"]
@@ -939,7 +938,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -958,7 +957,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1084,7 +1083,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1109,7 +1108,7 @@
 				item: "ad_astra:mars_globe"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: 18.0d
 		}
 		{
@@ -1126,8 +1125,8 @@
 				item: "gtceu:luv_chemical_reactor"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 20.0d
+			x: 3.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["45622072F0EF423F"]
@@ -1143,7 +1142,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5A901F344704292D"]
@@ -1261,8 +1260,8 @@
 				item: "gtceu:indium_phosphide_dust"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 24.5d
+			x: 10.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["1554884EF9FACAA4"]
@@ -1278,8 +1277,8 @@
 				item: "gtceu:trinium_sulfide_dust"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 24.5d
+			x: 14.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["280D88ECFC490021"]
@@ -1295,7 +1294,7 @@
 				type: "checkmark"
 			}]
 			x: 5.0d
-			y: 20.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -1316,7 +1315,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Coil Block"
-			x: 3.5d
+			x: 3.0d
 			y: 23.5d
 		}
 		{
@@ -1335,7 +1334,7 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: 23.5d
 		}
 		{
@@ -1441,7 +1440,7 @@
 					type: "item"
 				}
 			]
-			x: 14.5d
+			x: 15.0d
 			y: 22.0d
 		}
 		{
@@ -1481,7 +1480,7 @@
 					type: "item"
 				}
 			]
-			x: 14.5d
+			x: 15.0d
 			y: 20.0d
 		}
 		{
@@ -1497,7 +1496,7 @@
 				item: "gtceu:hot_enriched_naquadah_ingot"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.0d
 			y: 18.5d
 		}
 		{
@@ -1514,7 +1513,7 @@
 				item: "gtceu:enriched_naquadah_ingot"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.0d
 			y: 17.0d
 		}
 		{
@@ -1623,8 +1622,19 @@
 				item: "gtceu:processing_plant"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 17.0d
+			x: 10.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["426DFA355636395B"]
+			id: "51C8C60CAC7B3665"
+			tasks: [{
+				id: "26E867609F95AF01"
+				item: "gtceu:chemical_plant"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 25.0d
 		}
 	]
 	subtitle: ["Ludicrous Voltage"]

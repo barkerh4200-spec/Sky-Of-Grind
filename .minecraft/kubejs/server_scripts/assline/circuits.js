@@ -178,7 +178,7 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor_computer')
 .duration(800)
 .EUt(GTValues.VA[GTValues.UXV])   
 event.recipes.gtceu.circuit_assembly_line('cosmic_processor_mainframe')
-.itemInputs('2x kubejs:cosmic_processor_computer', '4x kubejs:awakened_draconium_heavy_plating', '64x kubejs:complex_smd_capacitor', 'kubejs:extremely_advanced_soc', '4x kubejs:cosmic_printed_circuit_board', '4x kubejs:chaos_heavy_plating', '4x avaritia:eternal_singularity', '2x gtceu:pure_cosmic_matter_gear', 'kubejs:quantum_data_module')
+.itemInputs('2x kubejs:cosmic_processor_computer', '4x kubejs:awakened_draconium_heavy_plating', '64x kubejs:complex_smd_capacitor', 'kubejs:extremely_advanced_soc', '4x kubejs:cosmic_printed_circuit_board', '4x kubejs:chaos_heavy_plating', '4x avaritia:eternal_singularity', '2x gtceu:pure_cosmic_matter_gear', '64x gtceu:draconium_screw', 'kubejs:quantum_data_module')
 .itemOutputs('1x kubejs:cosmic_processor_mainframe')
 .inputFluids(
     Fluid.of('gtceu:eternity', 10),

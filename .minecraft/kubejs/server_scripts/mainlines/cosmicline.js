@@ -157,11 +157,6 @@ sog.recipes.gtceu.plasma_nexus('supercritical_californium')
 .outputFluids('gtceu:supercritical_californium_plasma 250')
 .duration(35)
 .EUt(GTValues.VA[GTValues.UXV]);
-sog.recipes.gtceu.plasma_nexus('quantum_anomaly')
-.inputFluids('gtceu:eternity 20')
-.itemInputs('kubejs:quantum_anomaly')
-.itemOutputs('2x kubejs:quantum_anomaly')
-.duration(35)
-.EUt(GTValues.VA[GTValues.UXV]);
+
 
 })
