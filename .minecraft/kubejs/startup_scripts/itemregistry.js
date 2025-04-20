@@ -89,6 +89,7 @@ sog.create('infinity_heavy_plating').displayName('Infinity Heavy Plating').textu
 sog.create('chaos_heavy_plating').displayName('Chaotic Heavy Plating').texture('kubejs:item/heavy_plating/chaotic_heavy_plating')
 sog.create('californite_heavy_plating').displayName('Radioactive Heavy Plating').texture('kubejs:item/heavy_plating/irradiated_heavy_plating')
 sog.create('space_time_heavy_plating').displayName('Space Time Heavy Plating').texture('kubejs:item/heavy_plating/space_time_heavy_plating')
+sog.create('eternity_heavy_plating').displayName('Eternity Heavy Plating').texture('kubejs:item/heavy_plating/eternity_heavy_plating')
         //power
 sog.create('tesla_coil_mk1').displayName('Tesla Coil MKI').texture('kubejs:item/power/tesla_coil_mk1').tooltip('Produces 1 ZPM amp when used on the Tesla Tower')
 sog.create('tesla_coil_mk2').displayName('Tesla Coil MKII').texture('kubejs:item/power/tesla_coil_mk2').tooltip('Produces 1 UEV amp when used on the Tesla Tower')
@@ -114,7 +115,11 @@ sog.create('cosmic_printed_circuit_board').maxStackSize(64).displayName('Cosmic 
         sog.create('complex_smd_inductor').maxStackSize(64).displayName('Complex SMD Inductor')
         sog.create('complex_smd_resistor').maxStackSize(64).displayName('Complex SMD Resistor')
         sog.create('complex_smd_transistor').maxStackSize(64).displayName('Complex SMD Transistor')
-
+        // NANITES
+sog.create('cosmic_matter_nanites').maxStackSize(64).displayName('Cosmic Matter Nanites')
+sog.create('eternity_nanites').maxStackSize(64).displayName('Eternity Nanites')
+sog.create('stellar_matter_nanites').maxStackSize(64).displayName('Stellar Matter Nanites')
+sog.create('universium_nanites').maxStackSize(64).displayName('Universium Nanites')
 
 
 
@@ -440,9 +445,19 @@ StartupEvents.registry('block', sog => {
         .lightLevel(0)
         .defaultCutout()
         .tagBlock('forge:mineable/wrench')
-        sog.create('chemical_tier_seven')
-        .displayName('Chemical Tier 7')
-        .textureAll('kubejs:block/casings/tiered/chemical_tier_seven')
+        sog.create('asteroid_belt_marker')
+        .displayName('Asteroid Belt')
+        .textureAll('kubejs:block/asteroid_belt')
+        .soundType('metal')
+        .resistance(1)
+        .requiresTool(true)
+        .hardness(9)
+        .lightLevel(0)
+        .defaultCutout()
+        .tagBlock('forge:mineable/wrench')
+        sog.create('eternity_casing')
+        .displayName('Eternity Casing')
+        .textureAll('kubejs:block/casings/eternity_casing')
         .soundType('metal')
         .resistance(1)
         .requiresTool(true)

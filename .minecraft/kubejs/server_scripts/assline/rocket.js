@@ -265,4 +265,56 @@ event.custom({
     }
   })
 
+  event.custom({
+    "type": "ad_astra:nasa_workbench",
+    "ingredients": [
+      {
+        "item": "ad_astra:rocket_nose_cone"
+      },
+      {
+        "item": "gtceu:eternity_block"
+      },
+      {
+        "item": "gtceu:eternity_block"
+      },
+      {
+        "item": "gtceu:eternity_block"
+      },
+      {
+        "item": "gtceu:eternity_block"
+      },
+      {
+        "item": "gtceu:eternity_block"
+      },
+      {
+        "item": "gtceu:eternity_block"
+      },
+      {
+        "item": "kubejs:plasma_data"
+      },
+      {
+        "item": "gtceu:dense_eternity_plate"
+      },
+      {
+        "item": "gtceu:dense_eternity_plate"
+      },
+      {
+        "item": "kubejs:plasma_data"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      },
+      {
+        "item": "kubejs:plasma_data"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      }
+    ],
+    "result": {
+      "count": 1,
+      "id": "ad_extendra:tier_6_rocket"
+    }
+  })
+
 })

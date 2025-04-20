@@ -95,19 +95,41 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.chemical_plant('epoxy')
-    .notConsumable('kubejs:chemical_tier_one')
+        .notConsumable('kubejs:chemical_tier_one')
         .inputFluids('gtceu:benzene 2000', 'gtceu:propene 2000', 'gtceu:chlorine 2000', 'gtceu:oxygen 4000')
         .outputFluids('gtceu:epoxy 1000', 'gtceu:hydrochloric_acid 1000')
         .duration(500)
         .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.chemical_plant('naquadah_line')
-    .notConsumable('kubejs:chemical_tier_three')
+        .notConsumable('kubejs:chemical_tier_three')
         .itemInputs('2x gtceu:crushed_naquadah_ore')
         .inputFluids('gtceu:fluoroantimonic_acid 1000', 'gtceu:sulfuric_acid 1500')
         .itemOutputs('2x gtceu:enriched_naquadah_dust', '2x gtceu:naquadria_dust', '2x gtceu:trinium_dust', '2x gtceu:antimony_dust', '2x gtceu:indium_phosphide_dust')
         .outputFluids('gtceu:hydrogen 2000', 'gtceu:fluorine 7000', 'gtceu:sulfuric_acid 500')
         .duration(800)
         .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.chemical_plant('eternity')
+        .notConsumable('kubejs:chemical_tier_six')
+        .inputFluids('gtceu:hypercharged_nebular_plasma 256000', 'gtceu:supercritical_californium_plasma 256000', 'gtceu:high_entropy_neptunium_plasma 256000')
+        .chancedFluidOutput('gtceu:eternity 5000', 2500, 0)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.UXV]);
+
+    event.recipes.gtceu.chemical_plant('chaos')
+        .notConsumable('kubejs:chemical_tier_six') 
+        .itemInputs('draconicevolution:chaos_shard')
+        .inputFluids('gtceu:eternity 10')
+        .chancedOutput('5x draconicevolution:chaos_shard', 7500, 0)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.UXV]);
+
+    event.recipes.gtceu.chemical_plant('neptunium')
+        .notConsumable('kubejs:chemical_tier_five')
+        .inputFluids('gtceu:eternity 10', 'gtceu:uranium 16000', 'gtceu:neutronium 16000')
+        .chancedFluidOutput('gtceu:neptunium 16000', 7500, 0)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.UXV]);
 
 });

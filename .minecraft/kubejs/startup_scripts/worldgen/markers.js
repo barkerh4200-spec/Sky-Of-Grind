@@ -16,4 +16,8 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
         .iconSupplier(() => Item.of('ad_astra:moon_globe').getItem())
         .tier(0)
         .overrideName('Moon')
+        event.create('sogcore:asteroid_belt')
+        .iconSupplier(() => Item.of('kubejs:asteroid_belt_maker').getItem())
+        .tier(0)
+        .overrideName('Asteroid Belt')
 })

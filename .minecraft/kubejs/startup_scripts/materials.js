@@ -570,7 +570,8 @@ event.create("universium")
     GTMaterialFlags.GENERATE_BOLT_SCREW,
     GTMaterialFlags.GENERATE_SMALL_GEAR,
     GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING
+    GTMaterialFlags.GENERATE_SPRING,
+    GTMaterialFlags.GENERATE_FRAME
 )
 event.create("eternity")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -588,7 +589,8 @@ event.create("eternity")
     GTMaterialFlags.GENERATE_BOLT_SCREW,
     GTMaterialFlags.GENERATE_SMALL_GEAR,
     GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING
+    GTMaterialFlags.GENERATE_SPRING,
+    GTMaterialFlags.GENERATE_FRAME
 )
 event.create("molten_space_time")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -627,7 +629,8 @@ event.create("stellar_matter_plasma")
     GTMaterialFlags.GENERATE_BOLT_SCREW,
     GTMaterialFlags.GENERATE_SMALL_GEAR,
     GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING
+    GTMaterialFlags.GENERATE_SPRING,
+    GTMaterialFlags.GENERATE_FRAME
 
 )
 
@@ -689,7 +692,8 @@ event.create("pure_cosmic_matter")
     GTMaterialFlags.GENERATE_BOLT_SCREW,
     GTMaterialFlags.GENERATE_SMALL_GEAR,
     GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING
+    GTMaterialFlags.GENERATE_SPRING,
+    GTMaterialFlags.GENERATE_FRAME
 )
  
 // PLASMAS NEBULA

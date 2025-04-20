@@ -189,6 +189,8 @@
     "gtceu.processing_plant": "Ore Processing Plant",
     "block.gtceu.chemical_plant": "Chemical Plant",
     "gtceu.chemical_plant": "Chemical Plant",
+    "block.gtceu.dimensional_miner": "Dimensional Miner",
+    "gtceu.dimensional_miner": "Dimensional Miner",
 
     "block.gtceu.mv_electric_extractinator":"§bAdvanced Electric Extractinator§f",
     "block.gtceu.hv_electric_extractinator":"§6Advanced Electric Extractinator II§f",

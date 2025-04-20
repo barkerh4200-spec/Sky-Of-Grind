@@ -126,18 +126,6 @@
 			y: 0.5d
 		}
 		{
-			description: ["Remember that u can convert EU into RF by using a converter, really important for using EnderIO, HNN and others."]
-			id: "305D1F8D4CE997EA"
-			subtitle: "Tipsss"
-			tasks: [{
-				id: "450CA4B8944A73DC"
-				item: "gtceu:lv_1a_energy_converter"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.0d
-		}
-		{
 			description: ["Compressed hammers are a way to make gravel, sand and dust more efficiently by hammering down the compressed versions of the blocks."]
 			id: "5A5A47493815DA32"
 			tasks: [{
@@ -209,7 +197,7 @@
 			}]
 			title: "Automated wood!"
 			x: 1.5d
-			y: 8.0d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -329,37 +317,6 @@
 			title: "Cover your pipes!"
 			x: 3.0d
 			y: 6.5d
-		}
-		{
-			description: [
-				"Remember to check out the texture packs of the pack."
-				"Thanks to people that made them."
-				""
-				"&3&nCustom Skybox Pack&r&r"
-				""
-				"&3&nCustom FONT Pack &r&r // Imo best one :D"
-				""
-				"&3&nProgrammer GTCEU textures Pack&r&r"
-				""
-				"&3&nCustom GT-like Computer Craft Pack&r&r"
-				""
-				"Those packs are not made by the team, they are public ones abailable through the cf page."
-			]
-			icon: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "bonsaitrees3:book_of_trees"
-				}
-			}
-			id: "7F39506C9902060F"
-			tasks: [{
-				id: "48E96CFA39DD897E"
-				title: "Custom Texturepacks"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 8.0d
 		}
 	]
 	title: "Tips and Tricks"

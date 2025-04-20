@@ -15,27 +15,25 @@
 	quests: [
 		{
 			dependencies: ["3C7786F4A3C00CAE"]
+			description: [
+				"If you haven't yet made the chemical plant tier 6 you really should."
+				""
+				"The eternity costs are going to go crazy, are you prepared?"
+			]
 			icon_scale: 1.5d
 			id: "0BAA4873EF207963"
 			size: 1.0d
 			tasks: [{
-				id: "1AC4F3D01B1B3A64"
+				id: "6CEDE7B656ADABB1"
 				item: {
 					Count: 1
 					id: "ad_extendra:tier_6_rocket"
-					tag: {
-						BotariumData: {
-							StoredFluids: [{
-								Amount: 3000L
-								Fluid: "ad_astra:fuel"
-							}]
-						}
-					}
+					tag: { }
 				}
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			icon_scale: 2.0d
@@ -45,7 +43,7 @@
 				item: "avaritia:infinity_ingot"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.5d
 			y: -4.0d
 		}
 		{
@@ -57,7 +55,7 @@
 				item: "gtceu:reinforced_atomicforge"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.5d
 			y: -2.0d
 		}
 		{
@@ -73,6 +71,28 @@
 			}]
 			x: 2.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["0BAA4873EF207963"]
+			description: [
+				"You can reach the asteroids by using the T6 Rocket."
+				""
+				"There's a specific belt that we're looking for, it's on alpha centauri and our radars detected some forms of infinity catalyst there.."
+			]
+			icon: "kubejs:asteroid_belt_marker"
+			id: "1FA2E480736D20C9"
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				dimension: "sogcore:asteroid_belt"
+				icon: "kubejs:asteroid_belt_marker"
+				id: "4C1EF8C1C014EAB2"
+				title: "Visit the asteroid belt."
+				type: "dimension"
+			}]
+			title: "Reach the asteroids!"
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Maximum Voltage"]

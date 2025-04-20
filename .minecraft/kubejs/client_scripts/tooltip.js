@@ -63,8 +63,6 @@ ItemEvents.tooltip(event => {
         text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
     })
 
-    event.add(['fluxnetworks:flux_block', 'fluxnetworks:flux_plug', 'fluxnetworks:flux_point', 'fluxnetworks:flux_controller', 'fluxnetworks:basic_flux_storage', 'fluxnetworks:herculean_flux_storage', 'fluxnetworks:gargantuan_flux_storage', 'fluxnetworks:flux_dust', 'fluxnetworks:flux_configurator', 'fluxnetworks:flux_core'], Text.red('DEPRECATED & WILL BE REMOVED NEXT UPDATE').bold(true))
-
 
 
 })

@@ -138,7 +138,7 @@ event.recipes.gtceu.assembly_line('large_synchrotron_switcher')
 .duration(1000)
 .EUt(GTValues.VA[GTValues.UXV])   
 event.recipes.gtceu.assembly_line('chaotic_singularity_reactor')
-.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '32x gtceu:dense_chaos_plate', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', '4x gtceu:uiv_field_generator')
+.itemInputs('16x gtceu:awakened_draconium_plate', 'draconicevolution:chaotic_core', 'gtceu:uiv_machine_hull', '64x draconicevolution:chaos_shard', '4x #gtceu:circuits/uiv', '4x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', '4x gtceu:uiv_field_generator')
 .itemOutputs('gtceu:chaotic_singularity_reactor')
 .inputFluids(
   Fluid.of('gtceu:stropharic_hypoxylon', 9152),
@@ -207,7 +207,7 @@ event.recipes.gtceu.assembly_line('ore_processing_plant')
   Fluid.of('gtceu:soldering_alloy', 1152),
 )
 .duration(200)
-.EUt(GTValues.VA[GTValues.ZPM])  
+.EUt(GTValues.VA[GTValues.ZPM])
 event.recipes.gtceu.assembly_line('chemical_plant')
 .itemInputs('8x gtceu:trinium_plate', '4x gtceu:luv_electric_motor', 'gtceu:inert_machine_casing', '8x #gtceu:circuits/zpm', '8x gtceu:trinium_gear', 'gtceu:luv_chemical_reactor')
 .itemOutputs('gtceu:chemical_plant')
