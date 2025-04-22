@@ -220,6 +220,16 @@ event.recipes.gtceu.assembly_line('chemical_plant')
 .duration(200)
 .EUt(GTValues.VA[GTValues.ZPM])  
 ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('gtceu:large_chemical_reactor')).EUt(GTValues.VA[GTValues.IV]).duration(4200)) // 
+event.recipes.gtceu.assembly_line('dimensional_miner')
+.itemInputs('8x kubejs:eternity_heavy_plating', '4x draconicevolution:chaotic_core', '64x gtceu:luv_large_miner', '4x #gtceu:circuits/uxv', '16x gtceu:uiv_field_generator', '8x gtceu:uiv_electric_piston', 'gtceu:uiv_macerator',  '64x kubejs:energized_quantum_anomaly', '64x avaritia:eternal_singularity')
+.itemOutputs('gtceu:dimensional_miner')
+.inputFluids(
+  Fluid.of('gtceu:eternity', 16000),
+  Fluid.of('gtceu:antimatter', 5000),
+  Fluid.of('gtceu:cosmic_matter', 5000)
+  )
+.duration(60000)
+.EUt(GTValues.VA[GTValues.UXV])  
 
 event.recipes.gtceu.quantum_station('qee')
 .inputFluids('gtceu:oganesson 32', 'gtceu:antimatter 32')

@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
         ['uhv', 'ruthenium_trinium_americium_neutronate', 'crystal_matrix'],
         ['uev', 'cosmic_neutronium', 'draconium'],
         ['uiv', 'awakened_draconium', 'chaos'],
+        ['uxv', 'chaos', 'chaos'],
     ]
     // no MAX tier laserhatch :1984:
     const laserhatch = [
@@ -180,7 +181,15 @@ ServerEvents.recipes(sog => {
                 .EUt(GTValues.VA[GTValues.UIV])
                 .duration(20*60)
 
-            const plating = ["neutronium", "chaos", "infinity", "cosmic_neutronium", "draconium", "awakened_draconium", "californite"]
+                sog.recipes.gtceu.extruder('nan_certificate')
+                .itemInputs('64x gtceu:dense_infinity_plate')
+                .itemInputs('64x gtceu:dense_infinity_plate')
+                .itemOutputs('gtceu:nan_certificate')
+                .duration(3600*20*2)
+                .EUt((GTValues.VA[GTValues.OpV]))
+
+
+            const plating = ["neutronium", "chaos", "infinity", "cosmic_neutronium", "draconium", "awakened_draconium", "californite", "eternity"]
             plating.forEach((plate) => {
             sog.recipes.gtceu.hgim("kubejs:" + plate + "_heavy_plating")
                 .notConsumable('kubejs:gravitational_containment_cell')
@@ -190,8 +199,6 @@ ServerEvents.recipes(sog => {
                 .itemOutputs("kubejs:" + plate + "_heavy_plating")
                 .EUt(GTValues.VA[GTValues.UEV])
                 .duration(20*60)
-
-
 
 
         })

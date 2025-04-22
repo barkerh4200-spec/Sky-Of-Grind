@@ -903,6 +903,7 @@
 		}
 		{
 			dependencies: ["78508975EC36DBFA"]
+			icon_scale: 2.0d
 			id: "3C7786F4A3C00CAE"
 			subtitle: "Welcome to the end."
 			tasks: [{
@@ -942,6 +943,18 @@
 			title: "Chemical Plant tier 6"
 			x: 21.0d
 			y: 17.0d
+		}
+		{
+			dependencies: ["6FE6B17B9193CAB2"]
+			id: "7F2E580B1D5682AB"
+			subtitle: "Amp of MAX+4"
+			tasks: [{
+				id: "0BACC9B84108BA89"
+				item: "kubejs:infused_reactive_chaos_pellet"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.0d
 		}
 	]
 	subtitle: ["Ultra Immense Voltage"]

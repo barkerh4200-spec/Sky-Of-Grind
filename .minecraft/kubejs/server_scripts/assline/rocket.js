@@ -290,7 +290,7 @@ event.custom({
         "item": "gtceu:eternity_block"
       },
       {
-        "item": "kubejs:plasma_data"
+        "item": "kubejs:cosmic_processor_mainframe"
       },
       {
         "item": "gtceu:dense_eternity_plate"
@@ -299,7 +299,7 @@ event.custom({
         "item": "gtceu:dense_eternity_plate"
       },
       {
-        "item": "kubejs:plasma_data"
+        "item": "kubejs:cosmic_processor_mainframe"
       },
       {
         "item": "ad_astra:rocket_fin"

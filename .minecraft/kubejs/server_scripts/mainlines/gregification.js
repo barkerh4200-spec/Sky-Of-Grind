@@ -232,6 +232,11 @@ ServerEvents.recipes(sog => {
         .itemOutputs('gtceu:uxv_machine_casing')
         .EUt(32)
         .circuit(8)
+        sog.recipes.gtceu.assembler('dimensional_pumping_module')
+        .itemInputs('8x kubejs:space_time_heavy_plating', 'gtceu:uiv_fluid_regulator')
+        .itemOutputs('kubejs:dimensional_pump_module')
+        .EUt(32)
+        .circuit(8)
         sog.recipes.gtceu.assembler('high_power_casing_plant')
         .itemInputs('8x gtceu:osmiridium_plate', 'gtceu:secure_maceration_casing')
         .itemOutputs('kubejs:high_power_casing')
@@ -870,6 +875,17 @@ ServerEvents.recipes(sog => {
                 H: 'gtceu:zpm_fusion_reactor'
            }
             ).id('sog:atomicforge')
+            sog.shaped(
+                'gtceu:reinforced_atomicforge',
+                ['ABA', 'CZC', 'CHC'],
+                {
+                    A: 'gtceu:dense_infinity_plate',
+                    B: 'gtceu:atomicforge',
+                    Z: '#gtceu:circuits/uxv',
+                    C: 'gtceu:infinity_screw',
+                    H: 'gtceu:uev_fusion_reactor'
+               }
+                ).id('sog:reinforced_atomicforge')
     sog.shaped(
             'gtceu:starcondenser',
             ['ABA', 'BZB', 'CCC'],

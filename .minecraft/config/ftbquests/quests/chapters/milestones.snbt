@@ -700,8 +700,10 @@
 		{
 			dependencies: [
 				"28365A3D6884CA34"
-				"776B36FB90E136C8"
-				"3CE8156C2E4AAFCE"
+				"0EEC8806D9B7E7D4"
+				"7077A1AECE496480"
+				"7F0C919A5E9E77BF"
+				"765ADE14F741C5E5"
 			]
 			description: [
 				"&l&9Hope you enjoyed playing through Sky of Grind.&r"
@@ -711,40 +713,61 @@
 				""
 				"&l&aSpecial Thanks to:"
 				""
+				"Chi for helping us with a lot of endgame material textures."
 				"Diatonius1 for helping us with most of the endgame item and textures."
 				"Witherschat for helping us with texturing and letting us use his incredible textures."
 				"Thanks to DanRobzProbz for making the first ever Sky of Grind YouTube playthrough."
 				"- And thanks to RadzRatz for following in!"
+				""
+				"..."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"Aparently, this craft has created a glitch."
+				"You might have to deal with it in the future, right?"
+				""
+				"Are you this crazy?"
+				""
+				"..."
+				""
+				"Maybe?"
+				""
+				"What are you going to do now?"
+				""
+				"Survive?..."
+				""
+				"Take a break,"
+				"Rest."
 			]
 			icon_scale: 2.0d
 			id: "721022894AAF65E9"
-			rewards: [{
-				count: 2
-				id: "5A2ADF86172F4C4C"
-				item: "minecraft:stick"
-				type: "item"
-			}]
+			min_required_dependencies: 1
+			rewards: [
+				{
+					count: 2
+					id: "5A2ADF86172F4C4C"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6F0C83E9AC1BE0A0"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 5.0d
-			subtitle: "You won!"
+			subtitle: "Oh wait... wrong modpack, no stargate."
 			tasks: [{
 				id: "753199955ABAF2C8"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
+			title: "The Door to Heaven"
 			x: 0.0d
 			y: 19.5d
-		}
-		{
-			id: "776B36FB90E136C8"
-			size: 1.0d
-			tasks: [{
-				id: "2F284A204B00884A"
-				item: "kubejs:max_voltage_coil"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 23.0d
 		}
 		{
 			dependencies: ["2A0B2D9208AA3F3D"]
@@ -1177,16 +1200,6 @@
 			}]
 			x: 21.5d
 			y: 18.0d
-		}
-		{
-			id: "3CE8156C2E4AAFCE"
-			tasks: [{
-				id: "56A39E5B289B0A16"
-				item: "gtceu:max_machine_casing"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 16.0d
 		}
 		{
 			dependencies: ["20B7921E35AA0D02"]

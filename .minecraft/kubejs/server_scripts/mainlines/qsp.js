@@ -91,7 +91,7 @@ event.recipes.gtceu.qsp('hrsoc')
     event.recipes.gtceu.qsp('pumpend')
     .notConsumable('kubejs:pumping_projector_module')
     .itemInputs('4x kubejs:quantum_energy_capsule', 'minecraft:end_stone')
-    .outputFluids('gtceu:ender_air 14400000')
+    .outputFluids('gtceu:ender_air 14400000', 'gtceu:helium 144000000')
     .circuit(1)
     .duration(600)
     .EUt(GTValues.VA[GTValues.UEV]);

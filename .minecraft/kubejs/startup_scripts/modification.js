@@ -1,3 +1,18 @@
+
+
+
+
+
+
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    GTRecipeTypes.BLAST_RECIPES.setMaxIOSize(3, 3, 4, 1)
+    })
+
+
+
+
+
+
 // Create New Begginings Code
 
 

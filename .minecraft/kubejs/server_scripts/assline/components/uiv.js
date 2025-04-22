@@ -140,7 +140,6 @@ ServerEvents.recipes(event => {
   .EUt(GTValues.VA[GTValues.UIV]);
   event.recipes.gtceu.polarizer('magnetic_iridium')
   .itemInputs('gtceu:stabilized_iridium_ingot')
-  .circuit(1)
   .itemOutputs('gtceu:magnetic_stabilized_iridium_ingot')
   .duration(1200)
   .EUt(GTValues.VA[GTValues.UEV]);

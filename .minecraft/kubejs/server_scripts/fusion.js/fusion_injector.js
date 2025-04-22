@@ -31,7 +31,7 @@ ServerEvents.recipes(sog => {
     .duration(20*300)
     .EUt(GTValues.VA[GTValues.UXV])  
     sog.recipes.gtceu.assembly_line('chaotic_fusion_injector')
-    .itemInputs('7x gtceu:dense_chaos_plate', '8x draconicevolution:chaotic_core', 'gtceu:draconic_fusion_injector', '8x #gtceu:circuits/uxv', '4x #gtceu:circuits/uiv', '16x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', '8x gtceu:uiv_field_generator')
+    .itemInputs('7x gtceu:dense_chaos_plate', '8x draconicevolution:chaotic_core', 'gtceu:draconic_fusion_injector', '8x #gtceu:circuits/uxv', '4x #gtceu:circuits/uiv', '16x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', '8x gtceu:uiv_field_generator', '64x kubejs:space_time_heavy_plating')
     .itemOutputs('gtceu:chaotic_fusion_injector')
     .inputFluids(
     Fluid.of('gtceu:stropharic_hypoxylon', 9152),

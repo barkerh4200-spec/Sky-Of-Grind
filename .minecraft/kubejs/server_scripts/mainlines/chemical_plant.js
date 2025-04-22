@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_plant('eternity')
         .notConsumable('kubejs:chemical_tier_six')
         .inputFluids('gtceu:hypercharged_nebular_plasma 256000', 'gtceu:supercritical_californium_plasma 256000', 'gtceu:high_entropy_neptunium_plasma 256000')
-        .chancedFluidOutput('gtceu:eternity 5000', 2500, 0)
+        .chancedFluidOutput('gtceu:eternity 64000', 2500, 0)
         .duration(500)
         .EUt(GTValues.VA[GTValues.UXV]);
 
@@ -121,15 +121,23 @@ ServerEvents.recipes(event => {
         .notConsumable('kubejs:chemical_tier_six') 
         .itemInputs('draconicevolution:chaos_shard')
         .inputFluids('gtceu:eternity 10')
-        .chancedOutput('5x draconicevolution:chaos_shard', 7500, 0)
+        .chancedOutput('64x draconicevolution:chaos_shard', 7500, 0)
         .duration(500)
         .EUt(GTValues.VA[GTValues.UXV]);
 
     event.recipes.gtceu.chemical_plant('neptunium')
         .notConsumable('kubejs:chemical_tier_five')
         .inputFluids('gtceu:eternity 10', 'gtceu:uranium 16000', 'gtceu:neutronium 16000')
-        .chancedFluidOutput('gtceu:neptunium 16000', 7500, 0)
+        .chancedFluidOutput('gtceu:neptunium 64000', 7500, 0)
         .duration(500)
         .EUt(GTValues.VA[GTValues.UXV]);
+
+        event.recipes.gtceu.chemical_plant('californium_line')
+        .notConsumable('kubejs:chemical_tier_four')
+        .itemInputs('4x gtceu:triplatirium_235_dust')
+        .inputFluids('gtceu:sulfuric_acid 1000')
+        .chancedFluidOutput('gtceu:processed_californium_sulfate 64000', 7500, 0)
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
 });

@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('dimensional_miner')
         .category('multiblocks')
         .setEUIO('in')
-        .setMaxIOSize(0, 0, 1, 1)
+        .setMaxIOSize(2, 5, 2, 3)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.REPLICATOR)
 })

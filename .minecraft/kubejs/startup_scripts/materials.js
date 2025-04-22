@@ -399,7 +399,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
             GTMaterialFlags.GENERATE_LENS,
             GTMaterialFlags.GENERATE_ROUND,
         )
-        .blastTemp(13000, 'highest', 2097152, 2400)
+        .blastTemp(13000, 'highest', 2097152, 200)
         .cableProperties(GTValues.V[GTValues.UEV], 8, 4, false)
     
     event.create('awakened_draconium')
@@ -435,7 +435,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .element('stabilized_iridium')
         .color(0x9deafa).secondaryColor(0x232020)
         .iconSet('radioactive')
-        .blastTemp(13000, 'highest', 2097152, 1400)
+        .blastTemp(13000, 'highest', 2097152, 200)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         event.create('magnetic_stabilized_iridium')
         .ingot()

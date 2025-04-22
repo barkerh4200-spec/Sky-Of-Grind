@@ -33,7 +33,7 @@ ServerEvents.recipes(sog => {
         .EUt(GTValues.VA[GTValues.UV]);
     sog.shaped(
             'fluxnetworks:flux_configurator',
-            ['#AB', '#BA', 'B##'],
+            [' AB', ' BA', 'B  '],
             {
                 A: 'fluxnetworks:flux_core',
                 B: 'gtceu:crystal_matrix_rod'
