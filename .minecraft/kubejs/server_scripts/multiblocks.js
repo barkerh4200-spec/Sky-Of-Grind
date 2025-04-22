@@ -19,6 +19,7 @@ event.recipes.gtceu.moonminer('tungstenminer')
     .EUt(GTValues.VA[GTValues.EV]);
     event.replaceOutput({ type: 'gtceu:macerator' }, 'gtceu:tungstate_dust', 'gtceu:platinum_dust')
 
+
     //Star extractor
 event.recipes.gtceu.starextractor('star_matter')
     .notConsumable('gtceu:quantum_eye')
@@ -260,7 +261,13 @@ event.recipes.gtceu.atomicforge('awakened_draconium_coil')
     .itemOutputs("kubejs:awakened_draconium_coil_block")
     .duration(200)
     .EUt(GTValues.VA[GTValues.UXV]);
-
+event.recipes.gtceu.atomicforge('infinity_coil_block')
+    .inputFluids([Fluid.of('gtceu:cosmic_matter', 288)])
+    .notConsumable("kubejs:gravitational_fluctuation_module")
+    .itemInputs('kubejs:awakened_draconium_coil_block', '8x gtceu:infinity_plate', '1x gtceu:double_infinity_plate')
+    .itemOutputs("kubejs:infinity_coil_block")
+    .duration(20*20)
+    .EUt(GTValues.VA[GTValues.OpV]);
 
 event.recipes.gtceu.dimensionalmatter('matter')
     .notConsumable('kubejs:gravitational_containment_cell')
