@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:dimension_marker', event => {
         .tier(0)
         .overrideName('Moon')
         event.create('sogcore:asteroid_belt')
-        .iconSupplier(() => Item.of('kubejs:asteroid_belt_maker').getItem())
+        .iconSupplier(() => Item.of('kubejs:asteroid_belt_marker').getItem())
         .tier(0)
         .overrideName('Asteroid Belt')
 })

@@ -369,34 +369,6 @@
 			y: 1.5d
 		}
 		{
-			description: [
-				"You are probably confused on why the shop uses credits and not doge coins."
-				""
-				"This is the part 1 of the shops, this is for cosmetic stuff like dyes, building blocks and saplings."
-				" "
-				"The part 2 is under heavy WIP and will probably be released at UHV or later."
-				""
-				"That one is gonna use doge coins for useful items like basic circuits and/or alloys."
-			]
-			icon: {
-				Count: 1
-				id: "extendedcrafting:singularity"
-				tag: {
-					Id: "extendedcrafting:redstone"
-				}
-			}
-			id: "7D056284BBA958B1"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "24685F49735A3C59"
-				title: "READ THIS!"
-				type: "checkmark"
-			}]
-			x: -1.5d
-			y: 1.0d
-		}
-		{
 			can_repeat: true
 			dependencies: [
 				"22E32E4A8A6A927E"
@@ -520,6 +492,45 @@
 			title: "Warden Data Model"
 			x: 6.0d
 			y: 1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["6F8EE1F6815E131A"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 6
+						id: "hostilenetworks:sheep"
+					}
+				}
+			}
+			id: "583567D0C9A03842"
+			rewards: [{
+				id: "099CE7BF31D12214"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:sheep"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "4B7A95DD6AD50013"
+				item: "gtceu:platinum_credit"
+				type: "item"
+			}]
+			title: "Sheep Data Model"
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	title: "Rich!"

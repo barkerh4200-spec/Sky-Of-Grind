@@ -57,6 +57,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "gtmutils": {
+    "pterb_info": true
+  },
   "endertanks": {
     "hud.basic": true,
     "hud": true,

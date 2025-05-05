@@ -28,6 +28,7 @@
 		{
 			id: "3D39C164B8D0999B"
 			linked_quest: "721022894AAF65E9"
+			shape: "none"
 			size: 2.0d
 			x: 8.0d
 			y: -4.0d
@@ -49,6 +50,7 @@
 			]
 			icon_scale: 1.5d
 			id: "0BAA4873EF207963"
+			shape: "none"
 			size: 1.0d
 			tasks: [{
 				id: "6CEDE7B656ADABB1"
@@ -222,6 +224,7 @@
 			icon: "kubejs:eternity_nanites"
 			icon_scale: 1.5d
 			id: "7F0C919A5E9E77BF"
+			shape: "none"
 			tasks: [
 				{
 					id: "56AA337828AEF84F"
@@ -325,6 +328,26 @@
 			}]
 			x: 8.0d
 			y: 4.5d
+		}
+		{
+			id: "203EDAF44CA6A68F"
+			tasks: [{
+				id: "44B935941ED2D099"
+				item: "gtceu:creative_energy"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			id: "21DB66835BD2EC43"
+			tasks: [{
+				id: "4FCA148EE4F4733F"
+				item: "gtceu:creative_computation_provider"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Maximum Voltage"]

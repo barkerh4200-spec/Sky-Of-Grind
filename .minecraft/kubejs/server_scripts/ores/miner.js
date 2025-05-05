@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('7500x gtceu:moon_cosmic_neutronium_ore')
     .circuit(1)
     .duration(20*20)
+    .dimension('sogcore:asteroid_belt')
     .EUt(GTValues.VA[GTValues.UIV]);
 
     event.recipes.gtceu.dimensional_miner('asteroid_mining_2')
@@ -21,6 +22,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('75000x gtceu:moon_resonant_naquadah_ore')
     .itemOutputs('75000x gtceu:moon_resonant_essence_ore')
     .circuit(2)
+    .dimension('sogcore:asteroid_belt')
     .duration(20*20)
     .EUt(GTValues.VA[GTValues.UIV]);
 
@@ -34,6 +36,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('500x gtceu:moon_infinity_catalyst_ore')
     .circuit(3)
     .duration(20*10)
+    .dimension('sogcore:asteroid_belt')
     .EUt(GTValues.VA[GTValues.UIV]);
     
     event.recipes.gtceu.dimensional_miner('asteroid_mining_3_2')
@@ -49,6 +52,7 @@ ServerEvents.recipes(event => {
     .chancedFluidOutput('gtceu:molten_space_time 100', 1500, 0)
     .circuit(3)
     .duration(20*20)
+    .dimension('sogcore:asteroid_belt')
     .EUt(GTValues.VA[GTValues.UIV]);
 
     event.recipes.gtceu.dimensional_miner('asteroid_mining_4')
@@ -58,6 +62,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('1000000x gtceu:moon_draconium_ore')
     .circuit(4)
     .duration(20*40)
+    .dimension('sogcore:asteroid_belt')
     .EUt(GTValues.VA[GTValues.UIV]);
     event.recipes.gtceu.dimensional_miner('asteroid_mining_5')
     .inputFluids([Fluid.of('gtceu:eternity', 500)])
@@ -66,5 +71,6 @@ ServerEvents.recipes(event => {
     .itemOutputs('1000000x gtceu:moon_chaos_ore')
     .circuit(5)
     .duration(20*40)
+    .dimension('sogcore:asteroid_belt')
     .EUt(GTValues.VA[GTValues.UIV]);
 })

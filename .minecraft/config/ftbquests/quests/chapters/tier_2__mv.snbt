@@ -973,7 +973,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["7D6C30089B9F8938"]
+			dependencies: ["2F459E86E600C4DD"]
 			description: [
 				"Another LV machine? That's crazy..."
 				""

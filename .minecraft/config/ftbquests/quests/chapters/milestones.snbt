@@ -704,6 +704,8 @@
 				"7077A1AECE496480"
 				"7F0C919A5E9E77BF"
 				"765ADE14F741C5E5"
+				"203EDAF44CA6A68F"
+				"21DB66835BD2EC43"
 			]
 			description: [
 				"&l&9Hope you enjoyed playing through Sky of Grind.&r"
@@ -757,7 +759,7 @@
 					type: "item"
 				}
 			]
-			shape: "octagon"
+			shape: "none"
 			size: 5.0d
 			subtitle: "Oh wait... wrong modpack, no stargate."
 			tasks: [{
@@ -1220,6 +1222,7 @@
 			]
 			icon_scale: 2.0d
 			id: "7FFA0E8C4210B437"
+			shape: "none"
 			tasks: [{
 				id: "30E8AE831136644C"
 				item: "avaritia:infinity_ingot"
@@ -1315,6 +1318,7 @@
 			]
 			icon_scale: 2.0d
 			id: "61F1797DA06E0711"
+			shape: "none"
 			tasks: [{
 				id: "607F82A945C86212"
 				item: "avaritia:infinity_catalyst"
@@ -1375,6 +1379,7 @@
 		{
 			dependencies: ["2349587F40CC813B"]
 			id: "603DF5ED229A5BB9"
+			shape: "rsquare"
 			subtitle: "MAX"
 			tasks: [{
 				id: "5C3EFC28EE7E4E69"

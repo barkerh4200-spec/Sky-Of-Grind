@@ -69,12 +69,6 @@
 			x: -3.5d
 			y: 17.5d
 		}
-		{
-			id: "7831704EAC2225C1"
-			linked_quest: "3EB096642664FBB1"
-			x: 0.0d
-			y: 21.5d
-		}
 	]
 	quests: [
 		{
@@ -612,8 +606,8 @@
 				item: "gtceu:chaotic_singularity_reactor"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 18.5d
+			x: 0.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["6FE6B17B9193CAB2"]
@@ -625,8 +619,32 @@
 				item: "kubejs:reactive_chaos_pellet"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 18.5d
+		}
+		{
+			dependencies: ["6FE6B17B9193CAB2"]
+			id: "3DB256A33B446134"
+			tasks: [{
+				id: "2187263355A44217"
+				item: "kubejs:infused_reactive_chaos_pellet"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 18.5d
+		}
+		{
+			description: ["Congrats! Huge milestone."]
+			id: "00B8E2FD349C58C3"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "373E4FF0115A86DE"
+				item: "gtceu:creative_energy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 21.0d
 		}
 	]
 	title: "Power Generation"

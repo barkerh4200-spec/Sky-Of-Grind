@@ -170,11 +170,11 @@ event.custom({
     pattern: [
         "AAAAAAAAA",
         "ARGGIGGTA",
-        "AGOPNPOGA",
+        "AGOLNLOGA",
         "AGPVBVPGA",
-        "AIPMQKPIA",
+        "AIZMQKXIA",
         "AGPVCVPGA",
-        "AGOPFPOGA",
+        "AGOLFLOGA",
         "AUGGIGGYA",
         "AAAAAAAAA"
     ],
@@ -229,9 +229,99 @@ event.custom({
         ],
         K: [
             {item: 'avaritia:infinity_crossbow'}
+        ],
+        X: [
+            {item: 'gtceu:creative_computation_provider'}
+        ],
+        Z: [
+            {item: 'gtceu:creative_energy'}
+        ],
+        L: [
+            {item: 'gtceu:nan_certificate'}
         ]
     },
     result: {item: 'gtceu:creative_chest'}
+})
+
+event.custom({
+    type: 'avaritia:shaped_table',
+    pattern: [
+        "YYYYYYYYY",
+        "YIYIIIYIY",
+        "YYPXNXPYY",
+        "YIXTRTXIY",
+        "YINRQRNIY",
+        "YIXTRTXIY",
+        "YYPXNXPYY",
+        "YIYIIIYIY",
+        "YYYYYYYYY"
+    ],
+    key: {
+        Y: [
+            {item: 'kubejs:infinity_heavy_plating'}
+        ],
+        I: [
+            {item: 'kubejs:space_time_heavy_plating'}
+        ],
+        N: [
+            {item: 'avaritia:enhancement_core'}
+        ],
+        X: [
+            {item: 'kubejs:energized_quantum_anomaly'}
+        ],
+        P: [
+            {item: 'kubejs:dimensional_processor_computer'}
+        ],
+        Q: [
+            {item: 'kubejs:dimensional_processor_mainframe'}
+        ],
+        T: [
+            {item: 'gtceu:uxv_4096a_laser_source_hatch'}
+        ],
+        R: [
+            {item: 'gtceu:uxv_4096a_laser_target_hatch'}
+        ]
+    },
+    result: {item: 'gtceu:creative_energy'}
+})
+
+event.custom({
+    type: 'avaritia:shaped_table',
+    pattern: [
+        "YYYYYYYYY",
+        "YIYIIIYIY",
+        "YYPXNXPYY",
+        "YIXTTTXIY",
+        "YINTQTNIY",
+        "YIXTTTXIY",
+        "YYPXNXPYY",
+        "YIYIIIYIY",
+        "YYYYYYYYY"
+    ],
+    key: {
+        Y: [
+            {item: 'kubejs:infinity_heavy_plating'}
+        ],
+        I: [
+            {item: 'kubejs:space_time_heavy_plating'}
+        ],
+        N: [
+            {item: 'avaritia:enhancement_core'}
+        ],
+        X: [
+            {item: 'kubejs:energized_quantum_anomaly'}
+        ],
+        P: [
+            {item: 'kubejs:dimensional_processor_computer'}
+        ],
+        Q: [
+            {item: 'kubejs:dimensional_processor_mainframe'}
+        ],
+        T: [
+            {item: 'gtceu:creative_data_access_hatch'}
+        ]
+    },
+    result: {item: 'gtceu:creative_computation_provider'}
 })
 
 })

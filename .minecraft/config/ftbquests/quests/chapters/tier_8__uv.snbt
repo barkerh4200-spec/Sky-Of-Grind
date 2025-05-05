@@ -1328,7 +1328,7 @@
 				item: "gtceu:doge_coin"
 				type: "item"
 			}]
-			shape: "gear"
+			shape: "none"
 			size: 1.75d
 			subtitle: "First creative item"
 			tasks: [{
@@ -1337,7 +1337,7 @@
 				type: "item"
 			}]
 			title: "&d&nCreative Energy Cell"
-			x: 16.5d
+			x: 16.625d
 			y: -5.25d
 		}
 		{

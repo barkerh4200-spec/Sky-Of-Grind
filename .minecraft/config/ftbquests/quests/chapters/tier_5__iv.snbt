@@ -1759,6 +1759,23 @@
 			x: 1.5d
 			y: 8.0d
 		}
+		{
+			dependencies: ["73AB9D7E04840A3C"]
+			id: "6739CA0466707A00"
+			rewards: [{
+				id: "05672149F55E697D"
+				item: "gtceu:doge_coin"
+				type: "item"
+			}]
+			subtitle: "HUGE QOL!"
+			tasks: [{
+				id: "78C4C1E7EE22692C"
+				item: "gtmutils:omnibreaker"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 16.5d
+		}
 	]
 	subtitle: ["Insane Voltage"]
 	title: "&#000dffTier 5 - IV"

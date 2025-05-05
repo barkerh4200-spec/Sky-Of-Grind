@@ -947,7 +947,7 @@
 			description: [
 				"Yes, this is Hostile Neural Networks. Remember, this pack is peaceful, so the way you will get the data models is gonna be buying them with items in the quests."
 				""
-				"&oPsss, get RF energy from EU by making a converter!"
+				"&oPsss, you can power these machines on GT cables!"
 			]
 			id: "66079F4565A6B631"
 			rewards: [{

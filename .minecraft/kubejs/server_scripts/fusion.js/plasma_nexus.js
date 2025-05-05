@@ -12,7 +12,7 @@ sog.recipes.gtceu.plasma_nexus('energized_anomaly')
 sog.recipes.gtceu.plasma_nexus('quantum_anomaly')
 .inputFluids('gtceu:eternity 20')
 .itemInputs('1x kubejs:quantum_anomaly')
-.itemOutputs('1x kubejs:quantum_anomaly')
+.itemOutputs('2x kubejs:quantum_anomaly')
 .duration(64*60)
 .EUt(GTValues.VA[GTValues.UXV]);
 

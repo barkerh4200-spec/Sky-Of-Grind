@@ -1073,6 +1073,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 3.0d
 			tasks: [{
 				id: "29E53BF09A067880"
 				item: {

@@ -400,8 +400,8 @@
 				"Oganesson = 256 CWU/t (256*20 duration)"
 			]
 			id: "1AAD55E80A86E225"
-			shape: "octagon"
-			size: 1.5d
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "409DE0DBF1AB2A5A"
 				item: "gtceu:uev_fusion_reactor"

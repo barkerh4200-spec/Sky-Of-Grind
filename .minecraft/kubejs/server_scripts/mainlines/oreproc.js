@@ -14,9 +14,8 @@ const oreProcessableTiers = {
         { material: 'stibnite', secondary: 'antimony', tertiary: 'sulfur' },
         { material: 'salt', secondary: 'rock_salt', tertiary: 'rock_salt', quaternary: 'borax' },
         { material: 'coal', secondary: 'coal', tertiary: 'coal', quaternary: 'thorium' },
-	    { material: 'nickel', secondary: 'cobalt', tertiary: 'iron', quaternary: 'platinum'},
-	    { material: 'redstone', secondary: 'cinnabar', tertiary: 'rare_earth', quaternary: 'glwostone'},
-	    { material: 'lead', secondary: 'silver', tertiary: 'sulfur'},
+    	{ material: 'nickel', secondary: 'cobalt', tertiary: 'iron', quaternary: 'platinum'},
+    	{ material: 'lead', secondary: 'silver', tertiary: 'sulfur'},
         { material: 'lapis', secondary: 'lazurite', tertiary: 'sodalite'},
 	    { material: 'amethyst', secondary: 'amethyst', tertiary: 'iron'},
 	    { material: 'quartzite', secondary: 'certus_quartz', tertiary: 'barite'}
@@ -31,7 +30,7 @@ const oreProcessableTiers = {
         { material: 'apatite', secondary: 'tricalcium_phosphate', tertiary: 'tricalcium_phosphate', quaternary: 'phosphate' },
         { material: 'graphite', secondary: 'graphite', tertiary: 'carbon', quaternary: 'diamond'},
 	    { material: 'barite', secondary: 'barium', tertiary: 'sulfur'},
-	    { material: 'calcite', secondary: 'calcium', tertiary: 'sodalite'},
+    	{ material: 'calcite', secondary: 'calcium', tertiary: 'sodalite'},
 	    { material: 'saltpeter', secondary: 'potassium', tertiary: 'salt'},
 	    { material: 'sulfur', secondary: 'sulfur', tertiary: 'sulfur'},
 	    { material: 'hematite', secondary: 'magnetite', tertiary: 'calcium', quaternary:'magnesium'},
@@ -193,7 +192,16 @@ const plant_ore_processing = (event, materialObj) => {
 
 /* Final Product */
 ServerEvents.recipes(event => {
-
+	 event.recipes.gtceu.processing_plant(`crushed_redstone`)
+        .itemInputs('gtceu:crushed_redstone_ore')
+        .inputFluids(fluids.distilled_water)
+		.itemOutputs('minecraft:redstone')
+        .chancedOutput('minecraft:redstone', 5000, 150)
+        .chancedOutput('gtceu:cinnabar_dust', 2500, 100)
+        .chancedOutput('gtceu:rare_earth_dust', 1250, 50)
+        .chancedOutput('minecraft:glowstone_dust', 750, 100)
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.LV]);
 
 
     // Iterate over each tier and processable item and register the recipes

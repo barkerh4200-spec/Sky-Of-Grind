@@ -30,8 +30,9 @@
 		{
 			id: "699A92A3755E94A5"
 			linked_quest: "2FA03148CCD8CA22"
-			x: -1.5d
-			y: 10.5d
+			shape: "none"
+			x: -2.0d
+			y: 11.0d
 		}
 	]
 	quests: [
@@ -90,6 +91,7 @@
 			]
 			icon_scale: 2.0d
 			id: "6075D2D1AA906975"
+			shape: "none"
 			subtitle: "This is sick"
 			tasks: [{
 				id: "6A41C454F86CF351"
@@ -551,7 +553,7 @@
 			]
 			icon_scale: 2.0d
 			id: "2C628D575A89E6E1"
-			shape: "octagon"
+			shape: "none"
 			size: 2.0d
 			subtitle: "The cheapest one!"
 			tasks: [{
@@ -905,6 +907,7 @@
 			dependencies: ["78508975EC36DBFA"]
 			icon_scale: 2.0d
 			id: "3C7786F4A3C00CAE"
+			shape: "none"
 			subtitle: "Welcome to the end."
 			tasks: [{
 				id: "7AA8CA9D731E1EEA"
@@ -947,14 +950,15 @@
 		{
 			dependencies: ["6FE6B17B9193CAB2"]
 			id: "7F2E580B1D5682AB"
+			shape: "none"
 			subtitle: "Amp of MAX+4"
 			tasks: [{
 				id: "0BACC9B84108BA89"
 				item: "kubejs:infused_reactive_chaos_pellet"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 12.0d
+			x: -2.5d
+			y: 11.5d
 		}
 	]
 	subtitle: ["Ultra Immense Voltage"]
