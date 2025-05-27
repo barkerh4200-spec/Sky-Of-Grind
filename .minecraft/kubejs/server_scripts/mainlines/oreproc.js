@@ -17,8 +17,8 @@ const oreProcessableTiers = {
     	{ material: 'nickel', secondary: 'cobalt', tertiary: 'iron', quaternary: 'platinum'},
     	{ material: 'lead', secondary: 'silver', tertiary: 'sulfur'},
         { material: 'lapis', secondary: 'lazurite', tertiary: 'sodalite'},
-	{ material: 'amethyst', secondary: 'amethyst', tertiary: 'iron'},
-	{ material: 'quartzite', secondary: 'certus_quartz', tertiary: 'barite'}
+	    { material: 'amethyst', secondary: 'amethyst', tertiary: 'iron'},
+	    { material: 'quartzite', secondary: 'certus_quartz', tertiary: 'barite'}
     ],
 
     'mv': [
@@ -48,9 +48,9 @@ const oreProcessableTiers = {
         { material: 'molybdenite', secondary: 'molybdenum', tertiary: 'sulfur', quaternary: 'molybdenum' },
         { material: 'tantalite', secondary: 'manganese', tertiary: 'niobium', quaternary: 'niobium' },
     	{ material: 'kyanite', secondary: 'talc', tertiary: 'aluminium', quaternary:'silicon'},
-	{ material: 'platinum', secondary: 'nickel', tertiary: 'palladium', quaternary:'cobalt'},
-	{ material: 'tricalcium_phosphate', secondary: 'apatite', tertiary: 'phosphate', quaternary:'pyrochlore'},
-	{ material: 'plutonium', secondary: 'uraninite', tertiary: 'lead'},
+	    { material: 'platinum', secondary: 'nickel', tertiary: 'palladium', quaternary:'cobalt'},
+	    { material: 'tricalcium_phosphate', secondary: 'apatite', tertiary: 'phosphate', quaternary:'pyrochlore'},
+	    { material: 'plutonium', secondary: 'uraninite', tertiary: 'lead'},
     	{ material: 'uraninite', secondary: 'uraninite', tertiary: 'lead', quaternary:'silver'},
     	{ material: 'mica', secondary: 'potassium', tertiary: 'aluminium'},
     	{ material: 'green_sapphire', secondary: 'beryllium', tertiary: 'iron', quaternary:'vanadium'}
