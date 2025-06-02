@@ -717,6 +717,7 @@
 				type: "item"
 			}]
 			shape: "octagon"
+			size: 1.5d
 			subtitle: "Multiblocks are cool"
 			tasks: [
 				{
@@ -936,40 +937,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["7B6D059D211A42FC"]
-			id: "77AC718FEFE30BCD"
-			rewards: [{
-				id: "011A412CA7FC9872"
-				item: "gtceu:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "46E5042001B6EE9F"
-				item: "gtceu:mercury_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["77AC718FEFE30BCD"]
-			description: ["Thats also a crazy name right, trust me the final product isnt gonna be that hard to pronounce right?"]
-			id: "670813897BBD84C6"
-			rewards: [{
-				id: "1B7C6DC1A1C39A74"
-				item: "gtceu:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "09A9E69C5B0AC985"
-				item: "gtceu:hypochlorous_acid_bucket"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["670813897BBD84C6"]
 			description: ["Add Propene + chlorine + 3 sodium hydroxide to the mix."]
 			id: "04A2F84F6044BE9E"
 			rewards: [{
@@ -982,8 +949,8 @@
 				item: "gtceu:epichlorohydrin_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 12.0d
+			x: -5.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["04A2F84F6044BE9E"]
@@ -999,8 +966,8 @@
 				item: "gtceu:epoxy_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 12.0d
+			x: -7.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["2D4D18C80841EB7B"]
@@ -1015,8 +982,8 @@
 				item: "gtceu:epoxy_circuit_board"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 12.0d
+			x: -8.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["6997FC5CBBEBE98B"]
@@ -1032,7 +999,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 12.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["154DA8F1EBCE6B4B"]
@@ -1309,7 +1276,7 @@
 				item: "gtceu:nano_cpu_wafer"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -10.0d
 			y: 14.5d
 		}
 		{

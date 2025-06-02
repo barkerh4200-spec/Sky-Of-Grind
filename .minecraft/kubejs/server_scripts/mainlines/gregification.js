@@ -1251,6 +1251,16 @@ sog.recipes.gtceu.implosion_compressor('gtceu:ic/hdat1')
 .itemOutputs('gtceu:heavy_duty_alloy_t1_ingot')
 .duration(5)
 .EUt(GTValues.VA[GTValues.LV]);
+sog.recipes.gtceu.implosion_compressor('gtceu:ic/hdat2itnt')
+.itemInputs('32x gtceu:industrial_tnt', 'gtceu:hot_heavy_duty_alloy_t2_ingot')
+.itemOutputs('gtceu:heavy_duty_alloy_t2_ingot')
+.duration(5)
+.EUt(GTValues.VA[GTValues.LuV]);
+sog.recipes.gtceu.implosion_compressor('gtceu:ic/hdat1itnt')
+.itemInputs('32x gtceu:industrial_tnt', 'gtceu:hot_heavy_duty_alloy_t1_ingot')
+.itemOutputs('gtceu:heavy_duty_alloy_t1_ingot')
+.duration(5)
+.EUt(GTValues.VA[GTValues.LV]);
 sog.shaped(
     'gtceu:atomic_moonminer',
     ['ABA', 'EDE', 'ABA'],
@@ -1369,6 +1379,12 @@ sog.recipes.gtceu.mixer('platiumsuperconductor')
 .itemOutputs('4x gtceu:platium_superconductor_dust')
 .duration(275)
 .EUt(512)
+sog.recipes.gtceu.mixer('tilrunumsuperconductor')
+.circuit(4)
+.itemInputs('1x gtceu:titanium_dust', '4x gtceu:ruthenium_dust', '8x gtceu:molybdenum_dust')
+.itemOutputs('13x gtceu:tilrunum_superconductor_dust')
+.duration(175)
+.EUt(2048)
 sog.recipes.gtceu.autoclave('crystal_superconductor')
 .inputFluids(Fluid.of('gtceu:europium', 144))
 .itemInputs('gtceu:crystal_soc')
