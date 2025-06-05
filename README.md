@@ -18,6 +18,7 @@
  - Thanks to Gregtech New Beginnings for some textures, like cosmic matter and infinity coils.
  - Thanks to Monifactory for their complex smds textures.
  - Thanks to Star Technology for giving us permission to use some of their code.
+ - Thanks to Lopy's More Materials, we use the cell textures.
  
  - And thanks again, to the great GT modpacks like GT:NH, Nomifactory, Technological Journey, etc. For lots of ideas and inspiration!
 
