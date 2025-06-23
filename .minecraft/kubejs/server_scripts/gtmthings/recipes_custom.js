@@ -13,11 +13,14 @@ ServerEvents.recipes(event => {
 
   const getHatchId = (tier, amp, isInput, isLaser, isWireless) => {
     const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
-    const wirelessPart = isWireless ? "wireless_" : ""
+    const wirelessPart = isWireless ? `wireless_` : ""
     const modId = isWireless ? "gtmthings" : "gtceu"
-    const ampSuffix = !isWireless && !isLaser && amp === "2a" ? "" : `_${amp}`
 
-    const commonPrefix = `${modId}:${tier}${ampSuffix}_${wirelessPart}`
+    const ampText = `${amp}_`
+    const ampPrefix = isWireless || isLaser ? ampText : ""
+    const ampSuffix = ampPrefix.length === 0 ? ampText : ""
+
+    const commonPrefix = `${modId}:${tier}_${ampPrefix}${wirelessPart}${ampSuffix}`
 
     return isLaser
       ? `${commonPrefix}laser_${hatchIoName[1]}_hatch`
@@ -29,9 +32,11 @@ ServerEvents.recipes(event => {
     const gtceuHatchId = getHatchId(tier, amp, isInput, isLaser, false)
     const fluxItem = isInput ? "point" : "plug"
 
-    if (!Item.exists(wirelessHatchId)) {
-      console.warn(`${wirelessHatchId} does not exist`)
-      return
+    for (const hatch of [wirelessHatchId, gtceuHatchId]) {
+      if (!Item.exists(hatch)) {
+        console.warn(`${hatch} does not exist`)
+        return
+      }
     }
 
     event.shapeless(wirelessHatchId, [gtceuHatchId, `fluxnetworks:flux_${fluxItem}`])
@@ -60,7 +65,7 @@ ServerEvents.recipes(event => {
     })
 
     if (index >= tierIndex("iv")) {
-      let laserAmps = ["256a", "1024a", "4096a", "16384a", "65536a"]
+      let laserAmps = ["256a", "1024a", "4096a"]
 
       laserAmps.forEach(amp => {
         addWirelessHatchRecipe(tier, amp, true, true)
