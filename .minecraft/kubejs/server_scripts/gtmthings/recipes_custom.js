@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
     const wirelessPart = isWireless ? "wireless_" : ""
     const modId = isWireless ? "gtmthings" : "gtceu"
-    const ampSuffix = isWireless || isLaser || amp !== "2a" ? "" : `_${amp}`
+    const ampSuffix = !isWireless && !isLaser && amp === "2a" ? "" : `_${amp}`
 
     const commonPrefix = `${modId}:${tier}${ampSuffix}_`
 
