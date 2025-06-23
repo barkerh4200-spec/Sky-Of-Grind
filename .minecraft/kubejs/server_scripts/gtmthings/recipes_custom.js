@@ -16,15 +16,15 @@ ServerEvents.recipes(event => {
     const wirelessPart = isWireless ? `wireless_` : ""
     const modId = isWireless ? "gtmthings" : "gtceu"
 
-    const ampText = `${amp}_`
-    const ampPrefix = isWireless || isLaser ? ampText : ""
-    const ampSuffix = ampPrefix.length === 0 ? ampText : ""
+    const doPrefix = isWireless || isLaser
+    const ampPrefix = doPrefix ? `${amp}_` : ""
+    const ampSuffix = !doPrefix && amp !== "2a" ? `_${amp}` : ""
 
-    const commonPrefix = `${modId}:${tier}_${ampPrefix}${wirelessPart}${ampSuffix}`
+    const commonPrefix = `${modId}:${tier}_${ampPrefix}${wirelessPart}`
 
     return isLaser
-      ? `${commonPrefix}laser_${hatchIoName[1]}_hatch`
-      : `${commonPrefix}energy_${hatchIoName[0]}_hatch`
+      ? `${commonPrefix}laser_${hatchIoName[1]}_hatch${ampSuffix}`
+      : `${commonPrefix}energy_${hatchIoName[0]}_hatch${ampSuffix}`
   }
 
   const addWirelessHatchRecipe = (tier, amp, isInput, isLaser) => {
