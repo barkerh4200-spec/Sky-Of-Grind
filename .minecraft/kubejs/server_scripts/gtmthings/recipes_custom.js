@@ -1,4 +1,8 @@
 ServerEvents.recipes(event => {
+  const GTMTHINGS_WHITELIST = [
+    "advanced_terminal",
+    "wireless_energy_monitor",
+  ].map(id => { output: `gtmthings:${id}` })
   const TIERS = [
     "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv",
     "uhv", "uev", "uiv", "uxv", "opv", "max"
@@ -7,13 +11,17 @@ ServerEvents.recipes(event => {
   const tierIndex = tier => TIERS.indexOf(tier)
   const tiersBetween = (start, end) => TIERS.slice(tierIndex(start), tierIndex(end) + 1)
 
-  const getHatchId = (tier, amp, isInput, isLaser) => {
+  const getHatchId = (tier, amp, isInput, isLaser, isWireless) => {
     const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
-    const ampSuffix = amp === "2a" ? "" : `_${amp}`
+    const wirelessPart = isWireless ? "wireless_" : ""
+    const modId = isWireless ? "gtmthings" : "gtceu"
+    const ampSuffix = isWireless || isLaser || amp !== "2a" ? "" : `_${amp}`
+
+    const commonPrefix = `${modId}:${tier}${ampSuffix}_`
 
     return isLaser
-      ? `gtceu:${tier}_${amp}_laser_${hatchIoName[1]}_hatch`
-      : `gtceu:${tier}_energy_${hatchIoName[0]}_hatch${ampSuffix}`
+      ? `${commonPrefix}laser_${hatchIoName[1]}_hatch`
+      : `${commonPrefix}${wirelessPart}energy_${hatchIoName[0]}_hatch`
   }
 
   const addHatchRecipe = (tier, amp, isInput, isLaser) => {
@@ -35,7 +43,7 @@ ServerEvents.recipes(event => {
     ])
   }
 
-  event.remove({ mod: "gtmthings", not: { output: "gtmthings:wireless_energy_monitor" } })
+  event.remove({ mod: "gtmthings", not: GTMTHINGS_WHITELIST })
 
   tiersBetween("lv", "opv").forEach(tier => {
     event.shapeless(`gtmthings:${tier}_wireless_energy_receive_cover`, [
