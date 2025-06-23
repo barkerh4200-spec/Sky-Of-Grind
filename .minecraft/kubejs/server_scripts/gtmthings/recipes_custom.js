@@ -17,17 +17,17 @@ ServerEvents.recipes(event => {
     const modId = isWireless ? "gtmthings" : "gtceu"
     const ampSuffix = !isWireless && !isLaser && amp === "2a" ? "" : `_${amp}`
 
-    const commonPrefix = `${modId}:${tier}${ampSuffix}_`
+    const commonPrefix = `${modId}:${tier}${ampSuffix}_${wirelessPart}`
 
     return isLaser
       ? `${commonPrefix}laser_${hatchIoName[1]}_hatch`
-      : `${commonPrefix}${wirelessPart}energy_${hatchIoName[0]}_hatch`
+      : `${commonPrefix}energy_${hatchIoName[0]}_hatch`
   }
 
   const addWirelessHatchRecipe = (tier, amp, isInput, isLaser) => {
     const wirelessHatchId = getHatchId(tier, amp, isInput, isLaser, true)
     const gtceuHatchId = getHatchId(tier, amp, isInput, isLaser, false)
-    const fluxItem = isInput ? "input" : "plug"
+    const fluxItem = isInput ? "point" : "plug"
 
     if (!Item.exists(wirelessHatchId)) {
       console.warn(`${wirelessHatchId} does not exist`)
@@ -55,7 +55,6 @@ ServerEvents.recipes(event => {
     }
 
     energyAmps.forEach(amp => {
-      console.log(tier, amp, false)
       addWirelessHatchRecipe(tier, amp, true, false)
       addWirelessHatchRecipe(tier, amp, false, false)
     })
@@ -64,7 +63,6 @@ ServerEvents.recipes(event => {
       let laserAmps = ["256a", "1024a", "4096a", "16384a", "65536a"]
 
       laserAmps.forEach(amp => {
-        console.log(tier, amp, true)
         addWirelessHatchRecipe(tier, amp, true, true)
         addWirelessHatchRecipe(tier, amp, false, true)
       })
