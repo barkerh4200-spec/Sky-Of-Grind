@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
   const GTMTHINGS_WHITELIST = [
     "advanced_terminal",
     "wireless_energy_monitor",
-  ].map(id => { output: `gtmthings:${id}` })
+  ].map(id => ({ output: `gtmthings:${id}` }))
   const TIERS = [
     "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv",
     "uhv", "uev", "uiv", "uxv", "opv", "max"
