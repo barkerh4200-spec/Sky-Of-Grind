@@ -1,11 +1,4 @@
 ServerEvents.recipes(event => {
-  const PRESERVED_RECIPES = [
-    "flux_transfer_cover",
-    "me_export_hatch",
-    "virtual_item_hatch",
-    "virtual_item_provider"
-  ]
-
   const TIERS = [
     "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv",
     "uhv", "uev", "uiv", "uxv", "opv", "max"
@@ -14,22 +7,30 @@ ServerEvents.recipes(event => {
   const tierIndex = tier => TIERS.indexOf(tier)
   const tiersBetween = (start, end) => TIERS.slice(tierIndex(start), tierIndex(end) + 1)
 
+  const getHatchId = (tier, amp, isInput, isLaser) => {
+    const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
+    const ampSuffix = amp === "2a" ? "" : `_${amp}`
+
+    return isLaser
+      ? `gtceu:${tier}_${amp}_laser_${hatchIoName[1]}_hatch`
+      : `gtceu:${tier}_energy_${hatchIoName[0]}_hatch${ampSuffix}`
+  }
+
   const addHatchRecipe = (tier, amp, isInput, isLaser) => {
     const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
     const hatchType = isLaser ? "laser" : "energy"
     const fluxItem = isInput ? "point" : "plug"
 
     const hatchSuffix = `${hatchType}_${hatchIoName[isLaser ? 1 : 0]}_hatch`
-    const ampSuffix = amp === "2a" && !isLaser ? "" : `_${amp}`
-
     const itemId = `gtmthings:${tier}_${amp}_wireless_${hatchSuffix}`
+
     if (!Item.exists(itemId)) {
       console.warn(itemId, "does not exist")
       return
     }
 
     event.shapeless(`gtmthings:${tier}_${amp}_wireless_${hatchSuffix}`, [
-      `gtceu:${tier}${ampSuffix}_${hatchSuffix}`,
+      getHatchId(tier, amp, isInput, isLaser),
       `fluxnetworks:flux_${fluxItem}`
     ])
   }
@@ -52,6 +53,7 @@ ServerEvents.recipes(event => {
     }
 
     energyAmps.forEach(amp => {
+      console.log(tier, amp, false)
       addHatchRecipe(tier, amp, true, false)
       addHatchRecipe(tier, amp, false, false)
     })
@@ -60,6 +62,7 @@ ServerEvents.recipes(event => {
       let laserAmps = ["256a", "1024a", "4096a", "16384a", "65536a"]
 
       laserAmps.forEach(amp => {
+        console.log(tier, amp, true)
         addHatchRecipe(tier, amp, true, true)
         addHatchRecipe(tier, amp, false, true)
       })
