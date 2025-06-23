@@ -15,12 +15,18 @@ ServerEvents.recipes(event => {
   const tiersBetween = (start, end) => TIERS.slice(tierIndex(start), tierIndex(end) + 1)
 
   const addHatchRecipe = (tier, amp, isInput, isLaser) => {
-    const hatchIoName = isInput ? "target" : "source"
+    const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
     const hatchType = isLaser ? "laser" : "energy"
     const fluxItem = isInput ? "point" : "plug"
 
-    const hatchSuffix = `${hatchType}_${hatchIoName}_hatch`
+    const hatchSuffix = `${hatchType}_${hatchIoName[isLaser ? 1 : 0]}_hatch`
     const ampSuffix = amp === "2a" && !isLaser ? "" : `_${amp}`
+
+    const itemId = `gtmthings:${tier}_${amp}_wireless_${hatchSuffix}`
+    if (!Item.exists(itemId)) {
+      console.warn(itemId, "does not exist")
+      return
+    }
 
     event.shapeless(`gtmthings:${tier}_${amp}_wireless_${hatchSuffix}`, [
       `gtceu:${tier}${ampSuffix}_${hatchSuffix}`,
@@ -28,9 +34,9 @@ ServerEvents.recipes(event => {
     ])
   }
 
-  event.remove({ output: new RegExp(`gtmthings:(?!${PRESERVED_RECIPES.join("|")}).+`) })
+  event.remove({ mod: "gtmthings", not: { output: "gtmthings:wireless_energy_monitor" } })
 
-  TIERS.forEach(tier => {
+  tiersBetween("lv", "opv").forEach(tier => {
     event.shapeless(`gtmthings:${tier}_wireless_energy_receive_cover`, [
       `gtceu:${tier}_energy_input_hatch`,
       "gtceu:machine_controller_cover",
@@ -51,7 +57,7 @@ ServerEvents.recipes(event => {
     })
 
     if (index >= tierIndex("iv")) {
-      const laserAmps = ["256a", "1024a", "4096a"]
+      let laserAmps = ["256a", "1024a", "4096a", "16384a", "65536a"]
 
       laserAmps.forEach(amp => {
         addHatchRecipe(tier, amp, true, true)
@@ -60,7 +66,7 @@ ServerEvents.recipes(event => {
     }
   })
 
-  event.shapeless("gtmthings:wireless_energy_binding_hatch", [
+  event.shapeless("gtmthings:wireless_energy_binding_tool", [
     "gtceu:data_stick",
     "gtceu:machine_controller_cover"
   ])
