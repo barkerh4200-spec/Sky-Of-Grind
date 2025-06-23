@@ -24,23 +24,17 @@ ServerEvents.recipes(event => {
       : `${commonPrefix}${wirelessPart}energy_${hatchIoName[0]}_hatch`
   }
 
-  const addHatchRecipe = (tier, amp, isInput, isLaser) => {
-    const hatchIoName = isInput ? ["input", "target"] : ["output", "source"]
-    const hatchType = isLaser ? "laser" : "energy"
-    const fluxItem = isInput ? "point" : "plug"
-
-    const hatchSuffix = `${hatchType}_${hatchIoName[isLaser ? 1 : 0]}_hatch`
-    const itemId = `gtmthings:${tier}_${amp}_wireless_${hatchSuffix}`
+  const addWirelessHatchRecipe = (tier, amp, isInput, isLaser) => {
+    const wirelessHatchId = getHatchId(tier, amp, isInput, isLaser, true)
+    const gtceuHatchId = getHatchId(tier, amp, isInput, isLaser, false)
+    const fluxItem = isInput ? "input" : "plug"
 
     if (!Item.exists(itemId)) {
-      console.warn(itemId, "does not exist")
+      console.warn(`${itemId} does not exist`)
       return
     }
 
-    event.shapeless(`gtmthings:${tier}_${amp}_wireless_${hatchSuffix}`, [
-      getHatchId(tier, amp, isInput, isLaser),
-      `fluxnetworks:flux_${fluxItem}`
-    ])
+    event.shapeless(wirelessHatchId, [gtceuHatchId, `fluxnetworks:flux_${fluxItem}`])
   }
 
   event.remove({ mod: "gtmthings", not: GTMTHINGS_WHITELIST })
@@ -62,8 +56,8 @@ ServerEvents.recipes(event => {
 
     energyAmps.forEach(amp => {
       console.log(tier, amp, false)
-      addHatchRecipe(tier, amp, true, false)
-      addHatchRecipe(tier, amp, false, false)
+      addWirelessHatchRecipe(tier, amp, true, false)
+      addWirelessHatchRecipe(tier, amp, false, false)
     })
 
     if (index >= tierIndex("iv")) {
@@ -71,8 +65,8 @@ ServerEvents.recipes(event => {
 
       laserAmps.forEach(amp => {
         console.log(tier, amp, true)
-        addHatchRecipe(tier, amp, true, true)
-        addHatchRecipe(tier, amp, false, true)
+        addWirelessHatchRecipe(tier, amp, true, true)
+        addWirelessHatchRecipe(tier, amp, false, true)
       })
     }
   })
