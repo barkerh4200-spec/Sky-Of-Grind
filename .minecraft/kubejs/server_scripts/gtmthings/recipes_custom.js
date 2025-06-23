@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
   const GTMTHINGS_WHITELIST = [
-    "advanced_terminal",
     "wireless_energy_monitor",
   ].map(id => ({ output: `gtmthings:${id}` }))
   const TIERS = [
@@ -77,5 +76,9 @@ ServerEvents.recipes(event => {
   event.shapeless("gtmthings:wireless_energy_binding_tool", [
     "gtceu:data_stick",
     "gtceu:machine_controller_cover"
+  ])
+  event.shapeless("gtmthings:advanced_terminal", [
+    "gtceu:terminal",
+    "gtceu:data_stick"
   ])
 })
