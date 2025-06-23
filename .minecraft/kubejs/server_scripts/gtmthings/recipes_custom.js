@@ -29,8 +29,8 @@ ServerEvents.recipes(event => {
     const gtceuHatchId = getHatchId(tier, amp, isInput, isLaser, false)
     const fluxItem = isInput ? "input" : "plug"
 
-    if (!Item.exists(itemId)) {
-      console.warn(`${itemId} does not exist`)
+    if (!Item.exists(wirelessHatchId)) {
+      console.warn(`${wirelessHatchId} does not exist`)
       return
     }
 
