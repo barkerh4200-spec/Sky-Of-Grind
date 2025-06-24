@@ -39,7 +39,6 @@ JEIEvents.hideItems(event => {
     event.hide(['ae2additions:1024k_crafting_storage', 'ae2additions:4096k_crafting_storage', 'ae2additions:16384k_crafting_storage', 'ae2additions:65536k_crafting_storage', 'ae2additions:me_wireless_transceiver'])
     event.hide(['ae2additions:disk_item_256k', 'ae2additions:item_storage_cell_1024', 'ae2additions:item_storage_cell_4096','ae2additions:item_storage_cell_16384','ae2additions:item_storage_cell_65536','ae2additions:fluid_storage_cell_1024','ae2additions:fluid_storage_cell_4096', 'ae2additions:fluid_storage_cell_16384'])
   //GTMThings
-    event.hide(['gtmthings:advanced_terminal'])
     event.hide(['gtmthings:ev_16384a_wireless_laser_source_hatch', 'gtmthings:iv_16384a_wireless_laser_source_hatch', 'gtmthings:luv_16384a_wireless_laser_source_hatch', 'gtmthings:zpm_16384a_wireless_laser_source_hatch', 'gtmthings:uv_16384a_wireless_laser_source_hatch', 'gtmthings:uhv_16384a_wireless_laser_source_hatch', 'gtmthings:uev_16384a_wireless_laser_source_hatch', 'gtmthings:uiv_16384a_wireless_laser_source_hatch', 'gtmthings:uxv_16384a_wireless_laser_source_hatch', 'gtmthings:opv_16384a_wireless_laser_source_hatch', 'gtmthings:max_16384a_wireless_laser_source_hatch'])
     event.hide(['gtmthings:ev_16384a_wireless_laser_target_hatch', 'gtmthings:iv_16384a_wireless_laser_target_hatch', 'gtmthings:luv_16384a_wireless_laser_target_hatch', 'gtmthings:zpm_16384a_wireless_laser_target_hatch', 'gtmthings:uv_16384a_wireless_laser_target_hatch', 'gtmthings:uhv_16384a_wireless_laser_target_hatch', 'gtmthings:uev_16384a_wireless_laser_target_hatch', 'gtmthings:uiv_16384a_wireless_laser_target_hatch', 'gtmthings:uxv_16384a_wireless_laser_target_hatch', 'gtmthings:opv_16384a_wireless_laser_target_hatch', 'gtmthings:max_16384a_wireless_laser_target_hatch'])
     event.hide(['gtmthings:ev_256a_wireless_laser_target_hatch', 'gtmthings:ev_256a_wireless_laser_source_hatch', 'gtmthings:ev_1024a_wireless_laser_target_hatch', 'gtmthings:ev_1024a_wireless_laser_source_hatch', 'gtmthings:ev_4096a_wireless_laser_target_hatch', 'gtmthings:ev_4096a_wireless_laser_source_hatch'])
@@ -74,4 +73,3 @@ onEvent('jei.remove.categories', event => {
   event.remove('ae2:charger')
   event.remove('ae2:transform')
 })
-
