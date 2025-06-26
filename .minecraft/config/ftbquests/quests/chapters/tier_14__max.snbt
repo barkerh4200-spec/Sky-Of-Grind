@@ -349,6 +349,71 @@
 			x: 9.5d
 			y: -3.0d
 		}
+		{
+			dependencies: ["4E8E8EA3099ED38C"]
+			description: [
+				"These new multiblocks are the PEAK of machines."
+				"They work with perfect OC Subtick, Parallel Control Hatch AND Laser support."
+				"Congrats on reaching this point."
+			]
+			id: "7D6177D586CCC567"
+			size: 0.5d
+			subtitle: "Hyper Multis!!!"
+			tasks: [
+				{
+					id: "0323A06676573AC6"
+					item: "gtceu:hyper_assembly_line"
+					type: "item"
+				}
+				{
+					id: "3CE8904CF3DFF3C6"
+					item: "gtceu:hyper_assembler"
+					type: "item"
+				}
+				{
+					id: "5E6DB28BEA3AB2B2"
+					item: "gtceu:hyper_cutter"
+					type: "item"
+				}
+				{
+					id: "4A0EB1BC64A7E8E7"
+					item: "gtceu:hyper_laser_engraver"
+					type: "item"
+				}
+				{
+					id: "2BBA0C3DFE3240AF"
+					item: "gtceu:hyper_arc_furnace"
+					type: "item"
+				}
+				{
+					id: "78D1FE48319DB25B"
+					item: "gtceu:hyper_bender"
+					type: "item"
+				}
+				{
+					id: "6B765EBDEBC425F2"
+					item: "gtceu:hyper_wiremill"
+					type: "item"
+				}
+				{
+					id: "77CB391425A7B039"
+					item: "gtceu:hyper_lathe"
+					type: "item"
+				}
+				{
+					id: "463A25B8F60438C1"
+					item: "gtceu:hyper_extruder"
+					type: "item"
+				}
+				{
+					id: "1A93F35A6A0A223C"
+					item: "gtceu:hyper_mixer"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["Maximum Voltage"]
 	title: "&#ff0000&l  Endgame Goals"

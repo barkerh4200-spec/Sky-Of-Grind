@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('chemical_plant')
         .category('drack')
         .setEUIO('in')
-        .setMaxIOSize(8, 5, 8, 4)
+        .setMaxIOSize(8, 7, 8, 4)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
 })

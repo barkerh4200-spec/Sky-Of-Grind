@@ -8,7 +8,7 @@ ServerEvents.recipes(sog => {
     .chancedInput('kubejs:tesla_coil_mk1', 500, 0)
     .chancedOutput('gtceu:small_teslarium_dust', 500, 0)
     .duration(200)
-    .EUt(-(GTValues.V[GTValues.ZPM]))
+    .EUt(-(GTValues.V[GTValues.UV]))
     sog.recipes.gtceu.tesla_tower('tesla_mk2')
     .chancedInput('kubejs:tesla_coil_mk2', 500, 0)
     .chancedOutput('gtceu:small_teslarium_dust', 1000, 0)

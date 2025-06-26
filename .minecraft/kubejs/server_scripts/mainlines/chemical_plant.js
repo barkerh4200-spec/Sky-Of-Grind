@@ -103,12 +103,22 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_plant('naquadah_line')
         .notConsumable('kubejs:chemical_tier_three')
-        .itemInputs('2x gtceu:crushed_naquadah_ore')
+        .itemInputs('2x gtceu:naquadah_dust')
         .inputFluids('gtceu:fluoroantimonic_acid 1000', 'gtceu:sulfuric_acid 1500')
         .itemOutputs('2x gtceu:enriched_naquadah_dust', '2x gtceu:naquadria_dust', '2x gtceu:trinium_dust', '2x gtceu:antimony_dust', '2x gtceu:indium_phosphide_dust')
         .outputFluids('gtceu:hydrogen 2000', 'gtceu:fluorine 7000', 'gtceu:sulfuric_acid 500')
         .duration(800)
         .EUt(GTValues.VA[GTValues.UV]);
+
+    event.recipes.gtceu.chemical_plant('naquadah_line_p2')
+        .notConsumable('kubejs:chemical_tier_four')
+        .itemInputs('1x gtceu:naquadria_dust')
+        .inputFluids('gtceu:enriched_naquadah 144', 'gtceu:diluted_sulfuric_acid 1500')
+        .itemOutputs('5x gtceu:resonant_naquadah_dust')
+        .itemOutputsRanged('gtceu:resonant_naquadah_dust', 5, 15)
+        .outputFluids('gtceu:pure_naquadria_fuel 5000', 'gtceu:sulfuric_acid 500')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.chemical_plant('eternity')
         .notConsumable('kubejs:chemical_tier_six')

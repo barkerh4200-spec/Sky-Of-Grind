@@ -231,6 +231,17 @@ event.recipes.gtceu.assembly_line('dimensional_miner')
 .duration(60000)
 .EUt(GTValues.VA[GTValues.UXV])  
 
+            event.recipes.gtceu.assembly_line("gtceu:hyper_assembly_line")
+                .itemInputs("16x gtceu:assembly_line")
+                .itemInputs("2x #gtceu:circuits/uxv", "4x kubejs:eternity_heavy_plating", "1x kubejs:space_time_heavy_plating", "2x gtceu:uiv_field_generator", "8x kubejs:eternity_casing", "32x gtceu:double_space_time_plate", "32x gtceu:double_space_time_plate", "2x gtceu:uiv_electric_motor", "2x #gtceu:circuits/uiv", "8x #gtceu:circuits/uev", "64x gtceu:eternity_bolt", "64x gtceu:eternity_foil", "gtceu:max_battery", "64x kubejs:quantum_anomaly", "64x kubejs:energized_quantum_anomaly")
+                .inputFluids("gtceu:nihonium 144*16", "gtceu:oganesson 144*16")
+                .itemOutputs("gtceu:hyper_assembly_line")
+                .EUt(GTValues.VA[GTValues.UXV])
+                .duration(20*240)
+
+
+
+
 event.recipes.gtceu.quantum_station('qee')
 .inputFluids('gtceu:oganesson 32', 'gtceu:antimatter 32')
 .itemInputs('gtceu:research_station')
@@ -250,5 +261,15 @@ event.recipes.gtceu.quantum_station('qed')
 
 
 
+const hyper = ["cutter", "laser_engraver", "arc_furnace", "bender", "wiremill", "lathe", "extruder", "mixer", "assembler"]
+            hyper.forEach((hyper) => {
+            event.recipes.gtceu.assembly_line("gtceu:hyper_" + hyper )
+                .itemInputs("16x gtceu:uiv_" + hyper )
+                .itemInputs("2x #gtceu:circuits/uxv", "4x kubejs:eternity_heavy_plating", "1x kubejs:space_time_heavy_plating", "2x gtceu:uiv_field_generator", "8x kubejs:eternity_casing", "32x gtceu:double_space_time_plate", "32x gtceu:double_space_time_plate", "2x gtceu:uiv_electric_motor", "2x #gtceu:circuits/uiv", "8x #gtceu:circuits/uev", "64x gtceu:eternity_bolt", "64x gtceu:eternity_foil", "gtceu:max_battery", "64x kubejs:quantum_anomaly", "64x kubejs:energized_quantum_anomaly")
+                .inputFluids("gtceu:nihonium 144*16", "gtceu:oganesson 144*16")
+                .itemOutputs("gtceu:hyper_" + hyper )
+                .EUt(GTValues.VA[GTValues.UXV])
+                .duration(20*240)
+            })
 
     })

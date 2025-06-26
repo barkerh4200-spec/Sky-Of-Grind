@@ -22,7 +22,7 @@ const oreProcessableTiers = {
     ],
 
     'mv': [
-        { material: 'pyrochlore', secondary: 'apatite', tertiary: 'apatite', quaternary: 'calcium' },
+        { material: 'pyrochlore', secondary: 'apatite', tertiary: 'apatite', quaternary: 'niobium' },
         { material: 'cobaltite', secondary: 'cobalt', tertiary: 'sulfur', quaternary: 'cobalt' },
         { material: 'vanadium_magnetite', secondary: 'magnetite', tertiary: 'gold', quaternary: 'vanadium' },
         { material: 'chromite', secondary: 'iron', tertiary: 'magnesium', quaternary: 'iron' },
@@ -58,9 +58,10 @@ const oreProcessableTiers = {
 
     'ev': [
         { material: 'bastnasite', secondary: 'neodymium', tertiary: 'neodymium', quaternary: 'rare_earth' },
-        { material: 'tungstate', secondary: 'silver', tertiary: 'manganese', quaternary: 'lithium' },
+        { material: 'tungstate', secondary: 'platinum', tertiary: 'manganese', quaternary: 'lithium' },
         { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' },
         { material: 'zeolite', secondary: 'calcium', tertiary: 'aluminium', quaternary: 'silicon' },
+        { material: 'naquadah', secondary: 'sulfur', tertiary: 'barite', quaternary: 'enriched_naquadah' },
     ],
 
     'uev': [
@@ -74,8 +75,6 @@ const oreProcessableTiers = {
         { material: 'kaemite', secondary: 'rare_earth', tertiary: 'rare_earth', quaternary: 'naquadria' },
         { material: 'pure_cosmic_matter', secondary: 'pure_cosmic_matter', tertiary: 'pure_cosmic_matter', quaternary: 'pure_cosmic_matter' },
         { material: 'infinity_catalyst', secondary: 'infinity_catalyst', tertiary: 'pure_cosmic_matter', quaternary: 'space_time' },
-        { material: 'draconium', secondary: 'draconium', tertiary: 'draconium', quaternary: 'draconium' },
-        { material: 'awakened_draconium', secondary: 'awakened_draconium', tertiary: 'awakened_draconium', quaternary: 'awakened_draconium' }
     ]
 };
 
@@ -202,6 +201,27 @@ ServerEvents.recipes(event => {
         .chancedOutput('minecraft:glowstone_dust', 750, 100)
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.LV]);
+
+	 event.recipes.gtceu.processing_plant(`crushed_draconium`)
+        .itemInputs('gtceu:crushed_draconium_ore')
+        .inputFluids(fluids.distilled_water)
+		.itemOutputs('draconicevolution:draconium_dust')
+        .chancedOutput('draconicevolution:draconium_dust', 5000, 150)
+        .chancedOutput('draconicevolution:draconium_dust', 2500, 100)
+        .chancedOutput('draconicevolution:draconium_dust', 1250, 50)
+        .chancedOutput('draconicevolution:draconium_dust', 750, 100)
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.UEV]);
+	 event.recipes.gtceu.processing_plant(`crushed_awakened_draconium`)
+        .itemInputs('gtceu:crushed_awakened_draconium_ore')
+        .inputFluids(fluids.distilled_water)
+		.itemOutputs('draconicevolution:awakened_draconium_dust')
+        .chancedOutput('draconicevolution:awakened_draconium_dust', 5000, 150)
+        .chancedOutput('draconicevolution:awakened_draconium_dust', 2500, 100)
+        .chancedOutput('draconicevolution:awakened_draconium_dust', 1250, 50)
+        .chancedOutput('draconicevolution:awakened_draconium_dust', 750, 100)
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.UEV]);
 
 
     // Iterate over each tier and processable item and register the recipes

@@ -193,6 +193,18 @@
     "block.gtceu.dimensional_miner": "Dimensional Miner",
     "gtceu.dimensional_miner": "Dimensional Miner",
 
+    "block.gtceu.hyper_cutter": "Hyper Cutter",
+    "block.gtceu.hyper_laser_engraver": "Hyper Laser Engraver",
+    "block.gtceu.hyper_arc_furnace": "Hyper Arc Furnace",
+    "block.gtceu.hyper_bender": "Hyper Bender",
+    "block.gtceu.hyper_wiremill": "Hyper Wiremill",
+    "block.gtceu.hyper_lathe": "Hyper Lathe",
+    "block.gtceu.hyper_extruder": "Hyper Extruder",
+    "block.gtceu.hyper_mixer": "Hyper Mixer",
+    "block.gtceu.hyper_assembler": "Hyper Assembler",
+    "block.gtceu.hyper_assembly_line": "Hyper Assembly line",
+
+
     "block.gtceu.mv_electric_extractinator":"§bAdvanced Electric Extractinator§f",
     "block.gtceu.hv_electric_extractinator":"§6Advanced Electric Extractinator II§f",
     "block.gtceu.ev_electric_extractinator":"§5Advanced Electric Extractinator III§f",

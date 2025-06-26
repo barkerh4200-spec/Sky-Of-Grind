@@ -12,4 +12,6 @@
 	EntityTickerCost = 256
 	#Blocks on which entity ticker should not work
 	EntityTickerBlackList = []
+	#If it should be possible to route p2p tunnels through a wormhole tunnel
+	nestedP2Pwormhole = false
 
