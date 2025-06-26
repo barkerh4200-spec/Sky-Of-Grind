@@ -6,7 +6,7 @@
 
  MINIMUM 4 GB; Recommended is 8.
 
- This pack is in BETA and is only playable up to UEV tier. Join the official discord to see current dev work/progress and get support [HERE](https://discord.gg/ECsQ5xkUYw).
+ Join the official discord to see current dev work/progress and get support [HERE](https://discord.gg/ECsQ5xkUYw).
  Thanks to other gregtech packs like GTNH, NomifactoryCEu(Monifactory) and a lot of other ones for a lot of ideas and inspiration that made us create this pack. Tysm!
 
 # Credits:
@@ -18,6 +18,7 @@
  - Thanks to Gregtech New Beginnings for some textures, like cosmic matter and infinity coils.
  - Thanks to Monifactory for their complex smds textures.
  - Thanks to Star Technology for giving us permission to use some of their code.
+ - Thanks to Lopy's More Materials, we use the cell textures.
  
  - And thanks again, to the great GT modpacks like GT:NH, Nomifactory, Technological Journey, etc. For lots of ideas and inspiration!
 
