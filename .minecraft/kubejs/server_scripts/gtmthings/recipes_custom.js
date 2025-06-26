@@ -77,8 +77,5 @@ ServerEvents.recipes(event => {
     "gtceu:data_stick",
     "gtceu:machine_controller_cover"
   ])
-  event.shapeless("gtmthings:advanced_terminal", [
-    "gtceu:terminal",
-    "gtceu:data_stick"
-  ])
+  event.shapeless("gtmthings:advanced_terminal", ["gtceu:terminal", "gtceu:data_stick"])
 })
