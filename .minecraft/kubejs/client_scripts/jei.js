@@ -73,3 +73,4 @@ onEvent('jei.remove.categories', event => {
   event.remove('ae2:charger')
   event.remove('ae2:transform')
 })
+

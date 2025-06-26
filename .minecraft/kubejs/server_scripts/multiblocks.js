@@ -397,6 +397,20 @@ event.recipes.gtceu.electric_blast_furnace('antimatterboule')
     .blastFurnaceTemp(12400)
     .EUt(GTValues.VA[GTValues.UEV]);
 
+event.recipes.gtceu.electric_blast_furnace('neutronium_boule')
+    .itemInputs('64x gtceu:silicon_dust', '2x gtceu:neutronium_dust', '1x gtceu:gallium_arsenide_dust')
+    .itemOutputs('gtceu:neutronium_boule')
+    .duration(600*20)
+    .blastFurnaceTemp(9000)
+    .EUt(GTValues.VA[GTValues.IV]);
+
+event.recipes.gtceu.electric_blast_furnace('naquadah_boule')
+    .itemInputs('64x gtceu:silicon_dust', '8x gtceu:naquadah_dust', '1x gtceu:gallium_arsenide_dust')
+    .itemOutputs('gtceu:naquadah_boule')
+    .duration(600*20)
+    .blastFurnaceTemp(7200)
+    .EUt(GTValues.VA[GTValues.EV]);
+
 ////// Machine Recipe //////
 
 event.shaped(
