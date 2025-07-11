@@ -677,7 +677,6 @@ ServerEvents.recipes(sog => {
           .duration(20 * 15)
           .EUt(2)
       })
-      sog.recipes.gtceu.compressor("compress_plate_")
       sog.recipes.gtceu.arc_furnace('platinumsludge')
           .itemInputs('gtceu:platinum_dust')
           .inputFluids('gtceu:nitric_acid 1000')
