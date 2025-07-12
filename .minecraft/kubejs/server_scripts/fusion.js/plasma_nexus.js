@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     )
     .itemOutputs("1x kubejs:energized_quantum_anomaly")
     .circuit(2)
-    .duration(20 * 323)
+    .duration(20 * 192)
     .EUt(GTValues.VA[GTValues.UXV])
 
   event.recipes.gtceu.plasma_nexus("quantum_anomaly")
@@ -15,6 +15,6 @@ ServerEvents.recipes(event => {
     .inputFluids(Fluid.of("gtceu:eternity", 20))
     .itemOutputs(Item.of("kubejs:quantum_anomaly", 2))
     .circuit(1)
-    .duration(20 * 323)
+    .duration(20 * 192)
     .EUt(GTValues.VA[GTValues.UXV])
 })
