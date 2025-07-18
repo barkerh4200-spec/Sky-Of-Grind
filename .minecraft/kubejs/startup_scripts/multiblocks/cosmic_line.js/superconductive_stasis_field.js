@@ -39,5 +39,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/superconductive_casing", 'gtceu:block/multiblock/generator/large_plasma_turbine', true)
+        .workableCasingModel("kubejs:block/casings/superconductive_casing", 'gtceu:block/multiblock/generator/large_plasma_turbine')
 })

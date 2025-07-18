@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/bender', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/bender')
 
             event.create('hyper_wiremill', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/wiremill', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/wiremill')
 
             event.create('hyper_lathe', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -64,7 +64,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/lathe', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/lathe')
 
             event.create('hyper_extruder', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -86,7 +86,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/extruder', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/extruder')
 
             event.create('hyper_mixer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -108,5 +108,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/mixer', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/mixer')
 })

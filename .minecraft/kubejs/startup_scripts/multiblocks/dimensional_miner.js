@@ -30,5 +30,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/replicator', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/replicator')
 })

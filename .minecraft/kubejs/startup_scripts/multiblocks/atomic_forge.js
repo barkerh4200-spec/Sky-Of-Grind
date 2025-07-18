@@ -74,7 +74,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/fusion_reactor')
 
         event.create('reinforced_atomicforge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -131,5 +131,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/machines/replicator', true)
+        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/machines/replicator')
 })

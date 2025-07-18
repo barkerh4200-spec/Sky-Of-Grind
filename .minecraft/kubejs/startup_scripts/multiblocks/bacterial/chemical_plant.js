@@ -39,6 +39,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_inert_ptfe", 'gtceu:block/machines/replicator', true)
+        .workableCasingModel("gtceu:block/casings/solid/machine_casing_inert_ptfe", 'gtceu:block/machines/replicator')
 })
 

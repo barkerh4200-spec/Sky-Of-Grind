@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('gtceu:tungstensteel_turbine_casing'))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/iv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/iv/side", 'gtceu:block/multiblock/fusion_reactor')
 })
 
 
@@ -79,5 +79,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/fusion_reactor', true)
 })

@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build()
         )
-        .workableCasingRenderer(
-            "kubejs:block/casings/large_precision_casing", "gtceu:block/multiblock/assembly_line", false
+        .workableCasingModel(
+            "kubejs:block/casings/large_precision_casing", "gtceu:block/multiblock/assembly_line"
         )
 })

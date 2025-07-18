@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/hv/side", 'gtceu:block/multiblock/implosion_compressor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/hv/side", 'gtceu:block/multiblock/implosion_compressor', true)
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -70,5 +70,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/implosion_compressor', true)
+        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/implosion_compressor')
 })

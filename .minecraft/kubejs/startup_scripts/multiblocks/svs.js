@@ -34,5 +34,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/neutronium/ncasing", 'gtceu:block/multiblock/pyrolyse_oven', true)
+        .workableCasingModel("kubejs:block/neutronium/ncasing", 'gtceu:block/multiblock/pyrolyse_oven')
 })

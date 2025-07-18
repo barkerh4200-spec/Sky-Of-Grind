@@ -23,5 +23,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/gcym/watertight_casing", 'gtceu:block/machines/gas_collector', true)
+        .workableCasingModel("gtceu:block/casings/gcym/watertight_casing", 'gtceu:block/machines/gas_collector')
 })

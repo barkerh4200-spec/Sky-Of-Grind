@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/replicator', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/replicator')
 
 
         event.create('hyper_assembler', 'multiblock')
@@ -63,5 +63,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             )
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/assembler', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/assembler')
 })

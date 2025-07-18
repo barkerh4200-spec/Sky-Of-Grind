@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Z', Predicates.blocks('bloodmagic:altar'))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor')
 
     event.create('altart3', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -101,7 +101,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Z', Predicates.blocks('bloodmagic:altar'))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor')
     
     event.create('altart4', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -137,7 +137,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .or(Predicates.blocks('gtceu:cyan_lamp')))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor')
 
     event.create('altart5', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -176,7 +176,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('T', Predicates.blocks('bloodmagic:demoncrystallizer'))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor')
     
    event.create('altart6', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -230,6 +230,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .or(Predicates.blocks('gtceu:white_lamp')))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/luv/side", 'gtceu:block/multiblock/fusion_reactor')
     
     })

@@ -50,5 +50,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation', true)
+        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
 })

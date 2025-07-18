@@ -57,7 +57,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation', true)
+        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
 
         event.create('wyvern_fusion_injector', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -83,7 +83,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block//multiblock/power_substation', true)
+        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block//multiblock/power_substation')
 
         event.create('draconic_fusion_injector', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -109,7 +109,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation', true)
+        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
 
         event.create('chaotic_fusion_injector', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -135,5 +135,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation', true)
+        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
 })

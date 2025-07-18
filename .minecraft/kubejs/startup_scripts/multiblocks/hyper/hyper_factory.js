@@ -26,7 +26,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/cutter', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/cutter')
 
             event.create('hyper_laser_engraver', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/laser_engraver', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/laser_engraver')
 
             event.create('hyper_arc_furnace', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -84,5 +84,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             PartAbility.PARALLEL_HATCH)))
         .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/arc_furnace', true)
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/arc_furnace')
 })

@@ -32,7 +32,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
                 .where(' ', Predicates.any())
                 .build()
             )
-            .workableCasingRenderer(
-                "kubejs:block/casings/component_tile_casing", "gtceu:block/multiblock/assembly_line", false
+            .workableCasingModel(
+                "kubejs:block/casings/component_tile_casing", "gtceu:block/multiblock/assembly_line"
             )
     })

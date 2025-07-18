@@ -54,5 +54,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/zpm/side", 'gtceu:block/multiblock/generator/large_steam_turbine', true)
+        .workableCasingModel("gtceu:block/casings/voltage/zpm/side", 'gtceu:block/multiblock/generator/large_steam_turbine')
 })
