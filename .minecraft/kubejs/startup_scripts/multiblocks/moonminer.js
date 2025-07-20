@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingModel("gtceu:block/casings/voltage/hv/side", 'gtceu:block/multiblock/implosion_compressor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/hv/side", 'gtceu:block/multiblock/implosion_compressor')
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
