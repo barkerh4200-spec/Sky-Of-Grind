@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('greenhouse', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('greenhouse')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('##COC##', '##GAG##', '##GAG##', '##GAG##', '##GAG##', '##CCC##')

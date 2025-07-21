@@ -62,6 +62,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('starcondenser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('starcondenser')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_UV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCC', '#A#', '#A#', '#A#', '###', '###', '###', )

@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('gravitational_implosion_machine', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('hgim')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:quantum_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#################', '#################', '#################', '#################', '#################', '#################', '#######CCC#######', '######CCCCC######', '######CCCCC######', '######CCCCC######', '#######CCC#######', '#################', '#################', '#################', '#################', '#################', '#################')

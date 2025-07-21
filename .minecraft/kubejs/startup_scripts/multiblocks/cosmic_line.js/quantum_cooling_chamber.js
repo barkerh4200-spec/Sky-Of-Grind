@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_cooling_chamber', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('quantum_cooling_chamber')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()      
         .aisle('###CCC###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###CCC###')

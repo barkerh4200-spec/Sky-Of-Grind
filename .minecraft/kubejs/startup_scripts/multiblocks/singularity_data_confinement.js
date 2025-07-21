@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('singularity_data_confinement', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('blackhole_holder')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:highly_reinforced_radioactive_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('######CCCCCCC######', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################', '###################')

@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_entanglement_encrypter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('quantum_entanglement_encrypter')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:highly_reinforced_radioactive_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCCCC', 'D###D', 'D###D', 'D###D', 'D###D', 'D###D', 'CCCCC')

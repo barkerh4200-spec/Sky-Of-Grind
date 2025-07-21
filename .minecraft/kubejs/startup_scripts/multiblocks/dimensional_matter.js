@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_matter_extractor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('dimensionalmatter')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_HV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('###########################', '###########################', '###########################', '#############Z#############', '###########CCCCC###########', '###########################', '###########################', '###########################', '###########################', '###########################', '###########CCCCC###########', '#############Z#############', '###########################', '###########################', )

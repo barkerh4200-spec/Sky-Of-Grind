@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('atmospheric_collector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('gas_collector')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_UV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#CCC#', '#CDC#', '#CDC#', '#CCC#', '##C##', '#####')

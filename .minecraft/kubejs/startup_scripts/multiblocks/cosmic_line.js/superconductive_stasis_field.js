@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('superconductive_stasis_field', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('stasis_field')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:superconductive_casing'))
         .pattern(definition => FactoryBlockPattern.start()      
         .aisle('####CCC####', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '####CCC####', )
