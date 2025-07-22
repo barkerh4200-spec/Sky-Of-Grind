@@ -35,5 +35,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", 'gtceu:block/multiblock/hpca', true)
+        .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", 'gtceu:block/multiblock/hpca')
     })

@@ -44,3 +44,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor')
 })
+

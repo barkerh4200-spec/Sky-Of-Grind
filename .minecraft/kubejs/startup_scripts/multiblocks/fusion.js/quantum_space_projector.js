@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_space_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('qsp')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:quantum_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('############AAAAAAAAA############', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', )
@@ -65,6 +65,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/quantum_casing", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("kubejs:block/casings/quantum_casing", 'gtceu:block/multiblock/fusion_reactor')
 })
 

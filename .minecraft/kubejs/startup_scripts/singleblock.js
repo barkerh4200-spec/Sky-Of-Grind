@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             builder
         .langValue(GTValues.VLVH[tier] + " Electric Extractinator")
         .recipeType('extractinator')
-        .workableTieredHullRenderer('gtceu:block/machines/extractinator')
+        .workableTieredHullModel('gtceu:block/machines/extractinator')
         )
 })
 
@@ -32,7 +32,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .definition((tier, builder) => {
         builder.rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_uhv"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_uhv"))
     })
     event.create("uev_parallel_hatch", "custom")
     .tiers(GTValues.UEV)
@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .definition((tier, builder) => {
         builder.rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_uev"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_uev"))
     })
     event.create("uiv_parallel_hatch", "custom")
     .tiers(GTValues.UIV)
@@ -48,7 +48,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .definition((tier, builder) => {
         builder.rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_uiv"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_uiv"))
     })
     event.create("uxv_parallel_hatch", "custom")
     .tiers(GTValues.UXV)
@@ -56,7 +56,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .definition((tier, builder) => {
         builder.rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_uxv"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_uxv"))
     })
     event.create("opv_parallel_hatch", "custom")
     .tiers(GTValues.OpV)
@@ -64,7 +64,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .definition((tier, builder) => {
         builder.rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_opv"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_opv"))
     })
 
 })
