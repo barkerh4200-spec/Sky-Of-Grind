@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('gtceu:tungstensteel_turbine_casing'))
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/voltage/iv/side", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/voltage/iv/side", 'gtceu:block/multiblock/fusion_reactor')
 })
 
 
@@ -62,6 +62,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('starcondenser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('starcondenser')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_UV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCC', '#A#', '#A#', '#A#', '###', '###', '###', )
@@ -79,5 +80,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/fusion_reactor', true)
+        .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/fusion_reactor')
 })

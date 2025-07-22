@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('atomicompressor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('atomiccompressor')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_UV)
         .pattern(definition => FactoryBlockPattern.start()
         .aisle('###AAAAAAA###', '#############', '#############', '#############', '#############', '#############', '#############', '#############', '#############', '###AAAAAAA###')
@@ -50,7 +50,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .where('#', Predicates.any())
         .build()
     )
-    .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/generator/large_steam_turbine', true)
+    .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/generator/large_steam_turbine')
     })
 
 
