@@ -19,8 +19,8 @@
 			dependencies: ["56A354EB0D7C0ACE"]
 			id: "5999DFCEB9FF4F3A"
 			rewards: [{
-				id: "4389B7060FF9D1F7"
-				item: "gtceu:doge_coin"
+				id: "4933FB6365A25B75"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -37,8 +37,8 @@
 			icon: "gtceu:iv_electric_motor"
 			id: "700D75AB04659866"
 			rewards: [{
-				id: "3E3D9983050A78D1"
-				item: "gtceu:doge_coin"
+				id: "085421951E7EF291"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [
@@ -76,8 +76,8 @@
 			dependencies: ["700D75AB04659866"]
 			id: "294C1C635FCADC9C"
 			rewards: [{
-				id: "27B8662DC3FBACED"
-				item: "gtceu:doge_coin"
+				id: "5DAD6C051A896A13"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "Great, right? Now make 3 plat-lines :kappa:"
@@ -94,8 +94,8 @@
 			dependencies: ["294C1C635FCADC9C"]
 			id: "5E484465F0D041C0"
 			rewards: [{
-				id: "7C633D6D340FF664"
-				item: "gtceu:doge_coin"
+				id: "78FC6EC981667006"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -110,8 +110,8 @@
 			dependencies: ["5E484465F0D041C0"]
 			id: "5D5FA5429F87E942"
 			rewards: [{
-				id: "34F2F9A77DF41864"
-				item: "gtceu:doge_coin"
+				id: "2770D21726C749D9"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -128,8 +128,8 @@
 			icon: "gtceu:platinum_group_sludge_dust"
 			id: "019E64E5032F29C1"
 			rewards: [{
-				id: "72698B4D297FA368"
-				item: "gtceu:doge_coin"
+				id: "6C6C685C58358CDD"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [
@@ -151,9 +151,8 @@
 			dependencies: ["5D5FA5429F87E942"]
 			id: "7CFBD6D6165E827D"
 			rewards: [{
-				count: 2
-				id: "0322830F5294C4F3"
-				item: "gtceu:doge_coin"
+				id: "1A41BD7CEB4DDDA8"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "Latin for \"royal water\", because it can dissolve some very expensive metals like gold and platinum"
@@ -173,8 +172,8 @@
 			icon: "gtceu:rarest_metal_mixture_dust"
 			id: "154DA8F1EBCE6B4B"
 			rewards: [{
-				id: "35F42DAD2D7D93D3"
-				item: "gtceu:doge_coin"
+				id: "6009DA344B56B4C7"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -189,8 +188,8 @@
 			dependencies: ["019E64E5032F29C1"]
 			id: "4B2A6E64F43D7252"
 			rewards: [{
-				id: "318A52F781CC389B"
-				item: "gtceu:doge_coin"
+				id: "3640EB450B03407C"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -205,8 +204,8 @@
 			dependencies: ["019E64E5032F29C1"]
 			id: "3AA1B4F62E1E25CB"
 			rewards: [{
-				id: "582C5FCBBCAD5270"
-				item: "gtceu:doge_coin"
+				id: "0F0AE8799C38EE04"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -221,8 +220,8 @@
 			dependencies: ["154DA8F1EBCE6B4B"]
 			id: "7711788430376EFA"
 			rewards: [{
-				id: "61D9C26303A32502"
-				item: "gtceu:doge_coin"
+				id: "3D868FDBD086B1EE"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -238,8 +237,8 @@
 			icon: "gtceu:rhodium_dust"
 			id: "2018339BA1A264EB"
 			rewards: [{
-				id: "4794208B54965E77"
-				item: "gtceu:doge_coin"
+				id: "3AC6FD278900F1B0"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [
@@ -261,8 +260,8 @@
 			dependencies: ["4B2A6E64F43D7252"]
 			id: "274E268274965BB7"
 			rewards: [{
-				id: "67160B00EF6625CA"
-				item: "gtceu:doge_coin"
+				id: "2EF17EB47335AFD1"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -280,8 +279,8 @@
 			]
 			id: "1DB87EE3B42E5404"
 			rewards: [{
-				id: "0AAA357DA66CD4D7"
-				item: "gtceu:doge_coin"
+				id: "250165B0D680DFBC"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -297,9 +296,8 @@
 			description: ["The main LuV material."]
 			id: "3373B55C96DFFC1C"
 			rewards: [{
-				count: 3
-				id: "7ABB76010FBB0700"
-				item: "gtceu:doge_coin"
+				id: "573D0351A179E378"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -316,8 +314,8 @@
 			dependencies: ["7711788430376EFA"]
 			id: "1345C0E1DDC79F5E"
 			rewards: [{
-				id: "5A1BA76274C9096F"
-				item: "gtceu:doge_coin"
+				id: "7DE001A28D4B1D35"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -332,8 +330,8 @@
 			dependencies: ["1345C0E1DDC79F5E"]
 			id: "6355CA76C9C38FE5"
 			rewards: [{
-				id: "4B8D74F0C45F7442"
-				item: "gtceu:doge_coin"
+				id: "2B9FFE8A9A5ADDFD"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -348,8 +346,8 @@
 			dependencies: ["6355CA76C9C38FE5"]
 			id: "49CAD094813CC3F6"
 			rewards: [{
-				id: "127966E7A5211686"
-				item: "gtceu:doge_coin"
+				id: "32EB6AFEA87FF296"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -366,8 +364,8 @@
 			icon: "gtceu:pyrolyse_oven"
 			id: "7D056C61FBF5FB14"
 			rewards: [{
-				id: "515AC32A281DDA80"
-				item: "gtceu:doge_coin"
+				id: "744083362E29857B"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "What?"
@@ -396,8 +394,8 @@
 			]
 			id: "4828548537B14DA8"
 			rewards: [{
-				id: "17900ECDD39B2A20"
-				item: "gtceu:doge_coin"
+				id: "47B37504D68CFA4C"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -413,8 +411,8 @@
 			description: ["Creosote, naphthalene, phenol."]
 			id: "7C8DE25CEB012D1B"
 			rewards: [{
-				id: "375F3636939C8CDE"
-				item: "gtceu:doge_coin"
+				id: "3D457E2A559DE5F8"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -429,8 +427,8 @@
 			description: ["Another random catalyst."]
 			id: "3EC6FC25E1BC7385"
 			rewards: [{
-				id: "0A4C793FF604AF9C"
-				item: "gtceu:doge_coin"
+				id: "3280767214BC21B9"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -449,8 +447,8 @@
 			description: ["Please use the potassium recipe, it yields so much more and the ingredients are all really easy to get."]
 			id: "538B3E0A963EE919"
 			rewards: [{
-				id: "1CAA4FFE849CF42A"
-				item: "gtceu:doge_coin"
+				id: "568E96AB1518277B"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -468,8 +466,8 @@
 			]
 			id: "1540E57AE0D47EF4"
 			rewards: [{
-				id: "15A88F0F9D2D03B9"
-				item: "gtceu:doge_coin"
+				id: "0138D77D8DFE93E6"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -489,8 +487,8 @@
 			]
 			id: "7A886EC5250E59CC"
 			rewards: [{
-				id: "08380E67B0607128"
-				item: "gtceu:doge_coin"
+				id: "40E1911FAFD90FC6"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -505,8 +503,8 @@
 			dependencies: ["5D5FA5429F87E942"]
 			id: "50C30617DE1EB08C"
 			rewards: [{
-				id: "3C0EC2759D0599FD"
-				item: "gtceu:doge_coin"
+				id: "5B35B7C2E1E111C1"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "Chemistry in the mixer!"
@@ -525,8 +523,8 @@
 			]
 			id: "022B3784F81C37B3"
 			rewards: [{
-				id: "0391F1865B2EF30F"
-				item: "gtceu:doge_coin"
+				id: "78FC132DCAC61449"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -541,8 +539,8 @@
 			dependencies: ["4828548537B14DA8"]
 			id: "72B9DA06E31AA7E5"
 			rewards: [{
-				id: "601A8796EA055735"
-				item: "gtceu:doge_coin"
+				id: "2539632DBE04C6DE"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -557,8 +555,8 @@
 			dependencies: ["7D056C61FBF5FB14"]
 			id: "3158F541E708945F"
 			rewards: [{
-				id: "416BFCAF47239B33"
-				item: "gtceu:doge_coin"
+				id: "3ED3A4DA485CF362"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "Just call this PBI..."
@@ -575,8 +573,8 @@
 			dependencies: ["72B9DA06E31AA7E5"]
 			id: "439E332B15BE5708"
 			rewards: [{
-				id: "04D70D1E42301D7D"
-				item: "gtceu:doge_coin"
+				id: "111BF4DC72230468"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -595,8 +593,8 @@
 			description: ["Add hydrogen and a little bit of copper."]
 			id: "5C55E392BBFA8223"
 			rewards: [{
-				id: "7067D1BD616E7B09"
-				item: "gtceu:doge_coin"
+				id: "7103F6E1F3084E25"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -610,8 +608,8 @@
 		{
 			id: "0C797ACBD2DA00E9"
 			rewards: [{
-				id: "048AFF6A7346D2B6"
-				item: "gtceu:doge_coin"
+				id: "0AFB7FBF22267D59"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -642,8 +640,8 @@
 			description: ["Easy to make at this point right?"]
 			id: "318D6B27C8D197DD"
 			rewards: [{
-				id: "069DFAC3A40DE026"
-				item: "gtceu:doge_coin"
+				id: "79530A463FEFF16C"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -661,8 +659,8 @@
 			]
 			id: "0D05BFB2F9EB5B3A"
 			rewards: [{
-				id: "489C7C818BFE3FB1"
-				item: "gtceu:doge_coin"
+				id: "2BB409C7B3FD8D5C"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -681,9 +679,8 @@
 			description: ["Another big milestone, this incredibly strong synthetic fiber is gonna be used for almost everything from now on, so I hope you made it sustainable to mass produce! :D"]
 			id: "62704CC3038F1B20"
 			rewards: [{
-				count: 3
-				id: "55F9F22B0CEC659F"
-				item: "gtceu:doge_coin"
+				id: "75DD08D5DDA48CC4"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -712,8 +709,8 @@
 			icon: "gtceu:starextractor"
 			id: "7B6D059D211A42FC"
 			rewards: [{
-				id: "7F43D5933051AA2B"
-				item: "gtceu:doge_coin"
+				id: "23674EF85C68791C"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -758,8 +755,8 @@
 			dependencies: ["700D75AB04659866"]
 			id: "210DBD54A383E88F"
 			rewards: [{
-				id: "7A4994FE0D883E8D"
-				item: "gtceu:doge_coin"
+				id: "43614A7FBDA36F94"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -774,8 +771,8 @@
 			dependencies: ["210DBD54A383E88F"]
 			id: "752A9D0E74B3B11F"
 			rewards: [{
-				id: "2EB929C96124F28D"
-				item: "gtceu:doge_coin"
+				id: "70D30AD39306A238"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -790,8 +787,8 @@
 			dependencies: ["752A9D0E74B3B11F"]
 			id: "4D876F9D284F5590"
 			rewards: [{
-				id: "155142F4E130AE72"
-				item: "gtceu:doge_coin"
+				id: "53DA8D5308DDEFEA"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -806,8 +803,8 @@
 			dependencies: ["4D876F9D284F5590"]
 			id: "583BE811CB6712F5"
 			rewards: [{
-				id: "00FE7848B54ECD22"
-				item: "gtceu:doge_coin"
+				id: "45A1CAC1DD03D811"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -822,8 +819,8 @@
 			dependencies: ["7B6D059D211A42FC"]
 			id: "1B775F924C581DB0"
 			rewards: [{
-				id: "7D63A76397A8A0E4"
-				item: "gtceu:doge_coin"
+				id: "43FF51D96E0C3BDD"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -838,8 +835,8 @@
 			dependencies: ["1B775F924C581DB0"]
 			id: "2D20B06AA89E2F17"
 			rewards: [{
-				id: "6BFFD9A333B08DDE"
-				item: "gtceu:doge_coin"
+				id: "35D64B48DB29A3A0"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -855,8 +852,8 @@
 			icon: "gtceu:indium_dust"
 			id: "286AC73CCBD26965"
 			rewards: [{
-				id: "16165092C3A317DD"
-				item: "gtceu:doge_coin"
+				id: "5DC64DE1E56A87A9"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [
@@ -904,8 +901,8 @@
 			dependencies: ["286AC73CCBD26965"]
 			id: "2287165331647A9E"
 			rewards: [{
-				id: "581C5B563CBD1BBB"
-				item: "gtceu:doge_coin"
+				id: "2FCC43D8277CE2A8"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -924,8 +921,8 @@
 			description: ["Extremely easy to make both acetone and phenol at the same time from this!"]
 			id: "6363956FABDABA66"
 			rewards: [{
-				id: "3965828E01CFE28F"
-				item: "gtceu:doge_coin"
+				id: "7D9D4DE171D25706"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -940,8 +937,8 @@
 			description: ["Add Propene + chlorine + 3 sodium hydroxide to the mix."]
 			id: "04A2F84F6044BE9E"
 			rewards: [{
-				id: "5B776E93D5428C29"
-				item: "gtceu:doge_coin"
+				id: "2C8E33DC5B90C5B7"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -957,8 +954,8 @@
 			description: ["You get bisphenol A on the EV questline."]
 			id: "2D4D18C80841EB7B"
 			rewards: [{
-				id: "6430AD53C422825E"
-				item: "gtceu:doge_coin"
+				id: "4F0E8489CEF0189E"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -973,8 +970,8 @@
 			dependencies: ["2D4D18C80841EB7B"]
 			id: "6997FC5CBBEBE98B"
 			rewards: [{
-				id: "774EA1FB96C668E9"
-				item: "gtceu:doge_coin"
+				id: "6F2C9E5F755D973A"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -989,8 +986,8 @@
 			dependencies: ["6997FC5CBBEBE98B"]
 			id: "64229A4E8F92564A"
 			rewards: [{
-				id: "4071EE6D301AFE90"
-				item: "gtceu:doge_coin"
+				id: "67B95B1006FF1E13"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1005,8 +1002,8 @@
 			dependencies: ["154DA8F1EBCE6B4B"]
 			id: "1B7F935C0521CB99"
 			rewards: [{
-				id: "21D3E9E3FFC5F8D7"
-				item: "gtceu:doge_coin"
+				id: "039F0B566000DB76"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1021,8 +1018,8 @@
 			dependencies: ["1B7F935C0521CB99"]
 			id: "6EA9EC8136807D73"
 			rewards: [{
-				id: "376A2A41B78CF80F"
-				item: "gtceu:doge_coin"
+				id: "5EC1E05E052A04C4"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1037,8 +1034,8 @@
 			dependencies: ["6EA9EC8136807D73"]
 			id: "69E2C15FD2F7965F"
 			rewards: [{
-				id: "3E61D2E53730761D"
-				item: "gtceu:doge_coin"
+				id: "5F55863035E51E63"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1056,8 +1053,8 @@
 			]
 			id: "1BD8EA12EB5D5E2E"
 			rewards: [{
-				id: "342036159B6E92C2"
-				item: "gtceu:doge_coin"
+				id: "294D3A983C735F95"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1075,8 +1072,8 @@
 			]
 			id: "31610DF7D0850C14"
 			rewards: [{
-				id: "062D2EF3DA791732"
-				item: "gtceu:doge_coin"
+				id: "1000EFC1C9F7519E"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1094,8 +1091,8 @@
 			]
 			id: "0C424932A8819822"
 			rewards: [{
-				id: "24F303ADDA15F920"
-				item: "gtceu:doge_coin"
+				id: "62103F5E436B0D07"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1113,8 +1110,8 @@
 			]
 			id: "5F5E81D5E0BDCBFA"
 			rewards: [{
-				id: "02EC2ED3F35A4BA1"
-				item: "gtceu:doge_coin"
+				id: "6165A6184AD02991"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1133,8 +1130,8 @@
 			]
 			id: "5F567A7DB9B65799"
 			rewards: [{
-				id: "32615EADF232A0DF"
-				item: "gtceu:doge_coin"
+				id: "3C04F9D14D248F33"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1152,8 +1149,8 @@
 			]
 			id: "09174BB4D4D26D96"
 			rewards: [{
-				id: "4F7DDC2D962F4965"
-				item: "gtceu:doge_coin"
+				id: "31CF3CABEF060D7C"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1169,8 +1166,8 @@
 			description: ["This is gonna require some HSS-S and HSS-E, so finish the Platline first."]
 			id: "165BA28A8FBA4556"
 			rewards: [{
-				id: "31332C61C2B31A31"
-				item: "gtceu:doge_coin"
+				id: "7A6A49E4A7553111"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1185,8 +1182,8 @@
 			dependencies: ["165BA28A8FBA4556"]
 			id: "4218D1A91EB5DA91"
 			rewards: [{
-				id: "5417C0ED6852A25E"
-				item: "gtceu:doge_coin"
+				id: "1A2721F62CA03589"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1201,8 +1198,8 @@
 			dependencies: ["165BA28A8FBA4556"]
 			id: "6C71950A7E69410F"
 			rewards: [{
-				id: "7998A1C5286F8EE5"
-				item: "gtceu:doge_coin"
+				id: "12BDFEF67AE534B3"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1217,8 +1214,8 @@
 			dependencies: ["165BA28A8FBA4556"]
 			id: "225784890C2EAE48"
 			rewards: [{
-				id: "6CF97387A1CC7929"
-				item: "gtceu:doge_coin"
+				id: "2ABFA44C1A973CFD"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1234,8 +1231,8 @@
 			description: ["Right now this is a bit more complicated to make than others, as it requires niobium."]
 			id: "261C8012956FDFFB"
 			rewards: [{
-				id: "7D14BAD230CBB703"
-				item: "gtceu:doge_coin"
+				id: "7C37DCCB4F0861D1"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1250,8 +1247,8 @@
 			dependencies: ["165BA28A8FBA4556"]
 			id: "71BFEEFEB5307666"
 			rewards: [{
-				id: "74D044B58D2D3FC9"
-				item: "gtceu:doge_coin"
+				id: "604F6D11A08095C2"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1267,8 +1264,8 @@
 			description: ["Do you still only have 1 cleanroom???"]
 			id: "4DF9D36F7C82C455"
 			rewards: [{
-				id: "36891DBB5E6B3E33"
-				item: "gtceu:doge_coin"
+				id: "6AC4D7E2D59FD76A"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1287,8 +1284,8 @@
 			]
 			id: "5080DC298EE66D18"
 			rewards: [{
-				id: "7B7E36EA0AC9198F"
-				item: "gtceu:doge_coin"
+				id: "44FFDBA9E1452C1E"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1303,8 +1300,8 @@
 			dependencies: ["5080DC298EE66D18"]
 			id: "1D1FD67F2D891538"
 			rewards: [{
-				id: "1AC9A265DE7C017F"
-				item: "gtceu:doge_coin"
+				id: "06CD2D59E84F6F25"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1319,8 +1316,8 @@
 			dependencies: ["1D1FD67F2D891538"]
 			id: "1AEEFC47BF7F67C8"
 			rewards: [{
-				id: "24BFE7310C1C1FE3"
-				item: "gtceu:doge_coin"
+				id: "2F1B9EE1C184572B"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1335,9 +1332,8 @@
 			dependencies: ["1AEEFC47BF7F67C8"]
 			id: "69ACAFA6A0D18671"
 			rewards: [{
-				count: 5
-				id: "3657BFF0F9C2D401"
-				item: "gtceu:doge_coin"
+				id: "47EB761BD9F5EC37"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -1359,9 +1355,8 @@
 			description: ["Welcome to LuV"]
 			id: "34112DEEBBD82652"
 			rewards: [{
-				count: 6
-				id: "1DA22FB0D2EC861F"
-				item: "gtceu:doge_coin"
+				id: "3840534A095BB0E7"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -1383,8 +1378,8 @@
 			]
 			id: "1F14BED4734AE68F"
 			rewards: [{
-				id: "58982D46F84224E6"
-				item: "gtceu:doge_coin"
+				id: "0BBFCB80D5CA877A"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1401,8 +1396,8 @@
 			hide_dependent_lines: true
 			id: "32E62C0FB51F8271"
 			rewards: [{
-				id: "2EB326E24261B339"
-				item: "gtceu:doge_coin"
+				id: "41332BA3256A6E54"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1417,8 +1412,8 @@
 			dependencies: ["72F76285E8D91857"]
 			id: "6AF40905D8C70C89"
 			rewards: [{
-				id: "56B79B8AE5AA67E6"
-				item: "gtceu:doge_coin"
+				id: "58A00EFF0533F9DB"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1433,8 +1428,8 @@
 			dependencies: ["286AC73CCBD26965"]
 			id: "72F76285E8D91857"
 			rewards: [{
-				id: "73DAF9D3029C4249"
-				item: "gtceu:doge_coin"
+				id: "2C2B044D9D3EDE4B"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1450,8 +1445,8 @@
 			description: ["Solidify the tantalum carbide into an ingot."]
 			id: "23F1153372A0B7D6"
 			rewards: [{
-				id: "736C41460AF6DBEF"
-				item: "gtceu:doge_coin"
+				id: "5344E08452F487D6"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "Because apparently black + gray dusts make yellow ingots"
@@ -1482,8 +1477,8 @@
 			]
 			id: "7243EE3F57F3A31A"
 			rewards: [{
-				id: "7A6C510B8C9AE0E0"
-				item: "gtceu:doge_coin"
+				id: "567A85200C4DCE01"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -1500,8 +1495,8 @@
 			description: ["Titanium + carbon dust on a mixer, then EBF it and cool it down."]
 			id: "15A09F14F12AE9B2"
 			rewards: [{
-				id: "18E6C9D16B698BF2"
-				item: "gtceu:doge_coin"
+				id: "123C44D90ECA8D06"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1516,8 +1511,8 @@
 			description: ["A lot of diferent dusts on a mixer!"]
 			id: "6071D79FFF8DCE13"
 			rewards: [{
-				id: "7100582E470DBE49"
-				item: "gtceu:doge_coin"
+				id: "04AE40A161DF435B"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "High-strength low-alloy steel"
@@ -1533,8 +1528,8 @@
 			dependencies: ["7243EE3F57F3A31A"]
 			id: "0BB0061AC6390A07"
 			rewards: [{
-				id: "05B4C52FFD496E76"
-				item: "gtceu:doge_coin"
+				id: "12803D9A6D6F1146"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "This one is used in a LOT of multiblocks"
@@ -1555,8 +1550,8 @@
 			description: ["Put 2 IV hatches on these to be able to finally make nether stars!"]
 			id: "1514A260777E6B32"
 			rewards: [{
-				id: "0B6C2BA9059681BA"
-				item: "gtceu:doge_coin"
+				id: "31C7C5148EEEF9CF"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1572,8 +1567,8 @@
 			dependencies: ["1B775F924C581DB0"]
 			id: "02B307E39FF0547C"
 			rewards: [{
-				id: "4308FF866CE0553C"
-				item: "gtceu:doge_coin"
+				id: "027C450C47886687"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1592,33 +1587,11 @@
 				"You make this by placing some star matter in a crystalization chamber with an extruder mold of star, but the reason to why you use this big boi instead of an autoclave, is because of the overclocking."
 			]
 			id: "3F0D5B357A418240"
-			rewards: [
-				{
-					count: 5
-					id: "4EAD4646F830BE6F"
-					item: "gtceu:doge_coin"
-					type: "item"
-				}
-				{
-					id: "4E7812CD82DA1943"
-					item: {
-						Count: 1
-						id: "trophymanager:trophy"
-						tag: {
-							BaseBlock: "ae2:smooth_sky_stone_slab"
-							Name: "Nether Stars!"
-							OffsetY: 0.55d
-							Scale: 0.75d
-							TrophyItem: {
-								Count: 1.0d
-								id: "minecraft:nether_star"
-							}
-							TrophyType: "item"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1BCAC2A0DC5B6874"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
@@ -1633,8 +1606,8 @@
 			dependencies: ["3F0D5B357A418240"]
 			id: "137868B8B24F436D"
 			rewards: [{
-				id: "0800C2CB18CE50E2"
-				item: "gtceu:doge_coin"
+				id: "1354E248BA24E550"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -1649,8 +1622,8 @@
 			dependencies: ["137868B8B24F436D"]
 			id: "73AB9D7E04840A3C"
 			rewards: [{
-				id: "6B5E76692AD024F6"
-				item: "gtceu:doge_coin"
+				id: "5270582D87336B4F"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [
@@ -1679,8 +1652,8 @@
 			]
 			id: "78A8A5FABB94743B"
 			rewards: [{
-				id: "64DAE8F78252F1ED"
-				item: "gtceu:doge_coin"
+				id: "64A1456D733A39F2"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			shape: "gear"
@@ -1701,8 +1674,8 @@
 			]
 			id: "0E0E981276937653"
 			rewards: [{
-				id: "72CDE7C121F5E26D"
-				item: "gtceu:doge_coin"
+				id: "561451CA3314529D"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "Is this overkill"
@@ -1717,6 +1690,11 @@
 		{
 			dependencies: ["1B775F924C581DB0"]
 			id: "0856C064E634FBAE"
+			rewards: [{
+				id: "7B0C5192C41B36C0"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1852754DBE72298A"
 				item: "gtceu:star_matter_single_wire"
@@ -1730,8 +1708,8 @@
 			dependencies: ["73AB9D7E04840A3C"]
 			id: "6739CA0466707A00"
 			rewards: [{
-				id: "05672149F55E697D"
-				item: "gtceu:doge_coin"
+				id: "3245E15A91EB6C9E"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			subtitle: "HUGE QOL!"

@@ -236,12 +236,11 @@ ServerEvents.recipes(sog => {
         .itemInputs('8x kubejs:space_time_heavy_plating', 'gtceu:uiv_fluid_regulator')
         .itemOutputs('kubejs:dimensional_pump_module')
         .EUt(32)
-        .circuit(6)
         sog.recipes.gtceu.assembler('trascendental_space_time_casing')
         .itemInputs('16x kubejs:space_time_heavy_plating')
         .itemOutputs('kubejs:trascendental_space_time_casing')
         .EUt(32)
-        .circuit(8)
+        .circuit(6)
         sog.recipes.gtceu.assembler('high_power_casing_plant')
         .itemInputs('8x gtceu:osmiridium_plate', 'gtceu:secure_maceration_casing')
         .itemOutputs('kubejs:high_power_casing')
@@ -669,7 +668,7 @@ ServerEvents.recipes(sog => {
           .itemOutputs("gtceu:ruthenium_dust")
           .duration(400)
           .EUt(32)
-      const gems = ["lapis", "sodalite", "lazurite"]
+                const gems = ["lapis", "sodalite", "lazurite"]
       gems.forEach(gem => {
         sog.recipes.gtceu.compressor(`${gem}_plate`)
           .itemInputs(`gtceu:${gem}_dust`)
@@ -1061,7 +1060,7 @@ sog.shaped(
         D: 'gtceu:iv_conveyor_module',
         E: 'gtceu:iv_electric_extractinator',
         F: 'gtceu:iv_sensor',
-        G: 'gtceu:quantum_star',
+        G: 'minecraft:nether_star',
         H: '#gtceu:circuits/luv',
 
     }

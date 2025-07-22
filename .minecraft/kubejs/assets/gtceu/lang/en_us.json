@@ -230,6 +230,7 @@
     "gtceu.multiblock.needed_laser_input.description": "This multiblock can ONLY be powered by Laser Target Hatches",
     "gtceu.multiblock.laser_output.description": "Power can be extracted by Laser Source Hatches",
     "gtceu.multiblock.needed_laser_output.description": "Power may only be extracted by Laser Source Hatches",
+    "gtceu.doge.coin.tooltip": "wow much coin how monyey so cwypto pwz minye v wich vewy cuwwency wow",
 
     "gtceu.jei.ore_vein.glacio_chaos": "Chaos Vein Glacio",
     "gtceu.jei.ore_vein.glacio_pitchblend": "Pitchblend Vein Glacio",

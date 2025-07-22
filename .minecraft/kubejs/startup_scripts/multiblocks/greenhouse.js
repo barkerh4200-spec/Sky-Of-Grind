@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.blocks('grass_block'))
             )
             .where('G', Predicates.blocks('gtceu:tempered_glass'))
-            .where("Z", Predicates.blocks("chipped:smooth_glowstone")
+            .where('Z', Predicates.blocks('chipped:smooth_glowstone')
             .or((Predicates.blocks('rechiseled:glowstone_smooth')))
             .or((Predicates.blocks('rechiseled:glowstone_smooth_connecting'))))
             .where('C', Predicates.blocks('gtceu:steel_machine_casing'))
@@ -44,4 +44,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel', 'gtceu:block/multiblock/implosion_compressor')
 })
-
