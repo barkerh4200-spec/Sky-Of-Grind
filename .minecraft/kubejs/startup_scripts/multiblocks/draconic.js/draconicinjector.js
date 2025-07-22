@@ -83,7 +83,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block//multiblock/power_substation')
+        .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
 
         event.create('draconic_fusion_injector', 'multiblock')
         .rotationState(RotationState.ALL)
