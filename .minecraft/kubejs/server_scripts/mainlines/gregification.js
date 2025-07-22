@@ -839,6 +839,34 @@ ServerEvents.recipes(sog => {
             .circuit(1)
             .duration(40)
             .EUt(128)
+    sog.shapeless(
+        Item.of('gtmutils:neutronium_credit', 1),
+            ['8x gtmutils:naquadah_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:naquadah_credit', 1),
+            ['8x gtmutils:osmium_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:osmium_credit', 1),
+            ['8x gtmutils:platinum_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:platinum_credit', 1),
+            ['8x gtmutils:gold_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:gold_credit', 1),
+            ['8x gtmutils:silver_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:silver_credit', 1),
+            ['8x gtmutils:cupronickel_credit']
+    )
+        sog.shapeless(
+        Item.of('gtmutils:copper_credit', 8),
+            ['1x gtmutils:cupronickel_credit']
+    )
     sog.shaped(
             'gtceu:altart2',
             ['ABA', 'CZC', 'CFC'],
@@ -1060,7 +1088,7 @@ sog.shaped(
         D: 'gtceu:iv_conveyor_module',
         E: 'gtceu:iv_electric_extractinator',
         F: 'gtceu:iv_sensor',
-        G: 'minecraft:nether_star',
+        G: 'gtceu:quantum_star',
         H: '#gtceu:circuits/luv',
 
     }
@@ -1424,6 +1452,12 @@ sog.shaped(
         B: 'minecraft:dragon_breath',
         Z: 'draconicevolution:dragon_heart',
 })
+sog.recipes.gtceu.forming_press('cupro_credit')
+.itemInputs('gtceu:cupronickel_plate')
+.notConsumable('gtceu:cylinder_casting_mold')
+.itemOutputs('4x gtmutils:cupronickel_credit')
+.duration(100)
+.EUt((GTValues.VA[GTValues.LV]))
 sog.recipes.gtceu.forming_press('moonglobe')
 .itemInputs('gtceu:stainless_steel_block')
 .notConsumable('ae2:name_press')

@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('circuit_assembly_line', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('circuit_assembly_line')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:large_precision_casing'))
         .pattern(definition => FactoryBlockPattern.start(/*BACK, UP, RIGHT*/)
             .aisle('COC', 'GDG', 'CDC', ' F ')

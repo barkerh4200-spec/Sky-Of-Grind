@@ -18,11 +18,18 @@
 	quests: [
 		{
 			id: "3997514573BA3204"
-			rewards: [{
-				id: "1C826E1D81999B52"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1C826E1D81999B52"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "444AF7EE8806668F"
+					item: "crafting_on_a_stick:crafting_table"
+					type: "item"
+				}
+			]
 			subtitle: "Welcome to the pack"
 			tasks: [{
 				count: 16L

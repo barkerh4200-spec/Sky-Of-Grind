@@ -27,7 +27,8 @@ ServerEvents.recipes(sog => {
     .duration(1500)
     .EUt(GTValues.VA[GTValues.IV]);
     sog.recipes.gtceu.assembler('tesla_coil_mk2')
-    .itemInputs('8x gtceu:quantum_star', '4x gtceu:naquadah_alloy_rotor', '24x #gtceu:inductors', '3x gtceu:naquadria_sulfate_dust')
+    .itemInputs('8x gtceu:quantum_star', '4x gtceu:naquadah_alloy_rotor', '24x #gtceu:inductors')
+    .inputFluids('gtceu:naquadria 72')
     .itemOutputs('8x kubejs:tesla_coil_mk2')
     .duration(1500)
     .EUt(GTValues.VA[GTValues.LuV]);
