@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .EUt((GTValues.VA[GTValues.LuV]))
     event.recipes.gtceu.large_chemical_reactor('acidprocnaqusulfate')
         .inputFluids('gtceu:sulfuric_acid 250', 'gtceu:processed_naquadria_sulfate 1000')
-        .notConsumable('gtceu:naquadah_credit')
+        .notConsumable('gtmutils:naquadah_credit')
         .outputFluids('gtceu:acidic_processed_naquadria_sulfate 3105')
         .duration(700)
         .EUt((GTValues.VA[GTValues.LuV]))
