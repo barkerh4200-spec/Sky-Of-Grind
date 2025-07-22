@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         event.create('component_assembly_line', 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType('component_assembly_line')
-            .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+            .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
             .appearanceBlock(() => Block.getBlock('kubejs:component_tile_casing'))
             .pattern(definition => FactoryBlockPattern.start(/*BACK, UP, RIGHT*/)
                 .aisle('COC', 'GDG', 'CDC', ' F ')
