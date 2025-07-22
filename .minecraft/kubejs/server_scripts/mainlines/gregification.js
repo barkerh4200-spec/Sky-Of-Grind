@@ -1060,7 +1060,7 @@ sog.shaped(
         D: 'gtceu:iv_conveyor_module',
         E: 'gtceu:iv_electric_extractinator',
         F: 'gtceu:iv_sensor',
-        G: 'minecraft:nether_star',
+        G: 'gtceu:quantum_star',
         H: '#gtceu:circuits/luv',
 
     }
