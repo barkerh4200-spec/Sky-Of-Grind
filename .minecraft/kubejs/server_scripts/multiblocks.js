@@ -298,7 +298,7 @@ event.recipes.gtceu.dimensionalmatter('matter')
 
 event.recipes.gtceu.atomiccompressor('blackhole')
     .notConsumable('kubejs:gravitational_containment_cell')
-    .itemInputs('10x kubejs:exotic_matter', '2x kubejs:stabilized_collapsed_singularity', 'gtceu:neutronium_credit', '4x kubejs:quantum_energy_capsule', 'gtceu:dense_crystal_matrix_plate')
+    .itemInputs('10x kubejs:exotic_matter', '2x kubejs:stabilized_collapsed_singularity', 'gtmutils:neutronium_credit', '4x kubejs:quantum_energy_capsule', 'gtceu:dense_crystal_matrix_plate')
     .itemOutputs('kubejs:atomically_compressed_black_hole')
     .duration(500)
     .EUt(GTValues.VA[GTValues.UHV]);
