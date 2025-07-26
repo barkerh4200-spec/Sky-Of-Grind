@@ -14,6 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('circuit_assembly_line', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('circuit_assembly_line')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:large_precision_casing'))
         .pattern(definition => FactoryBlockPattern.start(/*BACK, UP, RIGHT*/)
             .aisle('COC', 'GDG', 'CDC', ' F ')
@@ -33,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build()
         )
-        .workableCasingRenderer(
-            "kubejs:block/casings/large_precision_casing", "gtceu:block/multiblock/assembly_line", false
+        .workableCasingModel(
+            "kubejs:block/casings/large_precision_casing", "gtceu:block/multiblock/assembly_line"
         )
 })

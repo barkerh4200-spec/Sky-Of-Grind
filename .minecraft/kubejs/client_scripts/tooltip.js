@@ -16,6 +16,9 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('gtceu:atomic_moonminer', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
+    event.addAdvanced('gtmutils:doge_coin', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.doge.coin.tooltip'))
+    })
     event.addAdvanced('gtceu:atomicompressor', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
@@ -29,6 +32,9 @@ ItemEvents.tooltip(event => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
     event.addAdvanced('gtceu:atmospheric_collector', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+    })
+    event.addAdvanced('gtceu:robust_extractinator', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
     event.addAdvanced('gtceu:nebular_plasma_nexus', (item, adv, text) => {

@@ -15,8 +15,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chemical_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('chemical_plant')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK])
+        .recipeTypes(['chemical_plant', 'large_chemical_reactor'])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:inert_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('##AAA##', '##CCC##', '##CCC##', '##CCC##', '##CCC##', '##CCC##', '##AAA##')
@@ -39,6 +39,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_inert_ptfe", 'gtceu:block/machines/replicator', true)
+        .workableCasingModel("gtceu:block/casings/solid/machine_casing_inert_ptfe", 'gtceu:block/machines/replicator')
 })
 

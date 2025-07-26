@@ -236,12 +236,11 @@ ServerEvents.recipes(sog => {
         .itemInputs('8x kubejs:space_time_heavy_plating', 'gtceu:uiv_fluid_regulator')
         .itemOutputs('kubejs:dimensional_pump_module')
         .EUt(32)
-        .circuit(8)
         sog.recipes.gtceu.assembler('trascendental_space_time_casing')
         .itemInputs('16x kubejs:space_time_heavy_plating')
         .itemOutputs('kubejs:trascendental_space_time_casing')
         .EUt(32)
-        .circuit(8)
+        .circuit(6)
         sog.recipes.gtceu.assembler('high_power_casing_plant')
         .itemInputs('8x gtceu:osmiridium_plate', 'gtceu:secure_maceration_casing')
         .itemOutputs('kubejs:high_power_casing')
@@ -669,14 +668,14 @@ ServerEvents.recipes(sog => {
           .itemOutputs("gtceu:ruthenium_dust")
           .duration(400)
           .EUt(32)
-      sog.shaped(
-            'gtceu:fluid_filter',
-            ['AAA', 'AWA', 'AAA'],
-            {
-                A: 'gtceu:steel_foil',
-                W: 'minecraft:water_bucket'
-            }
-          ).id('gtceu:filterfluid')
+                const gems = ["lapis", "sodalite", "lazurite"]
+      gems.forEach(gem => {
+        sog.recipes.gtceu.compressor(`${gem}_plate`)
+          .itemInputs(`gtceu:${gem}_dust`)
+          .itemOutputs(`gtceu:${gem}_plate`)
+          .duration(20 * 15)
+          .EUt(2)
+      })
       sog.recipes.gtceu.arc_furnace('platinumsludge')
           .itemInputs('gtceu:platinum_dust')
           .inputFluids('gtceu:nitric_acid 1000')
@@ -840,6 +839,34 @@ ServerEvents.recipes(sog => {
             .circuit(1)
             .duration(40)
             .EUt(128)
+    sog.shapeless(
+        Item.of('gtmutils:neutronium_credit', 1),
+            ['8x gtmutils:naquadah_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:naquadah_credit', 1),
+            ['8x gtmutils:osmium_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:osmium_credit', 1),
+            ['8x gtmutils:platinum_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:platinum_credit', 1),
+            ['8x gtmutils:gold_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:gold_credit', 1),
+            ['8x gtmutils:silver_credit']
+    )
+    sog.shapeless(
+        Item.of('gtmutils:silver_credit', 1),
+            ['8x gtmutils:cupronickel_credit']
+    )
+        sog.shapeless(
+        Item.of('gtmutils:copper_credit', 8),
+            ['1x gtmutils:cupronickel_credit']
+    )
     sog.shaped(
             'gtceu:altart2',
             ['ABA', 'CZC', 'CFC'],
@@ -919,7 +946,7 @@ ServerEvents.recipes(sog => {
             .duration(160)
             .EUt(GTValues.VA[GTValues.UHV]);
 sog.recipes.gtceu.implosion_compressor('ae2:quantumsingularity')
-            .itemInputs('gtceu:industrial_tnt', 'ae2:singularity', 'gtceu:ender_pearl_dust')
+            .itemInputs('gtceu:industrial_tnt', 'ae2:singularity', 'minecraft:ender_pearl')
             .itemOutputs('2x ae2:quantum_entangled_singularity')
             .duration(160)
             .EUt(GTValues.VA[GTValues.UHV]);
@@ -1052,6 +1079,21 @@ sog.shaped(
     }
 )
 sog.shaped(
+    'gtceu:robust_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:iv_robot_arm',
+        B: 'gtceu:iv_voltage_coil',
+        C: 'gtceu:osmiridium_gear',
+        D: 'gtceu:iv_conveyor_module',
+        E: 'gtceu:iv_electric_extractinator',
+        F: 'gtceu:iv_sensor',
+        G: 'gtceu:quantum_star',
+        H: '#gtceu:circuits/luv',
+
+    }
+)
+sog.shaped(
     'gtceu:atomicompressor',
     ['ABA', 'CDC', 'AEA'],
     {
@@ -1159,6 +1201,12 @@ sog.shaped(
 sog.recipes.gtceu.bender('ostrum_plate')
 .itemInputs('ad_astra:ostrum_ingot')
 .itemOutputs('ad_astra:ostrum_plate')
+.circuit(1)
+.duration(40)
+.EUt(128)
+sog.recipes.gtceu.bender('saturlyte_plate')
+.itemInputs('ad_extendra:saturlyte_ingot')
+.itemOutputs('ad_extendra:saturlyte_plate')
 .circuit(1)
 .duration(40)
 .EUt(128)
@@ -1404,6 +1452,12 @@ sog.shaped(
         B: 'minecraft:dragon_breath',
         Z: 'draconicevolution:dragon_heart',
 })
+sog.recipes.gtceu.forming_press('cupro_credit')
+.itemInputs('gtceu:cupronickel_plate')
+.notConsumable('gtceu:cylinder_casting_mold')
+.itemOutputs('4x gtmutils:cupronickel_credit')
+.duration(100)
+.EUt((GTValues.VA[GTValues.LV]))
 sog.recipes.gtceu.forming_press('moonglobe')
 .itemInputs('gtceu:stainless_steel_block')
 .notConsumable('ae2:name_press')

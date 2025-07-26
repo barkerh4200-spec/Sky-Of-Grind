@@ -36,5 +36,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build()
         )
-        .workableCasingRenderer("kubejs:block/casings/reinforced_computation_casing", 'gtceu:block/multiblock/research_station', true)
+        .workableCasingModel("kubejs:block/casings/reinforced_computation_casing", 'gtceu:block/multiblock/research_station')
 })
