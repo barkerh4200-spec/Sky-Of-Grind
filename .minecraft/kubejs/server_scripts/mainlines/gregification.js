@@ -360,11 +360,11 @@ ServerEvents.recipes(sog => {
     sog.shapeless('2x gtceu:rubber_planks', [ // arg 1: output
             'gtceu:rubber_log'
           ])
-        sog.recipes.gtceu.centrifuge('phosphorus')
-          .itemInputs('64x minecraft:glowstone_dust')
-          .itemOutputs('8x gtceu:phosphorus_dust')
-          .duration(200)
-          .EUt(512)
+    sog.recipes.gtceu.electrolyzer('phosphorus')
+        .itemInputs('64x minecraft:glowstone_dust')
+        .itemOutputs('8x gtceu:phosphorus_dust')
+        .duration(200)
+        .EUt(512)
     sog.recipes.gtceu.assembler('enderchest')
         .itemInputs('gtceu:hv_super_chest', 'minecraft:ender_eye')
         .inputFluids('gtceu:ender_air 5000')
