@@ -38,7 +38,7 @@ ServerEvents.recipes(sog => {
     .chancedInput('kubejs:reactive_chaos_pellet', 1000, 0)
     .chancedOutput('kubejs:reactive_chaos_waste', 500, 0)
     .duration(20*20)
-    .EUt(-(GTValues.V[GTValues.MAX]))
+    .EUt(-4*(GTValues.V[GTValues.MAX]))
     sog.recipes.gtceu.csr('infused_chaotic_pellet')
     .itemInputs('kubejs:infused_reactive_chaos_pellet')
     .duration(20*800)

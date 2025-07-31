@@ -13,7 +13,29 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b.researchStack(Item.of('gtceu:naquadah_boule')).EUt(GTValues.VA[GTValues.UV]).CWUt(16)) // 
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UV])
-
+	event.recipes.gtceu.assembly_line('extremecrackingunit')
+        .itemInputs('16x gtceu:zpm_electric_pump', '32x gtceu:cracker', '32x gtceu:cracker', '4x gtceu:zpm_fusion_reactor', '16x #gtceu:circuits/uv', '32x gtceu:superconducting_coil')
+        .itemOutputs('gtceu:extreme_cracking_unit')
+        .inputFluids(
+          Fluid.of('gtceu:star_matter', 5950),
+          Fluid.of('gtceu:silicone_rubber', 1152),
+          Fluid.of('gtceu:soldering_alloy', 1152),
+        )
+        .stationResearch(b => b.researchStack(Item.of('gtceu:cracker')).EUt(GTValues.VA[GTValues.UV]).CWUt(32)) // 
+        .duration(3000)
+        .EUt(GTValues.VA[GTValues.UV])
+	event.recipes.gtceu.assembly_line('naquadahmk2')
+        .itemInputs('3x gtceu:uhv_field_generator', '16x kubejs:uhv_voltage_coil', '7x gtceu:dense_crystal_matrix_plate', '7x gtceu:dense_crystal_matrix_plate','4x #gtceu:circuits/uev', '16x gtceu:resonant_essence_hex_wire', '4x gtceu:uv_fusion_reactor')
+        .itemOutputs('gtceu:naquadahreactormk2')
+        .inputFluids(
+          Fluid.of('gtceu:naquadria_plasma_mk2_plasma', 20000),
+          Fluid.of('gtceu:silicone_rubber', 4808),
+          Fluid.of('gtceu:hypoxylon', 3500),
+          Fluid.of('gtceu:soldering_alloy', 4808),
+        )
+        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadahreactormk2')).EUt(GTValues.VA[GTValues.UEV]).CWUt(160)) // 
+        .duration(3000)
+        .EUt(GTValues.VA[GTValues.UEV])
     event.recipes.gtceu.assembly_line('ae2energy')
         .itemInputs('gtceu:uv_machine_hull', '64x gtceu:advanced_computer_casing', '64x gtceu:computation_receiver_hatch', '64x gtceu:advanced_computer_casing', '64x gtceu:neutron_reflector', '32x gtceu:double_tritanium_plate', '64x gtceu:zpm_parallel_hatch', 'megacells:mega_energy_cell', 'megacells:cell_component_256m')
         .itemOutputs('ae2:creative_energy_cell')
