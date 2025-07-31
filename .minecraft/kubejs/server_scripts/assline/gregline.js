@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
           Fluid.of('gtceu:hypoxylon', 3500),
           Fluid.of('gtceu:soldering_alloy', 4808),
         )
-        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadahreactormk2')).EUt(GTValues.VA[GTValues.UEV]).CWUt(160)) // 
+        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadahreactormk1')).EUt(GTValues.VA[GTValues.UEV]).CWUt(160)) // 
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UEV])
     event.recipes.gtceu.assembly_line('ae2energy')
