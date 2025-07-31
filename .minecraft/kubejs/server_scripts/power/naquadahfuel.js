@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
 	 event.recipes.gtceu.chemical_plant('naquadriafuelmixturemk3')
 		.notConsumable('kubejs:chemical_tier_four')
-        .inputFluids('gtceu:treated_light_naquadria_fuel 18000','gtceu:treated_heavy_naquadria_fuel 36000', 'gtceu:treated_super_dense_naquadria_fuel 30000', 'gtceu:enriched_naquadria_fuel_base 30000')
+        .inputFluids('gtceu:treated_light_naquadria_fuel 36000','gtceu:treated_heavy_naquadria_fuel 54000', 'gtceu:treated_super_dense_naquadria_fuel 30000', 'gtceu:enriched_naquadria_fuel_base 30000')
         .outputFluids('gtceu:naquadria_fuel_mixture_mk3 150000')
         .circuit(21)
         .duration(50*20)
