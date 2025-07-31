@@ -658,6 +658,10 @@
 				"7801AD2F7D0B75C1"
 				"5E0A20CE6CF0CCFC"
 			]
+			description: [
+				"1 UIV Amp"
+				"The beggining of &2naquadria fuel&r line"
+			]
 			id: "456BBD4581EB2949"
 			rewards: [{
 				id: "26CB13056E4573F2"
@@ -818,6 +822,23 @@
 				type: "item"
 			}]
 			x: -2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["5145593BA83D0FDF"]
+			id: "401F575C95AC1E00"
+			rewards: [{
+				id: "603733FEBC8FEC48"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Better cracker"
+			tasks: [{
+				id: "155B7AD3D206E5B6"
+				item: "gtceu:extreme_cracking_unit"
+				type: "item"
+			}]
+			x: -8.0d
 			y: 13.5d
 		}
 	]
