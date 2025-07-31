@@ -108,7 +108,7 @@
 				item: "kubejs:quantum_energy_capsule"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 10.0d
 			y: 1.0d
 		}
 		{
@@ -1374,6 +1374,10 @@
 			y: 3.5d
 		}
 		{
+			dependencies: [
+				"54696AD3E7A21F00"
+				"164DE1203C8BEE1B"
+			]
 			description: ["With the new and unlocked power cells you can now create hatches that defy physics, I mean, wireless energy? Basically type 7."]
 			id: "274185FF00BD23BF"
 			subtitle: "WIRELESS!"
@@ -1389,8 +1393,24 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
+			x: 10.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["251FBD9F0A55D451"]
+			description: [
+				"2 UXV Amp "
+				"It's time to upgrade your &2naquadria fuel&r infra"
+			]
+			id: "273945A608BA3231"
+			subtitle: "Better Naquadria Plasma"
+			tasks: [{
+				id: "43767ED542A8A0CF"
+				item: "gtceu:naquadria_plasma_mk2_plasma_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.0d
 		}
 	]
 	subtitle: ["Ultra High Voltage"]
