@@ -121,8 +121,8 @@ sog.create('cosmic_matter_nanites').maxStackSize(64).displayName('Cosmic Matter 
 sog.create('eternity_nanites').maxStackSize(64).displayName('Eternity Nanites')
 sog.create('stellar_matter_nanites').maxStackSize(64).displayName('Stellar Matter Nanites')
 sog.create('universium_nanites').maxStackSize(64).displayName('Universium Nanites')
-
-
+// Credits
+sog.create('atomically_compressed_neutronium_credit').maxStackSize(64).displayName('Atomically Compressed Neutronium Credit').texture('kubejs:item/atomically_compressed_neutronium_credit')
 
 
 const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spacetime", "universe"]
@@ -590,4 +590,32 @@ StartupEvents.registry('block', sog => {
         .requiresTool(true)
         .soundType('metal')
         .tagBlock('forge:mineable/wrench')
+    // Compressed TNT
+    sog.create('compressed_industrial_tnt')
+        .displayName('Compressed Industrial TNT')
+        .textureAll('kubejs:block/compressed_tnt/compressed_industrial_tnt')
+        .soundType('metal')
+        .resistance(1)
+        .requiresTool(true)
+        .hardness(9)
+        .lightLevel(0)
+        .tagBlock('forge:mineable/axe')
+    sog.create('double_compressed_industrial_tnt')
+        .displayName('Double Compressed Industrial TNT')
+        .textureAll('kubejs:block/compressed_tnt/double_compressed_industrial_tnt')
+        .soundType('metal')
+        .resistance(1)
+        .requiresTool(true)
+        .hardness(9)
+        .lightLevel(0)
+        .tagBlock('forge:mineable/axe')
+    sog.create('triple_compressed_industrial_tnt')
+        .displayName('Triple Compressed Industrial TNT')
+        .textureAll('kubejs:block/compressed_tnt/triple_compressed_industrial_tnt')
+        .soundType('metal')
+        .resistance(1)
+        .requiresTool(true)
+        .hardness(9)
+        .lightLevel(0)
+        .tagBlock('forge:mineable/axe')
 })
