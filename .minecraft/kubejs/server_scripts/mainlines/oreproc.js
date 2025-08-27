@@ -73,7 +73,6 @@ const oreProcessableTiers = {
         { material: 'resonant_essence', secondary: 'resonant_essence', tertiary: 'kaemite', quaternary: 'kaemite' },
         { material: 'resonant_naquadah', secondary: 'resonant_naquadah', tertiary: 'naquadah', quaternary: 'naquadria' },
         { material: 'kaemite', secondary: 'rare_earth', tertiary: 'rare_earth', quaternary: 'naquadria' },
-        { material: 'pure_cosmic_matter', secondary: 'pure_cosmic_matter', tertiary: 'pure_cosmic_matter', quaternary: 'pure_cosmic_matter' },
         { material: 'infinity_catalyst', secondary: 'infinity_catalyst', tertiary: 'pure_cosmic_matter', quaternary: 'space_time' },
     ]
 };
