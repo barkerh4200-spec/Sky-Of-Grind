@@ -327,6 +327,26 @@ event.recipes.gtceu.atomiccompressor('dragon_heart')
     .itemOutputs('draconicevolution:dragon_heart')
     .duration(20)
     .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomiccompressor('compressed_industrial_tnt')
+    .itemInputs('9x gtceu:industrial_tnt')
+    .itemOutputs('kubejs:compressed_industrial_tnt')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomiccompressor('double_compressed_industrial_tnt')
+    .itemInputs('9x kubejs:compressed_industrial_tnt')
+    .itemOutputs('kubejs:double_compressed_industrial_tnt')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomiccompressor('triple_compressed_industrial_tnt')
+    .itemInputs('9x kubejs:double_compressed_industrial_tnt')
+    .itemOutputs('kubejs:triple_compressed_industrial_tnt')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomiccompressor('atomically_compressed_neutronium_credit')
+    .itemInputs('kubejs:triple_compressed_industrial_tnt', 'gtmutils:neutronium_credit')
+    .itemOutputs('kubejs:atomically_compressed_neutronium_credit')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.UEV]);
 
 event.recipes.gtceu.svs('singularitysteel')
     .itemInputs('1024x gtceu:steel_ingot')
