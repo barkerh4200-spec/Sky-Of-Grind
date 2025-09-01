@@ -71,7 +71,42 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('gtceu:singularity_data_confinement', (item, adv, text) => {
         text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
     })
-
+	event.addAdvanced('gtceu:processor_printing_factory_lv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_mv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_hv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_ev', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_iv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_luv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_zpm', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_uv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+    event.addAdvanced('gtceu:processor_printing_factory_uhv', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
 
 
 })
