@@ -344,6 +344,12 @@ event.recipes.gtceu.atomiccompressor('blackhole')
     .itemOutputs('kubejs:atomically_compressed_black_hole')
     .duration(500)
     .EUt(GTValues.VA[GTValues.UHV]);
+event.recipes.gtceu.atomiccompressor('blackhole_4')
+    .notConsumable('kubejs:gravitational_containment_cell')
+    .itemInputs('10x kubejs:exotic_matter', '2x kubejs:stabilized_collapsed_singularity', 'kubejs:atomically_compressed_neutronium_credit', '8x kubejs:quantum_energy_capsule', '3x gtceu:dense_crystal_matrix_plate')
+    .itemOutputs('4x kubejs:atomically_compressed_black_hole')
+    .duration(500)
+    .EUt(GTValues.VA[GTValues.UEV]);
 event.recipes.gtceu.atomiccompressor('resonant_core')
     .notConsumable('kubejs:gravitational_containment_cell')
     .itemInputs('10x kubejs:exotic_matter', '2x kubejs:stabilized_collapsed_singularity', 'kubejs:rad_primary_resonant_particles')
@@ -389,6 +395,12 @@ event.recipes.gtceu.atomiccompressor('atomically_compressed_neutronium_credit')
     .itemOutputs('kubejs:atomically_compressed_neutronium_credit')
     .duration(20)
     .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomiccompressor('neutronium_credit')
+    .itemInputs('65536x gtceu:cupronickel_ingot')
+    .inputFluids('gtceu:neutronium 9216')
+    .itemOutputs('gtmutils:neutronium_credit')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.UHV]);
 
 event.recipes.gtceu.svs('singularitysteel')
     .itemInputs('1024x gtceu:steel_ingot')
