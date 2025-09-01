@@ -128,10 +128,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UXV]);
 
     event.recipes.gtceu.chemical_plant('chaos')
-        .notConsumable('kubejs:chemical_tier_six') 
+        .notConsumable('kubejs:chemical_tier_five') 
         .itemInputs('draconicevolution:chaos_shard')
         .inputFluids('gtceu:eternity 10')
-        .chancedOutput('64x draconicevolution:chaos_shard', 7500, 0)
+        .itemOutputs('16x draconicevolution:chaos_shard')
         .duration(500)
         .EUt(GTValues.VA[GTValues.UXV]);
 
