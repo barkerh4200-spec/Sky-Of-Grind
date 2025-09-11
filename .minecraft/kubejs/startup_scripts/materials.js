@@ -1,4 +1,12 @@
 
+const $OreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
+Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.Material'); // This line is generally not needed
+
+// Additional imports for material properties/tool properties
+const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey');
+const $RotorProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.RotorProperty');
+const $IngotProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty");
+const $ToolProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.ToolProperty');
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
@@ -10,6 +18,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('stellar_matter').parent(GTMaterialIconSet.METALLIC)
     event.create('cosmic_matter').parent(GTMaterialIconSet.METALLIC)
     event.create('eternity').parent(GTMaterialIconSet.METALLIC)
+    event.create('chrono-infinity_alloy').parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry('gtceu:element', event => {
@@ -129,7 +138,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('pure_naquadria_fuel')
         .liquid()
         .color(0x426148)
-	event.create('enriched_naquadria_fuel_base')
+        event.create('enriched_naquadria_fuel_base')
 	    .liquid()
         .color(0x4d8258)
 	event.create('lightly_plasmacracked_enriched_naquadria_fuel_base')
@@ -213,7 +222,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('naquadria_plasma')
         .plasma()
         .color(0x426148)
-	event.create('naquadria_plasma_mk2')
+        	event.create('naquadria_plasma_mk2')
         .plasma()
         .color(0x5e8866)
 	event.create('naquadria_plasma_mk3')
@@ -818,13 +827,35 @@ event.create("hypercharged_nihonium")
 .plasma()
 .color(0x84a1e8)
 
-
 event.create("astral_space_time_plasma")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+event.create("chrono_infinity")
+.ingot().dust()
+.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+.cableProperties(8589934592, 9999, 0, true)
+.blastTemp(13000, 'highest', 536870912, 900)
+.element(GTElements.get("chrono_infinity"))
+.color(0xffffff)
+.iconSet('chrono-infinity_alloy')
+.flags( 
+    GTMaterialFlags.GENERATE_FOIL, 
+    GTMaterialFlags.GENERATE_GEAR, 
+    GTMaterialFlags.GENERATE_SMALL_GEAR,
+    GTMaterialFlags.GENERATE_DENSE, 
+    GTMaterialFlags.GENERATE_RING, 
+    GTMaterialFlags.GENERATE_PLATE,
+    GTMaterialFlags.GENERATE_ROD,
+    GTMaterialFlags.GENERATE_LONG_ROD,
+    GTMaterialFlags.GENERATE_ROTOR,
+    GTMaterialFlags.GENERATE_BOLT_SCREW,
+    GTMaterialFlags.GENERATE_ROUND,
+    GTMaterialFlags.GENERATE_SPRING,
+    GTMaterialFlags.GENERATE_SPRING_SMALL,
+    GTMaterialFlags.GENERATE_FINE_WIRE,
+    GTMaterialFlags.GENERATE_FRAME
+)
 
 
 
     })
-
-
-    

@@ -207,11 +207,27 @@
 			}
 			id: "20ED98F07FCB8D2C"
 			optional: true
-			rewards: [{
-				id: "403C2EC28DDC3F27"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "403C2EC28DDC3F27"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "57D9F2973FF09FED"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:enderman"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -398,11 +414,27 @@
 			}
 			id: "6D974844B7DEFE1A"
 			optional: true
-			rewards: [{
-				id: "5F8B4543A90F666F"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5F8B4543A90F666F"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "5134251DDB1F574E"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:blaze"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true

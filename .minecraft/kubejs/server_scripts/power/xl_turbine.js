@@ -8,7 +8,7 @@ ServerEvents.recipes(sog => {
     .outputFluids(Fluid.of('gtceu:naquadria_mk1_fuel_waste', 2500))
     .duration(8400)
     .EUt(-(GTValues.V[GTValues.UIV]))
-	sog.recipes.gtceu.xl_plasma_turbine('naquadria_plasma_mk2_xl')
+    sog.recipes.gtceu.xl_plasma_turbine('naquadria_plasma_mk2_xl')
     .inputFluids(Fluid.of('gtceu:naquadria_plasma_mk2_plasma', 10000))
     .itemInputs('gtceu:atomic_alloy_rotor')
     .outputFluids(Fluid.of('gtceu:naquadria_mk2_fuel_waste', 2500))

@@ -23,4 +23,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/implosion_compressor')
     })
 
-

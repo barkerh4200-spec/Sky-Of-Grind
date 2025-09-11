@@ -111,7 +111,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel('kubejs:block/neutronium/ncasing', 'gtceu:block/multiblock/assembly_line')
-    
+
     event.create('processor_printing_factory_hv', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('processor_printing_factory_hv')
@@ -273,7 +273,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel('kubejs:block/neutronium/ncasing', 'gtceu:block/multiblock/assembly_line')
-    
+
     event.create('processor_printing_factory_uhv', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('processor_printing_factory_uhv')

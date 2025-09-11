@@ -13,7 +13,8 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b.researchStack(Item.of('gtceu:naquadah_boule')).EUt(GTValues.VA[GTValues.UV]).CWUt(16)) // 
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UV])
-	event.recipes.gtceu.assembly_line('extremecrackingunit')
+
+        	event.recipes.gtceu.assembly_line('extremecrackingunit')
         .itemInputs('16x gtceu:zpm_electric_pump', '32x gtceu:cracker', '32x gtceu:cracker', '4x gtceu:zpm_fusion_reactor', '16x #gtceu:circuits/uv', '32x gtceu:superconducting_coil')
         .itemOutputs('gtceu:extreme_cracking_unit')
         .inputFluids(
@@ -33,9 +34,10 @@ ServerEvents.recipes(event => {
           Fluid.of('gtceu:hypoxylon', 3500),
           Fluid.of('gtceu:soldering_alloy', 4808),
         )
-        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadahreactormk1')).EUt(GTValues.VA[GTValues.UEV]).CWUt(160)) // 
+        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadahreactormk2')).EUt(GTValues.VA[GTValues.UEV]).CWUt(160)) // 
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UEV])
+
     event.recipes.gtceu.assembly_line('ae2energy')
         .itemInputs('gtceu:uv_machine_hull', '64x gtceu:advanced_computer_casing', '64x gtceu:computation_receiver_hatch', '64x gtceu:advanced_computer_casing', '64x gtceu:neutron_reflector', '32x gtceu:double_tritanium_plate', '64x gtceu:zpm_parallel_hatch', 'megacells:mega_energy_cell', 'megacells:cell_component_256m')
         .itemOutputs('ae2:creative_energy_cell')

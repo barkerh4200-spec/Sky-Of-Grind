@@ -202,11 +202,27 @@
 				}
 			}
 			id: "53E330337358D8DC"
-			rewards: [{
-				id: "4BB3EFF05A2E3292"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4BB3EFF05A2E3292"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "5FF87D61A3CDB454"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:witch"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -1029,11 +1045,24 @@
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "1E04F58E81F4F89F"
 			optional: true
-			rewards: [{
-				id: "5532941BCB9F7563"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5532941BCB9F7563"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "2C97F3020C21D43F"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.luv"
+						tag: {
+							Charge: 1000000000L
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "694F06817817123E"
@@ -1189,11 +1218,27 @@
 			}
 			id: "733971C42894950A"
 			optional: true
-			rewards: [{
-				id: "6B3EE059B9EA81FB"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6B3EE059B9EA81FB"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "47EFCFA41B8E16E0"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:slime"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true

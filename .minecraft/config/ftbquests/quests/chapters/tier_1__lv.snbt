@@ -964,11 +964,27 @@
 				}
 			}
 			id: "4F38FDE69E161339"
-			rewards: [{
-				id: "3FCB443B10A56296"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3FCB443B10A56296"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "4324EC7BBDD2D1A4"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:squid"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Peaceful Friendly"
 			tasks: [
 				{
@@ -1358,11 +1374,27 @@
 			}
 			id: "0718B686D7E82E27"
 			optional: true
-			rewards: [{
-				id: "08EF196B204C1F48"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "08EF196B204C1F48"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "37D9F5F8EE0FCCF8"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:spider"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -1435,6 +1467,7 @@
 				""
 				"Note: you might have been able to obtain them before, but some of them require Invar and Potin."
 			]
+			icon: "gtceu:steam_grinder"
 			id: "0DE09F4FDA8E1C86"
 			rewards: [{
 				id: "762EDB63766D1E16"
@@ -1467,47 +1500,6 @@
 			title: "Steam Multiblocks!"
 			x: 5.25d
 			y: 5.0d
-		}
-		{
-			dependencies: ["11F178FE7717ACD2"]
-			description: ["If you are tired of making LV pumps and conveyors for automations, try those, they require a little bit of lead, but are very cheap in comparison."]
-			icon: "ulvcovm:ulv_electric_pump"
-			id: "752B0E07BBC5F492"
-			rewards: [{
-				id: "6E4C1D2767C58FBD"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "75917B4AEB1EE939"
-					item: "ulvcovm:ulv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "0DF6B995A6B4E9D7"
-					item: "ulvcovm:ulv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "002F18D7E95AC7CF"
-					item: "ulvcovm:ulv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "76A45DAA8EC7709C"
-					item: "ulvcovm:ulv_robot_arm"
-					type: "item"
-				}
-				{
-					id: "01F44F62217B80C6"
-					item: "ulvcovm:ulv_electric_motor"
-					type: "item"
-				}
-			]
-			title: "ULV Components"
-			x: 5.5d
-			y: 6.5d
 		}
 		{
 			dependencies: ["11F178FE7717ACD2"]

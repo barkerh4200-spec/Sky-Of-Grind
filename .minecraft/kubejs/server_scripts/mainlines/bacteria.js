@@ -110,7 +110,7 @@ event.recipes.gtceu.biolab('rawdna')
     .outputFluids('gtceu:hypoxylon 144')
     .duration(100)
     .EUt(GTValues.VA[GTValues.UEV]);
-    event.recipes.gtceu.biolab('living_biological_carrot_goop')
+        event.recipes.gtceu.biolab('living_biological_carrot_goop')
     .circuit(1)
     .inputFluids('gtceu:biological_carrot_goop 5000', 'gtceu:sterilized_growth_medium 500')
     .outputFluids('gtceu:living_biological_carrot_goop 100')

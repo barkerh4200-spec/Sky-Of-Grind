@@ -125,6 +125,7 @@ sog.create('universium_nanites').maxStackSize(64).displayName('Universium Nanite
 sog.create('atomically_compressed_neutronium_credit').maxStackSize(64).displayName('Atomically Compressed Neutronium Credit').texture('kubejs:item/atomically_compressed_neutronium_credit')
 
 
+
 const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spacetime", "universe"]
         data.forEach((data) => {
             sog.create(data + "_data")
@@ -574,7 +575,7 @@ StartupEvents.registry('block', sog => {
         .tagBlock('forge:mineable/wrench')
 
 
-    // C O I L S
+        // C O I L S
     sog.create('atomic_alloy_coil_block', 'gtceu:coil')
         .temperature(12500)
         .level(32) //this is the multismelter parallel amount. The math is parallel = (level * 32)
@@ -588,7 +589,7 @@ StartupEvents.registry('block', sog => {
     sog.create('resonant_essence_coil_block', 'gtceu:coil')
         .temperature(13500)
         .level(64)
-        .energyDiscount(250) // 
+        .energyDiscount(64) // 
         .tier(10)
         .textureAll('kubejs:block/coils/machine_coil_resonant_essence')
         .hardness(5)
@@ -598,7 +599,7 @@ StartupEvents.registry('block', sog => {
     sog.create('awakened_draconium_coil_block', 'gtceu:coil')
         .temperature(15500)
         .level(128)
-        .energyDiscount(300) // 
+        .energyDiscount(128) // 
         .tier(11)
         .coilMaterial(() => GTMaterials.get('awakened_draconium'))
         .textureAll('kubejs:block/coils/machine_coil_awakened_draconium')
@@ -606,18 +607,29 @@ StartupEvents.registry('block', sog => {
         .requiresTool(true)
         .soundType('metal')
         .tagBlock('forge:mineable/wrench')
-    sog.create('infinity_coil_block', 'gtceu:coil')
-        .temperature(19950)
+        sog.create('infinity_coil_block', 'gtceu:coil')
+        .temperature(17950)
         .level(1024)
-        .energyDiscount(999) // 
-        .tier(99)
+        .energyDiscount(1024) // 
+        .tier(12)
         .coilMaterial(() => GTMaterials.get('infinity'))
         .textureAll('kubejs:block/coils/machine_coil_infinity')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
         .tagBlock('forge:mineable/wrench')
-    // Compressed TNT
+        sog.create('chrono-infinity_alloy_coil_block', 'gtceu:coil')
+        .temperature(19590)
+        .level(2048)
+        .energyDiscount(2048) // 
+        .tier(99)
+        .coilMaterial(() => GTMaterials.get('chrono-infinity'))
+        .textureAll('kubejs:block/coils/machine_coil_chrono-infinity_alloy')
+        .hardness(5)
+        .requiresTool(true)
+        .soundType('metal')
+        .tagBlock('forge:mineable/wrench')
+          // Compressed TNT
     sog.create('compressed_industrial_tnt')
         .displayName('Compressed Industrial TNT')
         .textureAll('kubejs:block/compressed_tnt/compressed_industrial_tnt')
@@ -645,4 +657,14 @@ StartupEvents.registry('block', sog => {
         .hardness(9)
         .lightLevel(0)
         .tagBlock('forge:mineable/axe')
+    sog.create('adv_high_power_crushing_wheels')
+        .displayName('Advanched High Power Crushing Wheels')
+        .textureAll('kubejs:block/casings/adv_high_power_crushing_wheels')
+        .soundType('metal')
+        .resistance(1)
+        .requiresTool(true)
+        .hardness(9)
+        .lightLevel(0)
+        .defaultCutout()
+        .tagBlock('forge:mineable/wrench')
 })

@@ -651,7 +651,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2A0B2D9208AA3F3D"]
+			dependencies: ["543C51F4F4FE91C8"]
 			id: "08F19428C7F1E9B4"
 			tasks: [{
 				id: "4B3C619B529263DF"
@@ -1072,18 +1072,6 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["2349587F40CC813B"]
-			id: "4D968848815FA9AD"
-			subtitle: "OpV"
-			tasks: [{
-				id: "31073D4E1C922E53"
-				item: "gtceu:space_time_ingot"
-				type: "item"
-			}]
-			x: 16.5d
-			y: -3.0d
-		}
-		{
 			id: "2A55D8B3FD9169B0"
 			tasks: [{
 				id: "7336414018ADBABA"
@@ -1211,38 +1199,23 @@
 				item: "kubejs:infinity_coil_block"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"41D28FE36C13266F"
-				"603DF5ED229A5BB9"
-				"6889191E23060B52"
-			]
+			dependencies: ["7C28D45E0C689A04"]
 			icon_scale: 2.0d
 			id: "7FFA0E8C4210B437"
 			shape: "none"
+			size: 0.9d
+			subtitle: "UXV"
 			tasks: [{
 				id: "30E8AE831136644C"
 				item: "avaritia:infinity_ingot"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 16.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["592AB72B0476B66B"]
-			hide_dependency_lines: false
-			hide_dependent_lines: true
-			id: "41D28FE36C13266F"
-			tasks: [{
-				id: "707F8E9BE317BE0B"
-				item: "gtceu:cosmic_matter_bucket"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -4.5d
 		}
 		{
 			dependencies: ["61F1797DA06E0711"]
@@ -1365,40 +1338,103 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["7323EB3DBA1D74D8"]
-			id: "2349587F40CC813B"
-			subtitle: "UXV"
+			dependencies: ["217A679A9D94A330"]
+			id: "543C51F4F4FE91C8"
 			tasks: [{
-				id: "409A1AA1BFAD8D70"
-				item: "gtceu:eternity_ingot"
+				id: "75DACA3F441567B5"
+				item: "kubejs:space_time_processor_mainframe"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["54E63DCC9E5E1003"]
+			id: "217A679A9D94A330"
+			tasks: [{
+				id: "3A3876AFC08C240B"
+				item: "kubejs:space_time_processor_computer"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["53887076018E20EB"]
+			id: "54E63DCC9E5E1003"
+			tasks: [{
+				id: "2A0577DE3BB5C3D0"
+				item: "kubejs:space_time_processor_assembly"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2A0B2D9208AA3F3D"]
+			id: "53887076018E20EB"
+			tasks: [{
+				id: "38271EA95CD9793A"
+				item: "kubejs:space_time_processor"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["543C51F4F4FE91C8"]
+			id: "197403E9133AC3F0"
+			tasks: [{
+				id: "36C928B4C202B0AE"
+				item: "kubejs:opv_voltage_coil"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 19.5d
+		}
+		{
+			id: "70CF08ED0369BB64"
+			tasks: [{
+				id: "48ADB3CD6308038A"
+				item: "gtceu:opv_machine_casing"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["7E113B2CB886D602"]
+			id: "20ED3BAE3778ABC3"
+			tasks: [{
+				id: "028BE728C10F2F19"
+				item: "kubejs:chrono-infinity_alloy_coil_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C28D45E0C689A04"]
+			id: "3604EC629F84E423"
+			subtitle: "OpV"
+			tasks: [{
+				id: "75B8616EE7B088C7"
+				item: "gtceu:chrono_infinity_ingot"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7323EB3DBA1D74D8"]
+			id: "7C28D45E0C689A04"
+			tasks: [{
+				id: "612BF6E679FDFE26"
+				item: "gtceu:pure_cosmic_matter_ingot"
 				type: "item"
 			}]
 			x: 16.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["2349587F40CC813B"]
-			id: "603DF5ED229A5BB9"
-			shape: "rsquare"
-			subtitle: "MAX"
-			tasks: [{
-				id: "5C3EFC28EE7E4E69"
-				item: "gtceu:universium_ingot"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -1.5d
-		}
-		{
-			id: "6889191E23060B52"
-			subtitle: "MAX"
-			tasks: [{
-				id: "610EEE7D4975CD62"
-				item: "gtceu:stellar_matter_plasma_ingot"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -4.5d
 		}
 	]
 	subtitle: ["Dont lose your motivation!"]

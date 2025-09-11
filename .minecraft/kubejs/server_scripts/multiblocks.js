@@ -12,8 +12,8 @@ event.recipes.gtceu.moonminer('titaminer')
 event.recipes.gtceu.moonminer('tungstenminer')
     .notConsumable('kubejs:end_miner_module')
     .inputFluids([Fluid.of('gtceu:drilling_fluid', 1000)])
-    .itemOutputsRanged( 'gtceu:endstone_tungstate_ore', 16, 32)
-    .itemOutputsRanged( 'gtceu:endstone_scheelite_ore', 16, 32)
+    .itemOutputsRanged( 'gtceu:raw_tungstate', 32, 64)
+    .itemOutputsRanged( 'gtceu:raw_scheelite', 32, 64)
     .dimension('minecraft:the_end')
     .duration(640)
     .EUt(GTValues.VA[GTValues.EV]);
@@ -201,7 +201,7 @@ event.recipes.gtceu.altart5('altart5recipe')
     .itemOutputs('gtceu:altart6')
     .duration(30000)
     .EUt(GTValues.VA[GTValues.LuV]);
-    // Rock Crusher recreation
+// Rock Crusher recreation
 event.recipes.gtceu.rock_crusher('diorite')
     .notConsumable('minecraft:diorite')
     .itemOutputs('minecraft:diorite')
@@ -375,7 +375,7 @@ event.recipes.gtceu.atomiccompressor('dragon_heart')
     .itemOutputs('draconicevolution:dragon_heart')
     .duration(20)
     .EUt(GTValues.VA[GTValues.UEV]);
-event.recipes.gtceu.atomiccompressor('compressed_industrial_tnt')
+    event.recipes.gtceu.atomiccompressor('compressed_industrial_tnt')
     .itemInputs('9x gtceu:industrial_tnt')
     .itemOutputs('kubejs:compressed_industrial_tnt')
     .duration(20)
@@ -395,7 +395,8 @@ event.recipes.gtceu.atomiccompressor('atomically_compressed_neutronium_credit')
     .itemOutputs('kubejs:atomically_compressed_neutronium_credit')
     .duration(20)
     .EUt(GTValues.VA[GTValues.UEV]);
-event.recipes.gtceu.atomiccompressor('neutronium_credit')
+
+    event.recipes.gtceu.atomiccompressor('neutronium_credit')
     .itemInputs('65536x gtceu:cupronickel_ingot')
     .inputFluids('gtceu:neutronium 9216')
     .itemOutputs('gtmutils:neutronium_credit')

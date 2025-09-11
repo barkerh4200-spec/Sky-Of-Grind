@@ -163,7 +163,7 @@ sog.recipes.gtceu.plasma_nexus('advanced_refined_cosmic_matter_plasma')
     .inputFluids('gtceu:hypercharged_nebular_plasma 200', 'gtceu:hyper_dense_cosmic_matter_base_plasma 576', 'gtceu:astral_space_time_plasma 144')
     .itemInputs('2x avaritia:eternal_singularity')
     .outputFluids('gtceu:refined_cosmic_matter_plasma 2304')
-    .duration(10*20)
-    .EUt(GTValues.VA[GTValues.OpV]);
-
+    .duration(20*20)
+    .EUt(GTValues.VA[GTValues.UXV]);
+    
 })
