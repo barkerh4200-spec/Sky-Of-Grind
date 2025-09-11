@@ -81,7 +81,6 @@ const advanced_fluids = {
   }
 
 const adv_processing_plant = (event, materialObj) => {
-
     event.recipes.gtceu.adv_processing_plant(`${materialObj.material}`)
         .circuit(1)
         .itemInputs(raw_ore(materialObj.material, 10000))
