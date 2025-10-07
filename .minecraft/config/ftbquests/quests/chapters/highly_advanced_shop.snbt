@@ -593,7 +593,7 @@
 			id: "4F4ADA7BF250073B"
 			ignore_reward_blocking: true
 			rewards: [{
-				command: "/summon minecraft:villager ~ ~ ~ {VillagerData:{profession:\"advancedperipherals:computer_scientist\",level:1,type:\"plains\"}}"
+				command: "/summon minecraft:villager ~ ~ ~ {VillagerData:{profession:\"advancedperipherals:computer_scientist\",level:2,type:\"plains\"}}"
 				exclude_from_claim_all: true
 				id: "583C57EA71346218"
 				ignore_reward_blocking: true
