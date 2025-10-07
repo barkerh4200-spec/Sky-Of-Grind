@@ -594,6 +594,7 @@
 			ignore_reward_blocking: true
 			rewards: [{
 				command: "/summon minecraft:villager ~ ~ ~ {VillagerData:{profession:\"advancedperipherals:computer_scientist\",level:2,type:\"plains\"}}"
+				elevate_perms: true
 				exclude_from_claim_all: true
 				id: "583C57EA71346218"
 				ignore_reward_blocking: true
